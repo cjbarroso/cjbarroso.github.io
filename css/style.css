@@ -455,8 +455,8 @@ table {
 .hero {
 	background: url('../img/header-bg.png') right bottom no-repeat;
 	background-size: contain;
-	padding:0px 0 100px 0;
-	height:auto;
+	padding: 0px 0 100px 0;
+	height: 500px;
 	background-color: #FBFBFB;
 }
 .hero h1 {
