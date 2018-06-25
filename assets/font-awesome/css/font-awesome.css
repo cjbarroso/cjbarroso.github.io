@@ -1799,3 +1799,12 @@
 .fa-medium:before {
   content: "\f23a";
 }
+.fa-archway:before {
+  content: "\f557";
+}
+.fa-product-hunt:before {
+  content: "\f288";
+}
+.fa-project-diagram:before {
+  content: "\f542";
+}
