@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,18 @@
     <script src="assets/respond/respond.min.js"></script>
     <![endif]-->
     <script src="js/l10n.min.js"></script>
+    <script type="text/javascript" src="js/localizations.js"></script>
+
+    <script type="text/javascript">
+        function carga() {
+            var _ = function (string) {
+                return string.toLocaleString();
+            };
+        }
+
+
+      </script>
+
   </head>
     <body id="top">
 
@@ -48,11 +60,11 @@
 				<nav class="menu">
 				    <!-- Menu Links -->
 					<div class="icon-list">
-						<a href="index.html#home"><i class="fas fa-home"></i><span>Home</span></a>
-						<a href="index.html#about"><i class="fas fa-quote-left"></i><span>About</span></a>
-						<a href="index.html#service"><i class="fas fa-globe"></i><span>Service</span></a>
-						<a href="index.html#blog"><i class="fab fa-blogger"></i><span>Blog</span></a>
-						<a href="index.html#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+                        <a href="index.html#home"><i class="fas fa-home" id="home_lnk"></i><span>_("%home_lnk")</span></a>
+						<a href="index.html#about"><i class="fas fa-quote-left" id="about_lnk"></i><span>About</span></a>
+						<a href="index.html#service"><i class="fas fa-globe" id="services_lnk"></i><span>Service</span></a>
+						<a href="index.html#blog"><i class="fab fa-blogger" id="blog_lnk"></i><span>Blog</span></a>
+						<a href="index.html#contact"><i class="fas fa-envelope" id="contact_lnk"></i><span>Contact</span></a>
 					</div>
 				</nav>
 			    </div>
@@ -76,7 +88,7 @@
                     <span>Ba<span style="color:#FFE800">rro</span>so</span>
                   </h1><!-- Title -->
                   <h3 class="animated fadeInUp delay-05s">
-                      <span class="rotate">AI Catalizer</span>
+                      <span class="rotate" id="anim_subtitle">AI Catalizer</span>
                   </h3><!-- Text Rotator -->
                 </div>
               </div>
@@ -84,7 +96,7 @@
               <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
                   <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
-			            <p>MAS</p>
+			            <p id="more_">MAS</p>
 			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
 			        </a>
                 </div>
@@ -107,9 +119,9 @@
 		    <!-- WELCOME TEXT -->
             <div class="row">
               <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">Algo <span>sobre</span> mí</h1><!-- Headline -->
+                <h1 class="arrow" id="about_me_title">Algo <span>sobre</span> mí</h1><!-- Headline -->
 				<!-- about / welcome text -->
-                    <p>Carlos es gerente de arquitectura en Machinalis, donde dirige el área de 
+                    <p id="about_me">Carlos es gerente de arquitectura en Machinalis, donde dirige el área de 
                         generación de soluciones, especialmente para 
                         e-commerce y fintech. Su misión ha sido ayudar a sus clientes a entender, 
                         planificar y ejecutar estrategias de negocios apoyadas en la inteligencia 
@@ -137,7 +149,7 @@
         <!-- Headline -->
             <div class="row">
               <div class="col-md-12">
-                <h1 class="arrow">Como ayudo a mis clientes</h1>
+                <h1 class="arrow" id="helping_clients">Como ayudo a mis clientes</h1>
               </div>
             </div>
             <div class="row">
@@ -148,15 +160,15 @@
                     <div class="icon">
                       <i class="fa fa-archway"></i><!-- Icon -->
                     </div>
-                    <h2>Arquitectura</h2><!-- Title -->
-                    <p>Creación de la arquitectura, selección de tecnologías y de proveedores para su iniciativa de inteligencia artificial.</p><!-- Description -->
+                    <h2 id="arquit_title">Arquitectura</h2><!-- Title -->
+                    <p id="arquitectura">Creación de la arquitectura, selección de tecnologías y de proveedores para su iniciativa de inteligencia artificial.</p><!-- Description -->
                   </div>
           <!-- Service Box 2 -->
                   <div class="col-md-4 wp2 item delay-05s">
                     <div class="icon">
                       <i class="fa fa-chart-line"></i><!-- Icon -->
                     </div>
-                    <h2>Product Advisory</h2><!-- Title -->
+                    <h2 id="prod_adv_title">Product Advisory</h2><!-- Title -->
                     <p>Expertise en el proceso de definicion de producto, MVP, implementacion, aceleracion, etc..</p><!-- Description -->
                   </div>
           <!-- Service Box 3 -->
