@@ -1,200 +1,488 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Carlos Barroso",
+    "label": "Chief IA Officer & AWS Community Builder & AWS Group Leader",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "cjbarroso@gmail.com",
+    "phone": "",
+    "url": "",
+    "summary": "Currently MLOps Architect at Teracloud (https://www.teracloud.io/services-machine-learning-mlops)\nArchitected, managed and reviewed a broad range of projects. In the last couple of years mostly solutions involving machine learning in the Fintech and e-commerce markets.\nProgressed through the positions of programmer, team leader, project manager and operations manager, I've managed large projects in the US and later a whole Operations division.\nNow I help companies to find the best solution to fulfill their organizational goals using people + data, while I design next-gen AI products for Teracloud.io\n\nI have experience in this industries:\n- Aerospatial\n- Finances\n- E-commerce\n- Bitcoin and blockchain\n\nKeywords: Technical sales, fintech, ecommerce, machine learning, data science, project management\n\nBassist of @afterofficemusic (https://www.instagram.com/afterofficemusic/)",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
       "countryCode": "US",
-      "region": "California"
+      "address": "Argentina"
     },
     "profiles": [
       {
+        "network": "LinkedIn",
+        "username": "cjbarroso",
+        "url": "https://www.linkedin.com/in/cjbarroso/"
+      },
+      {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "cjbarroso",
+        "url": "https://twitter.com/cjbarroso"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Teracloud.io",
+      "position": "CIAO",
+      "startDate": "2018-01-31",
+      "endDate": "",
+      "highlights": [],
+      "url": "",
+      "location": "Cordoba, Córdoba, Argentina"
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Teracloud.io",
+      "position": "Head of AI&ML",
+      "startDate": "2018-07-31",
+      "endDate": "2021-01-31",
+      "highlights": [],
+      "summary": "As Head of AI, my job is to ideate, validate, create and grow AI and ML related products for AIOps and robotic process automation. Teracloud.io is a young company created by seasoned practitioners of DevOps and cloud. My ultimate goal is to help people from every industry to harness the opportunities that AI&ML creates without investing in long and costly trial-and-error development processes.",
+      "url": "https://www.linkedin.com/company/teracloud.io/",
+      "location": "Córdoba Province, Argentina"
+    },
+    {
+      "name": "Teracloud",
+      "position": "MLOps engineer",
+      "startDate": "2021-01-31",
+      "endDate": "2024-02-28",
+      "highlights": [],
+      "summary": "Design, architect and implement MLOps infrastructure for machine/deep learning and artificial intelligence workloads. My goal is to lower costs and speed up the time to market of ML initiatives of our customers by implementing secure and robust infrastructure pipelines.",
+      "url": "https://www.linkedin.com/company/teracloud.io/",
+      "location": "Argentina"
+    },
+    {
+      "name": "Machinalis",
+      "position": "Manager, Machine Learning Solutions Architecture",
+      "startDate": "2016-01-31",
+      "endDate": "2018-07-31",
+      "highlights": [],
+      "summary": "Head of the Machine Learning Solutions Architecture.\nMy responsibilities include:\n* Finding new market verticals to conquer, and design the attack strategy using our technical strengths.\n* Lead the Customer Decision Journey process, from the first contact to the successful delivery of a business proposal.\n* Leading the Business Analysis teams and our Customer, to design the Best Solution for their current and future problems and opportunities.\n* Work with current customers to find new, innovative ways to understand their business and marketing to find opportunities to grow together.\n* Negotiating boring contract details.",
+      "url": "https://www.linkedin.com/company/machinalis/",
+      "location": "Provincia de Córdoba, Argentina"
+    },
+    {
+      "name": "Machinalis",
+      "position": "Project Portfolio Manager",
+      "startDate": "2012-12-31",
+      "endDate": "2016-01-31",
+      "highlights": [],
+      "summary": "Manage the portfolio of projects",
+      "url": "https://www.linkedin.com/company/machinalis/"
+    },
+    {
+      "name": "Machinalis",
+      "position": "Project Manager",
+      "startDate": "2011-12-31",
+      "endDate": "2012-12-31",
+      "highlights": [],
+      "summary": "Agile project management of a medium sized aerospatial MRP",
+      "url": "https://www.linkedin.com/company/machinalis/"
+    },
+    {
+      "name": "Starbene",
+      "position": "Software process designer",
+      "startDate": "2010-12-31",
+      "endDate": "2011-12-31",
+      "highlights": [],
+      "summary": "The job is to define and maintain processes in conformation with many ISO, IEC and FDA norms and regulations, like:\n\n- ISO 9001\n- IEC 60601, Medical electrical equipment\n- IEC 13485, Medical Devices - Quality management\n- IEC 62304 Medical Device Software - Software Life-cycle processes\n- ISO/IEC 14598 Software Product Evaluation\n- FDA General Principles of Software Validation",
+      "url": "https://www.linkedin.com/company/starbene-benedepil/"
+    },
+    {
+      "name": "IURL",
+      "position": "Linux Software Manager",
+      "startDate": "2007-12-31",
+      "endDate": "2008-12-31",
+      "highlights": [],
+      "summary": "Manage the project that became in urli OS versions 6 and 7. Look at http://www.tuxmachines.org/node/10978",
+      "url": ""
+    },
+    {
+      "name": "AguarA Soft",
+      "position": "Software Designer and coder",
+      "startDate": "2001-12-31",
+      "endDate": "2005-12-31",
+      "highlights": [],
+      "summary": "Design and Code bussiness applications in Clarion for Windows",
+      "url": ""
+    },
+    {
+      "name": "xecomm",
+      "position": "Software Designer",
+      "startDate": "1997-12-31",
+      "endDate": "1999-12-31",
+      "highlights": [],
+      "summary": "Design and implement government-related software using Delphi",
+      "url": ""
     }
   ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Amazon Partners Network",
+      "area": "Computer Systems Networking and Telecommunications",
+      "studyType": "AWS Cloud Practitioners Essentials",
+      "startDate": "2018-12-31",
+      "endDate": "2018-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Colegio Universitario IES",
+      "area": "Administración, Dirección, Gestión de RRHH, Economía",
+      "studyType": "Administrador de Empresas Informáticas",
+      "startDate": "2009-12-31",
+      "endDate": "2012-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "",
+      "area": "Administración y gestión de empresas, general",
+      "studyType": "Bachelor of Business Administration (B.B.A.)",
+      "startDate": "2015-12-31",
+      "endDate": "2016-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Curso de PMI",
+      "area": "",
+      "studyType": "PMP",
+      "startDate": "2012-12-31",
+      "endDate": "2012-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "1999-12-31",
+      "endDate": "2005-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Universidad Católica de Córdoba",
+      "area": "Business Administration, Management, Finances, Marketing",
+      "studyType": "Bachelor of Business Administration (B.B.A.)",
+      "startDate": "2014-12-31",
+      "endDate": "2016-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Amazon Partners Network",
+      "area": "Computer Systems Networking and Telecommunications",
+      "studyType": "AWS Technical Professional",
+      "startDate": "2018-12-31",
+      "endDate": "2018-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Amazon Partners Network",
+      "area": "Artificial Intelligence",
+      "studyType": "AWS Solutions Training for Partners: Machine Learning on AWS - Business ",
+      "startDate": "2019-12-31",
+      "endDate": "2019-12-31",
+      "score": "",
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "AWS User Group Leader",
+      "date": "2023-03-31",
+      "awarder": "Amazon Web Services",
+      "summary": "I founded the Patagonia AWS UG, the most southern aws UG in the world"
+    },
+    {
+      "title": "AWS Community Builder",
+      "date": "2021-09-30",
+      "awarder": "AWS",
+      "summary": "Awarded with  Community Builder title from AWS"
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Scrum Manager",
+      "issuer": null,
+      "startDate": "2010-03-31"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "AWS CCP",
+      "issuer": "Amazon Web Services (AWS)",
+      "endDate": "2021-10-31",
+      "startDate": "2019-10-31",
+      "url": "https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2019-10-17&ci=AWS00708154"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "  AWS Certified Solutions Architect – Associate",
+      "issuer": "Amazon Web Services (AWS)",
+      "endDate": "2023-07-31",
+      "startDate": "2020-07-31",
+      "url": "https://www.youracclaim.com/badges/cd2e13c2-0f5e-47a8-ad63-2113ee86cc69/linked_in_profile"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "AWS Machine Learning services - Business",
+      "issuer": "Amazon Web Services (AWS)"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "name": "Well-Architected Proficient ",
+      "issuer": "Amazon Web Services (AWS)",
+      "startDate": "2021-06-30",
+      "url": "https://www.credly.com/badges/8f20e188-bc03-4f03-9a7a-6502b6767f02"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "AWS Academy Graduate - AWS Academy Machine Learning Foundations",
+      "issuer": "Amazon Web Services (AWS)",
+      "startDate": "2022-03-31",
+      "url": "https://www.credly.com/badges/41478559-9224-4a85-a64e-f88c40fd51cc?source=linked_in_profile"
+    },
+    {
+      "name": "AWS Certified Database Specialty",
+      "issuer": "Amazon Web Services (AWS)",
+      "startDate": "2022-09-30"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Machine learning en e commerce: casos de éxito",
+      "publisher": null,
+      "releaseDate": "2017-11-30",
+      "summary": "Slides para mi charla sobre casos de éxito de machine learning en e commerce en el mercado latinoamericano",
+      "url": "https://goo.gl/3mcGZR"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Python para grandes proyectos",
+      "publisher": null,
+      "releaseDate": "2012-05-06",
+      "summary": "Charla que muestra la aplicabilidad de Python y software libre en general para proyectos de gran ingeniería.",
+      "url": ""
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Comedian",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Machinalis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Gestión ágil de proyectos",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Online Retail",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Requirements Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "E-commerce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Fintech",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PMI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C (programación)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Certificación PMP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Robotic Process Automation (RPA)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Digital retransformation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "machine learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Artificial Intelligence",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ventas internacionales",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Deep Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Human Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PMP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Marketing B2B",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Fluent English",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AWS community builder 2021",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Gestión de proyectos",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Marketing relacional",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Enterprise Portfolio Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Análisis de negocio",
+      "level": "",
+      "keywords": []
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Native Speaker"
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
+  "interests": [],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Julio Guillermo ACHAVAL",
+      "reference": "Respalda a sus compañeros de trabajo aportando soluciones a su alcance aunque le lleve realizar investigaciones y no sean de su inmediata responsabilidad. Aporta con sentido común al beneficio general de la Organización"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Claudia Calles",
+      "reference": "Carlos es muy analítico y creativo. Está constantemente investigando para conseguir los mejores resultados.  Es un profesional orientado perfección y a la mejora continua. Es una persona en constante búsqueda de la superación, lo cual lo convierte en un talento excepcional. Su gran calidez humana hace de él un gran compañero de trabajo."
+    },
+    {
+      "name": "Damian Antonio Gitto Olguin",
+      "reference": "La gestión de Carlos en Su puesto de Software Project Leader, realmente es impecable, la Gestión de proceso de desarrollo, su capacidad analitica, de planificación y visión, ha llevado a un status de Word Class Software a los desarrollado de software en nuestra Empresa.\r\nSu Capacidad de Mejora continua lo lleva a una constante evolución y mejora de las tecologias y procesos aplicados en sus Area a cargo."
+    },
+    {
+      "name": "Marcelo Alaniz",
+      "reference": "Carlos ha sido un excelente desarrollador. Tiene la capacidad de ver mas alla del común de la gente. Es una persona obsesionada por la perfección, lo cual compartimos. \r\nCuando trabajamos en algunos proyectos personales, aprendi mucho de el y su trato con el cliente. De su humor para siempre estar contento por nuevos desafíos..."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Machinalis' Github Public Repository",
+      "startDate": "2009-01-31",
+      "summary": "Samples of Machinalis' effort on making (part of) projects free and public.",
+      "url": "https://github.com/machinalis"
     }
-  ]
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
 }
