@@ -6,23 +6,23 @@
 # blogger_url: # your blogger URL
 # bluesky_url: # your bluesky URL
 # dblp_url: # your DBLP profile url
-# discord_id: # your discord id (18-digit unique numerical identifier)
-email: you@example.com # your email address
+discord_id: 724996266463068271 # your discord id (18-digit unique numerical identifier)
+email: carlos@cjbarroso.com # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-# github_username: # your GitHub user name
-# gitlab_username: # your GitLab user name
+github_username: cjbarroso # your GitHub user name
+gitlab_username: cjbarroso # your GitLab user name
 # ieee_id: # your ieeexplore.ieee.org/author/id
 inspirehep_id: 1010907 # Inspire HEP author ID
-# instagram_id: # your instagram id
+instagram_id: carlosjosebarroso # your instagram id
 # kaggle_id: # your kaggle id
-# keybase_username: # your keybase user name
-# lastfm_id: # your lastfm id
+keybase_username: cjbarroso # your keybase user name
+lastfm_id: cjbarroso # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-# linkedin_username: # your LinkedIn user name
+linkedin_username: cjbarroso # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-# medium_username: # your Medium username
+medium_username: cjbarroso # your Medium username
 # orcid_id: # your ORCID ID
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
@@ -30,19 +30,19 @@ inspirehep_id: 1010907 # Inspire HEP author ID
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 rss_icon: true # set to true to show the RSS icon
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+# scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
-# stackoverflow_id: # your stackoverflow id
-# telegram_username: # your Telegram user name
+stackoverflow_id: cjbarroso # your stackoverflow id
+telegram_username: cjbarroso # your Telegram user name
 # unsplash_id: # your unsplash id
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
-# wikipedia_id: # your wikipedia id (Case sensitive)
-# work_url: # work page URL
-# x_username: # your X handle
+wikipedia_id: cjbarroso # your wikipedia id (Case sensitive)
+work_url: https://www.teracloud.io # work page URL
+x_username: cjbarroso # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
 custom_social: # can be any name here other than the ones already defined above

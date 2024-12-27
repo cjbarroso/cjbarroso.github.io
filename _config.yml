@@ -87,8 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Totally Human # blog_name will be displayed in your blog page
+blog_description: Carlos Barroso site
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -275,8 +275,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Barroso]
+  first_name: [Carlos, J.]
 
   style: apa
   locale: en
