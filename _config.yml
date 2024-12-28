@@ -140,6 +140,42 @@ external_sources:
         published_date: 2018-09-24
       - url: https://www.linkedin.com/pulse/intro-ai-aws-carlos-barroso/
         published_date: 2018-08-01
+  - name: Teracloud blog
+    posts:
+      - url: https://www.teracloud.io/single-post/the-rise-of-ia-and-its-inescapable-transformation
+        published_date: 2024-07-08
+      - url: https://www.teracloud.io/single-post/teracloud-boosts-fintech-client-onboarding-with-cloud-and-ai
+        published_date: 2024-04-25
+      - url: https://www.teracloud.io/single-post/what-c-levels-must-know-about-their-it-in-the-age-of-ai
+        published_date: 2023-11-17
+      - url: https://www.teracloud.io/single-post/easy-codecommit-authentication-with-git-remote-codecommit
+        published_date: 2021-11-03
+      - url: https://www.teracloud.io/single-post/cybersecurity-month-tips-to-avoid-being-phished
+        published_date: 2021-10-06
+      - url: https://www.teracloud.io/single-post/data-fundamentals-on-aws-data-pipelines
+        published_date: 2021-09-14
+      - url: https://www.teracloud.io/single-post/terraform-workspaces-direnv-dotenv-and-mental-sanity
+        published_date: 2021-06-15
+      - url: https://www.teracloud.io/single-post/advanced-direnv-for-devops
+        published_date: 2021-06-07
+      - url: https://www.teracloud.io/single-post/direnv-for-devops
+        published_date: 2021-06-02
+      - url: https://www.teracloud.io/single-post/using-gcloud-service-accounts-in-terraform
+        published_date: 2021-05-27
+      - url: https://www.teracloud.io/single-post/secure-your-access-to-gcloud-cli-with-service-accounts
+        published_date: 2021-05-07
+      - url: https://www.teracloud.io/single-post/existing-aurora-mysql-cluster-encryption-at-rest-from-zero-to-kms
+        published_date: 2020-10-13
+      - url: https://www.teracloud.io/single-post/will-the-automation-stole-your-job-or-secure-your-future
+        published_date: 2020-07-20
+      - url: https://www.teracloud.io/single-post/the-power-of-big-data-in-the-cloud-and-its-effects-on-the-future-of-companies
+        published_date: 2020-06-05
+      - url: https://www.teracloud.io/single-post/2018/08/01/intro-to-artificial-intelligenceai-on-aws
+        published_date: 2018-07-30
+
+
+
+
 
 # -----------------------------------------------------------------------------
 # Newsletter
