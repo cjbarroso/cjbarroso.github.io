@@ -122,13 +122,24 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
+#      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#        published_date: 2024-05-14
 external_sources:
   - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
+    rss_url: https://medium.com/@carlosjosebarroso/feed
+  - name: blogger.com
+    rss_url: https://blog.cjbarroso.com/feeds/posts/default
+
+  - name: Linkedin articles
     posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+      - url: https://www.linkedin.com/pulse/chatbots-un-activo-invaluable-para-las-pymes-carlos-barroso/
+        published_date: 2018-10-22
+      - url: https://www.linkedin.com/pulse/como-bajamos-30-los-costos-de-atenci%25C3%25B3n-al-cliente-carlos-barroso/
+        published_date: 2018-10-18
+      - url: https://www.linkedin.com/pulse/por-qu%25C3%25A9-pydata-carlos-barroso/
+        published_date: 2018-09-24
+      - url: https://www.linkedin.com/pulse/intro-ai-aws-carlos-barroso/
+        published_date: 2018-08-01
 
 # -----------------------------------------------------------------------------
 # Newsletter
