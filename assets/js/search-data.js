@@ -555,7 +555,7 @@ ninja.data = [{
         title: 'Medium',
         section: 'Socials',
         handler: () => {
-          window.open("https://medium.com/@cjbarroso", "_blank");
+          window.open("https://medium.com/@carlosjosebarroso", "_blank");
         },
       },{
         id: 'social-rss',
