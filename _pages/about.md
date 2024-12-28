@@ -2,24 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: How do we keep being human in the world of ASI?
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>447 Broadway</p>
+    <p>New York, New York 10013</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Carlos J. Barroso is the Head of AI at Teracloud, where he provides the vision, guidance, and architecture for the future of AI in the cloud, for both Teracloud and its clients. With over a decade of experience in Artificial Intelligence, dating back to 2012, Carlos is a recognized thought leader known for his ability to translate complex technological landscapes into clear business strategies. He is the creator of the D2M2 (Datera Data Maturity Model), a framework used by Teracloud and other organizations to evaluate and enhance data maturity. His career spans roles from coder to C-suite positions, including significant projects with industry giants like Vodafone, Red Hat, and Mercadolibre. Carlos holds an MBA from the Universidad Nacional de Cordoba (UNC) and several certifications, including AWS Solutions Architect and PMP. He is passionate about leveraging data maturity to unlock the true value of AI and is focused on scaling Teracloud to become the leading AI/data partner for AWS in Latin America.
