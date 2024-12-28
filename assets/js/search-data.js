@@ -90,17 +90,6 @@ ninja.data = [{
           window.location.href = "/blog/2024/photo-gallery/";
         
       },
-    },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-      
-        title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-        
-      },
     },{id: "post-a-post-with-tabs",
       
         title: "a post with tabs",
@@ -222,6 +211,17 @@ ninja.data = [{
           window.location.href = "/blog/2023/tikzjax/";
         
       },
+    },{id: "post-the-age-of-ia-is-here-and-your-infrastructure-is-not-ready",
+      
+        title: 'The age of IA is here - and your infrastructure is not ready... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("http://blog.cjbarroso.com/2023/11/the-age-of-ia-is-here-and-your.html", "_blank");
+        
+      },
     },{id: "post-a-post-with-bibliography",
       
         title: "a post with bibliography",
@@ -321,17 +321,6 @@ ninja.data = [{
           window.location.href = "/blog/2022/giscus-comments/";
         
       },
-    },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-      
-        title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-        
-      },
     },{id: "post-a-post-with-redirect",
       
         title: "a post with redirect",
@@ -374,6 +363,182 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2020/twitter/";
+        
+      },
+    },{id: "post-marketing-conversacional-y-chatbots-un-matrimonio-perfecto",
+      
+        title: 'Marketing conversacional y chatbots: un matrimonio perfecto <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@carlosjosebarroso/marketing-conversacional-y-chatbots-matrimonio-perfecto-fdfa48b6d022?source=rss-de342e7629f8------2", "_blank");
+        
+      },
+    },{id: "post-chatbots-un-activo-invaluable-para-las-pymes",
+      
+        title: 'Chatbots: un activo invaluable para las PyMEs <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@carlosjosebarroso/chatbots-activo-invaluable-para-pymes-465e1d21e568?source=rss-de342e7629f8------2", "_blank");
+        
+      },
+    },{id: "post-chatbots-un-activo-invaluable-para-las-pymes",
+      
+        title: 'Chatbots: un activo invaluable para las PyMEs <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("http://blog.cjbarroso.com/2018/10/chatbots-un-activo-invaluable-para-las.html", "_blank");
+        
+      },
+    },{id: "post-chatbots-un-activo-invaluable-para-las-pymes",
+      
+        title: 'Chatbots: un activo invaluable para las PyMEs <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Todos los días vemos en las noticias que empresas relacionadas con Inteligencia Artificial se venden por millones de dólares. Esa realidad parece estar muy lejana de nuestras PyMEs, que creen estar a años de poder beneficiarse de las nuevas tecnologías.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.linkedin.com/pulse/chatbots-un-activo-invaluable-para-las-pymes-carlos-barroso/", "_blank");
+        
+      },
+    },{id: "post-como-bajamos-30-los-costos-de-atención-al-cliente",
+      
+        title: 'Como bajamos 30% los costos de atención al cliente <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@carlosjosebarroso/como-bajamos-30-los-costos-de-atenci%C3%B3n-al-cliente-cff0d6f6b739?source=rss-de342e7629f8------2", "_blank");
+        
+      },
+    },{id: "post-como-bajamos-30-los-costos-de-atención-al-cliente",
+      
+        title: 'Como bajamos 30% los costos de atención al cliente <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "¿Es posible bajar los costos de atención al cliente y, al mismo tiempo, mejorar la calidad de atención? Claro que sí. La respuesta viene de la mano de la innovación, la tecnología, y la Inteligencia Artificial.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.linkedin.com/pulse/como-bajamos-30-los-costos-de-atenci%25C3%25B3n-al-cliente-carlos-barroso/", "_blank");
+        
+      },
+    },{id: "post-por-qué-pydata",
+      
+        title: '¿Por qué PyData? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("http://blog.cjbarroso.com/2018/09/por-que-pydata.html", "_blank");
+        
+      },
+    },{id: "post-por-qué-pydata",
+      
+        title: '¿Por qué PyData? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Porque no existe otro evento que reúna bajo el mismo techo a lo mejor de la academia, la ciencia y los negocios alrededor de Ciencias de Datos y Machine Learning. Esto debería bastar para convencerte, apurate a inscribirte aquí, y si querés mas información sobre el lugar y como llegar, mirá este enl",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.linkedin.com/pulse/por-qu%25C3%25A9-pydata-carlos-barroso/", "_blank");
+        
+      },
+    },{id: "post-que-es-autokeras-y-por-que-es-un-paso-en-la-dirección-correcta",
+      
+        title: 'Que es autokeras y por que es un paso en la dirección correcta... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@carlosjosebarroso/que-es-autokeras-y-por-que-es-un-paso-en-la-direcci%C3%B3n-correcta-2ceb6ace8306?source=rss-de342e7629f8------2", "_blank");
+        
+      },
+    },{id: "post-serie-introducción-a-la-inteligencia-artificial-con-aws",
+      
+        title: 'Serie: Introducción a la inteligencia artificial con AWS <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@carlosjosebarroso/serie-introducci%C3%B3n-a-la-inteligencia-artificial-con-aws-301878174b59?source=rss-de342e7629f8------2", "_blank");
+        
+      },
+    },{id: "post-serie-introducción-a-la-inteligencia-artificial-con-aws",
+      
+        title: 'Serie: Introducción a la inteligencia artificial con AWS <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("http://blog.cjbarroso.com/2018/08/serie-introduccion-inteligencia.html", "_blank");
+        
+      },
+    },{id: "post-intro-to-ai-with-aws",
+      
+        title: 'Intro to #AI with AWS <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "When you read this, Amazon will have taken out of the market to 200 data scientists per day with an update to its Machine Learning platform. Ok, I made up that number, but I think is really close to the truth.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.linkedin.com/pulse/intro-ai-aws-carlos-barroso/", "_blank");
+        
+      },
+    },{id: "post-inteligencia-artificial-el-mundial-y-la-maldición-de-argentina",
+      
+        title: 'Inteligencia Artificial, el mundial y la maldición de Argentina <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("http://blog.cjbarroso.com/2018/06/inteligencia-artificial-el-mundial-y-la.html", "_blank");
+        
+      },
+    },{id: "post-qué-país-va-a-ganar-el-mundial-la-inteligencia-artificial-dio-su-veredicto",
+      
+        title: '¿Qué país va a ganar el Mundial? La Inteligencia Artificial dio su veredicto... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("http://blog.cjbarroso.com/2018/06/que-pais-va-ganar-el-mundial-la.html", "_blank");
+        
+      },
+    },{id: "post-qué-país-va-a-ganar-el-mundial-la-inteligencia-artificial-dio-su-veredicto",
+      
+        title: '¿Qué país va a ganar el Mundial? La Inteligencia Artificial dio su veredicto... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@carlosjosebarroso/qu%C3%A9-pa%C3%ADs-va-a-ganar-el-mundial-la-inteligencia-artificial-dio-su-veredicto-b5633c001a0?source=rss-de342e7629f8------2", "_blank");
+        
+      },
+    },{id: "post-inteligencia-artificial-el-mundial-y-la-maldición-de-argentina",
+      
+        title: 'Inteligencia Artificial, el mundial y la maldición de Argentina <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@carlosjosebarroso/inteligencia-artificial-el-mundial-y-la-maldici%C3%B3n-de-argentina-9d71041994ae?source=rss-de342e7629f8------2", "_blank");
         
       },
     },{id: "post-a-post-with-disqus-comments",
