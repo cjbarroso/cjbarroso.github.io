@@ -516,13 +516,6 @@ ninja.data = [{
           window.open("https://gitlab.com/cjbarroso", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
         id: 'social-instagram',
         title: 'Instagram',
         section: 'Socials',
@@ -565,13 +558,6 @@ ninja.data = [{
           window.open("/feed.xml", "_blank");
         },
       },{
-        id: 'social-stackoverflow',
-        title: 'Stackoverflow',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://stackoverflow.com/users/cjbarroso", "_blank");
-        },
-      },{
         id: 'social-telegram',
         title: 'telegram',
         section: 'Socials',
@@ -583,7 +569,7 @@ ninja.data = [{
         title: 'Wikipedia',
         section: 'Socials',
         handler: () => {
-          window.open("https://wikipedia.org/wiki/User:cjbarroso", "_blank");
+          window.open("https://wikipedia.org/wiki/User:Cjbarroso", "_blank");
         },
       },{
         id: 'social-work',
@@ -598,13 +584,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://twitter.com/cjbarroso", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
