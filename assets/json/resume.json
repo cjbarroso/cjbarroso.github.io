@@ -7,10 +7,9 @@
     "email": "cjbarroso@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "Currently MLOps Architect at Teracloud (https://www.teracloud.io/services-machine-learning-mlops)\nArchitected, managed and reviewed a broad range of projects. In the last couple of years mostly solutions involving machine learning in the Fintech and e-commerce markets.\nProgressed through the positions of programmer, team leader, project manager and operations manager, I've managed large projects in the US and later a whole Operations division.\nNow I help companies to find the best solution to fulfill their organizational goals using people + data, while I design next-gen AI products for Teracloud.io\n\nI have experience in this industries:\n- Aerospatial\n- Finances\n- E-commerce\n- Bitcoin and blockchain\n\nKeywords: Technical sales, fintech, ecommerce, machine learning, data science, project management\n\nBassist of @afterofficemusic (https://www.instagram.com/afterofficemusic/)",
-    "location": {
-      "countryCode": "US",
-      "address": "Argentina"
+    "summary": "Carlos is the Head of AI at Teracloud, where he provides the vision, guidance, and architecture for the future of AI in the cloud, for both Teracloud and its clients. With over a decade of experience in Artificial Intelligence, dating back to 2012, Carlos is a recognized thought leader known for his ability to translate complex technological landscapes into clear business strategies. He is the creator of the D2M2 (Datera Data Maturity Model), a framework used by Teracloud and other organizations to evaluate and enhance data maturity. His career spans roles from coder to C-suite positions, including significant projects with industry giants like Vodafone, Red Hat, and Mercadolibre. Carlos holds an MBA from the Universidad Nacional de Cordoba (UNC) and several certifications, including AWS Solutions Architect and PMP. He is passionate about leveraging data maturity to unlock the true value of AI and is focused on scaling Teracloud to become the leading AI/data partner for AWS in Latin America.",
+     "location": {
+      "countryCode": "US"
     },
     "profiles": [
       {
@@ -28,22 +27,12 @@
   "work": [
     {
       "name": "Teracloud.io",
-      "position": "CIAO",
+      "position": "Chies AI Officer",
       "startDate": "2018-01-31",
       "endDate": "",
       "highlights": [],
       "url": "",
-      "location": "Cordoba, Córdoba, Argentina"
-    },
-    {
-      "name": "Teracloud.io",
-      "position": "Head of AI&ML",
-      "startDate": "2018-07-31",
-      "endDate": "2021-01-31",
-      "highlights": [],
-      "summary": "As Head of AI, my job is to ideate, validate, create and grow AI and ML related products for AIOps and robotic process automation. Teracloud.io is a young company created by seasoned practitioners of DevOps and cloud. My ultimate goal is to help people from every industry to harness the opportunities that AI&ML creates without investing in long and costly trial-and-error development processes.",
-      "url": "https://www.linkedin.com/company/teracloud.io/",
-      "location": "Córdoba Province, Argentina"
+      "location": "Argentina"
     },
     {
       "name": "Teracloud",
@@ -63,7 +52,7 @@
       "highlights": [],
       "summary": "Head of the Machine Learning Solutions Architecture.\nMy responsibilities include:\n* Finding new market verticals to conquer, and design the attack strategy using our technical strengths.\n* Lead the Customer Decision Journey process, from the first contact to the successful delivery of a business proposal.\n* Leading the Business Analysis teams and our Customer, to design the Best Solution for their current and future problems and opportunities.\n* Work with current customers to find new, innovative ways to understand their business and marketing to find opportunities to grow together.\n* Negotiating boring contract details.",
       "url": "https://www.linkedin.com/company/machinalis/",
-      "location": "Provincia de Córdoba, Argentina"
+      "location": "Argentina"
     },
     {
       "name": "Machinalis",
@@ -72,7 +61,8 @@
       "endDate": "2016-01-31",
       "highlights": [],
       "summary": "Manage the portfolio of projects",
-      "url": "https://www.linkedin.com/company/machinalis/"
+      "url": "https://www.linkedin.com/company/machinalis/",
+      "location": "Argentina"
     },
     {
       "name": "Machinalis",
@@ -81,7 +71,8 @@
       "endDate": "2012-12-31",
       "highlights": [],
       "summary": "Agile project management of a medium sized aerospatial MRP",
-      "url": "https://www.linkedin.com/company/machinalis/"
+      "url": "https://www.linkedin.com/company/machinalis/",
+      "location": "Argentina"
     },
     {
       "name": "Starbene",
@@ -90,7 +81,8 @@
       "endDate": "2011-12-31",
       "highlights": [],
       "summary": "The job is to define and maintain processes in conformation with many ISO, IEC and FDA norms and regulations, like:\n\n- ISO 9001\n- IEC 60601, Medical electrical equipment\n- IEC 13485, Medical Devices - Quality management\n- IEC 62304 Medical Device Software - Software Life-cycle processes\n- ISO/IEC 14598 Software Product Evaluation\n- FDA General Principles of Software Validation",
-      "url": "https://www.linkedin.com/company/starbene-benedepil/"
+      "url": "https://www.linkedin.com/company/starbene-benedepil/",
+      "location": "Argentina"
     },
     {
       "name": "IURL",
@@ -99,6 +91,7 @@
       "endDate": "2008-12-31",
       "highlights": [],
       "summary": "Manage the project that became in urli OS versions 6 and 7. Look at http://www.tuxmachines.org/node/10978",
+      "location": "Argentina",
       "url": ""
     },
     {
@@ -108,6 +101,7 @@
       "endDate": "2005-12-31",
       "highlights": [],
       "summary": "Design and Code bussiness applications in Clarion for Windows",
+      "location": "Argentina",
       "url": ""
     },
     {
@@ -117,6 +111,7 @@
       "endDate": "1999-12-31",
       "highlights": [],
       "summary": "Design and implement government-related software using Delphi",
+      "location": "Argentina",
       "url": ""
     }
   ],
