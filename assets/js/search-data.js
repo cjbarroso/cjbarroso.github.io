@@ -90,6 +90,17 @@ ninja.data = [{
           window.location.href = "/blog/2024/photo-gallery/";
         
       },
+    },{id: "post-ai-beyond-science-fiction-a-look-at-its-gradual-takeover",
+      
+        title: 'AI: Beyond Science Fiction - A Look at Its Gradual Takeover <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "From finance to healthcare, AI is revolutionizing every aspect of our lives. Learn how AI can benefit you and unlock its potential to transform your world.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/the-rise-of-ia-and-its-inescapable-transformation", "_blank");
+        
+      },
     },{id: "post-a-post-with-tabs",
       
         title: "a post with tabs",
@@ -121,6 +132,17 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2024/post-citation/";
+        
+      },
+    },{id: "post-don-39-t-lose-clients-in-onboarding-hell-a-fintech-case-study-in-ai-powered-efficiency",
+      
+        title: 'Don&#39;t Lose Clients in Onboarding Hell: A Fintech Case Study in AI-powered Efficiency... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Learn how a leading Fintech company used AI and cloud technology to streamline onboarding, reduce errors, and gain a competitive edge.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/teracloud-boosts-fintech-client-onboarding-with-cloud-and-ai", "_blank");
         
       },
     },{id: "post-a-post-with-pseudo-code",
@@ -220,6 +242,17 @@ ninja.data = [{
       handler: () => {
         
           window.open("http://blog.cjbarroso.com/2023/11/the-age-of-ia-is-here-and-your.html", "_blank");
+        
+      },
+    },{id: "post-essential-insights-for-c-level-executives-navigating-it-in-the-age-of-ai",
+      
+        title: 'Essential Insights for C-Level Executives: Navigating IT in the Age of AI <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Learn essential steps to prepare your organization for the AI revolution. Explore practical strategies and recommendations to integrate AI seamlessly and drive business success.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/what-c-levels-must-know-about-their-it-in-the-age-of-ai", "_blank");
         
       },
     },{id: "post-a-post-with-bibliography",
@@ -332,6 +365,39 @@ ninja.data = [{
           window.location.href = "/assets/pdf/example_pdf.pdf";
         
       },
+    },{id: "post-simplify-codecommit-authentication",
+      
+        title: 'Simplify CodeCommit Authentication <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Discover the power of AWS Session Manager for simplified remote work. Enhance security, manage access, and track actions for improved efficiency and peace of mind.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/easy-codecommit-authentication-with-git-remote-codecommit", "_blank");
+        
+      },
+    },{id: "post-cybersecurity-awareness-phishing-prevention",
+      
+        title: 'Cybersecurity Awareness: Phishing Prevention <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Elevate your cybersecurity awareness with practical tips to prevent falling victim to phishing scams. Take charge of your online safety during Cybersecurity Month and equip yourself with the knowledge needed to recognize and thwart phishing attempts effectively.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/cybersecurity-month-tips-to-avoid-being-phished", "_blank");
+        
+      },
+    },{id: "post-the-art-of-data-management-aws-data-pipelines",
+      
+        title: 'The Art of Data Management: AWS Data Pipelines <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Discover the art of managing data effectively on AWS through robust data pipeline architectures. Gain insights into capture, ingestion, transformation, storage, and value extraction stages, empowering you to harness the full potential of your data assets.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/data-fundamentals-on-aws-data-pipelines", "_blank");
+        
+      },
     },{id: "post-a-post-with-diagrams",
       
         title: "a post with diagrams",
@@ -341,6 +407,50 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2021/diagrams/";
+        
+      },
+    },{id: "post-terraform-workspaces-with-direnv-amp-dotenv-maintain-sanity-in-multi-environment-setups",
+      
+        title: 'Terraform Workspaces with direnv &amp; dotenv: Maintain Sanity in Multi-Environment Setups <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Simplify complex Terraform workspace management! This guide explores how to leverage direnv and dotenv to keep your sanity intact when working with multiple environments.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/terraform-workspaces-direnv-dotenv-and-mental-sanity", "_blank");
+        
+      },
+    },{id: "post-direnv-demystified-advanced-tip-for-devops",
+      
+        title: 'Direnv Demystified: Advanced Tip for DevOps <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Demystify Direnv and take your DevOps skills to the next level. Unlock the secrets of advanced Direnv usage, including dynamic environment management and tailored deployments. Stay ahead of the curve with our exclusive insights and optimize your workflow for enhanced agility and effectiveness.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/advanced-direnv-for-devops", "_blank");
+        
+      },
+    },{id: "post-unlock-devops-efficiency-with-direnv",
+      
+        title: 'Unlock DevOps Efficiency with Direnv <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Unlock unparalleled DevOps efficiency with Direnv. Seamlessly switch environments with .envrc files. Elevate your workflow securely.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/direnv-for-devops", "_blank");
+        
+      },
+    },{id: "post-leverage-gcloud-service-accounts-within-terraform-for-secure-infrastructure-management",
+      
+        title: 'Leverage GCloud Service Accounts within Terraform for Secure Infrastructure Management <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Enhance your Terraform security! This guide explores how to integrate GCloud service accounts for secure and controlled infrastructure provisioning.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/using-gcloud-service-accounts-in-terraform", "_blank");
         
       },
     },{id: "post-a-distill-style-blog-post",
@@ -354,6 +464,28 @@ ninja.data = [{
           window.location.href = "/blog/2021/distill/";
         
       },
+    },{id: "post-boost-gcp-security-secure-gcloud-cli-access-with-service-accounts",
+      
+        title: 'Boost GCP Security: Secure GCloud CLI Access with Service Accounts <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Enhance your GCP security! This guide explains how to leverage service accounts to restrict access to the GCloud CLI and minimize administrative burdens.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/secure-your-access-to-gcloud-cli-with-service-accounts", "_blank");
+        
+      },
+    },{id: "post-secure-your-database-aurora-mysql-encryption",
+      
+        title: 'Secure Your Database: Aurora MySQL Encryption <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Strengthen the security of your Aurora MySQL database by encrypting it with AWS KMS, employing binlog replication for a smooth encryption process with minimal downtime.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/existing-aurora-mysql-cluster-encryption-at-rest-from-zero-to-kms", "_blank");
+        
+      },
     },{id: "post-a-post-with-twitter",
       
         title: "a post with twitter",
@@ -363,6 +495,28 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2020/twitter/";
+        
+      },
+    },{id: "post-automation-friend-or-foe-how-automation-will-reshape-the-future-of-work",
+      
+        title: 'Automation: Friend or Foe? How Automation Will Reshape the Future of Work <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Is automation a job threat? This guide explores the impact of automation on the workforce and highlights the new skills needed to thrive in the future.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/will-the-automation-stole-your-job-or-secure-your-future", "_blank");
+        
+      },
+    },{id: "post-the-impact-of-big-data-in-the-cloud-shaping-the-future-of-businesses",
+      
+        title: 'The Impact of Big Data in the Cloud: Shaping the Future of Businesses... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Unlock the power of big data! This guide explores how cloud-based big data solutions empower businesses with actionable insights to drive future growth.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/the-power-of-big-data-in-the-cloud-and-its-effects-on-the-future-of-companies", "_blank");
         
       },
     },{id: "post-marketing-conversacional-y-chatbots-un-matrimonio-perfecto",
@@ -495,6 +649,17 @@ ninja.data = [{
       handler: () => {
         
           window.open("https://www.linkedin.com/pulse/intro-ai-aws-carlos-barroso/", "_blank");
+        
+      },
+    },{id: "post-intro-to-artificial-intelligence-ai-on-aws",
+      
+        title: 'Intro to Artificial Intelligence(AI) on AWS <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "When you read this, Amazon will have taken out of the market to 200 data scientists per day with an update to its Machine Learning platform. Ok, I made up that",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/2018/08/01/intro-to-artificial-intelligenceai-on-aws", "_blank");
         
       },
     },{id: "post-inteligencia-artificial-el-mundial-y-la-maldición-de-argentina",
