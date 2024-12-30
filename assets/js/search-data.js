@@ -407,16 +407,16 @@ ninja.data = [{
           window.open("https://medium.com/@carlosjosebarroso/inteligencia-artificial-el-mundial-y-la-maldici%C3%B3n-de-argentina-9d71041994ae?source=rss-de342e7629f8------2", "_blank");
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+    },{id: "news-on-my-way-to-re-invent-2024-see-you-there",
+          title: 'On my way to re:Invent 2024! See you there!',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-back-from-re-invent-shocked",
+          title: 'Back from re:Invent... shocked',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-i-m-out-for-vacation-with-the-family-until-jan-6th-not-that-jan-6th-barack",
+          title: 'I’m out for vacation with the family until Jan 6th (not THAT Jan...',
           description: "",
           section: "News",},{id: "projects-1",
           title: '1',
