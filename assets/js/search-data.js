@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-my-past-talks-and-conferences",
+          title: "My past talks and conferences",
+          description: "Mainly talks I&#39;ve given but also some of my involvement in community events",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/talks/";
+          },
         },{id: "post-awsomeness-2024-my-re-invent-2024-highlights",
       
         title: "AWSomeness 2024 - My re:Invent 2024 highlights",
