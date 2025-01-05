@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-my-twitter-x-posts",
+        },{id: "post-awsomeness-2024-my-re-invent-2024-highlights",
+      
+        title: "AWSomeness 2024 - My re:Invent 2024 highlights",
+      
+      description: "What I learnt about the future of the world of data and AI from re:Invent 2024",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/awsomeness-2024-my-re-invent-2024-experience/";
+        
+      },
+    },{id: "post-my-twitter-x-posts",
       
         title: "My twitter/X posts",
       
