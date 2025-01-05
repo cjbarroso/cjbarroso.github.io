@@ -9,8 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
+  },{id: "nav-writeups",
+          title: "Writeups",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "My current, non-work projects",
           section: "Navigation",
           handler: () => {
@@ -38,14 +38,14 @@ ninja.data = [{
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-my-past-talks-and-conferences",
-          title: "My past talks and conferences",
+        },{id: "nav-talks-and-conferences",
+          title: "Talks and Conferences",
           description: "Mainly talks I&#39;ve given but also some of my involvement in community events",
           section: "Navigation",
           handler: () => {
