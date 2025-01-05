@@ -8,6 +8,8 @@ published: true
 
 Wow, what an event! AWS re:Invent 2024 was a total blast, and I'm still buzzing from all the amazing things I saw and learned. As you know, I'm passionate about data and AI, so I was especially excited to see how AWS is pushing the boundaries in these areas. Let me tell you, they didn't disappoint!
 
+{% include figure.liquid loading="eager" path="assets/img/reinvent-2024.jpeg" class="img-fluid rounded z-depth-1" %}
+
 # Data Maturity: The Foundation for Success
 
 First things first, data maturity: It's the key to unlocking the true potential of your data. Think about it: if your data is siloed, inconsistent, or just plain hard to access, you're missing out on valuable insights that could help you better serve your customers, optimize your operations, and drive innovation.
