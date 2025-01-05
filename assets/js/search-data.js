@@ -484,6 +484,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "talks-from-idea-to-genai-cordoba-2024",
+          title: 'From Idea to GenAI - Cordoba 2024',
+          description: "My FITGA talk in Teracloud&#39;s offices in Cordoba, Argentina",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/cba-teracloud-2024/";
             },},{
         id: 'social-discord',
         title: 'Discord',
