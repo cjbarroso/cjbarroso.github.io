@@ -4,6 +4,7 @@ title:  AWS Community Builders 2025 - Your Launchpad to Cloud Success
 date: 2025-10-06 22:59:00-0300
 description: Thinking about diving into the AWS cloud? Or maybe you're already there and want to level up your game? Look no further than the AWS Community Builders program!
 categories: community
+categories: ["community", "growth", "experience"]
 related_posts: true
 published: true
 ---
