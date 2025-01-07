@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-awsomeness-2024-my-re-invent-2024-highlights",
+        },{id: "post-aws-community-builders-2025-your-launchpad-to-cloud-success",
+      
+        title: "AWS Community Builders 2025 - Your Launchpad to Cloud Success",
+      
+      description: "Thinking about diving into the AWS cloud? Or maybe you&#39;re already there and want to level up your game? Look no further than the AWS Community Builders program!",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/new-year-new-community-builders/";
+        
+      },
+    },{id: "post-awsomeness-2024-my-re-invent-2024-highlights",
       
         title: "AWSomeness 2024 - My re:Invent 2024 highlights",
       
