@@ -16,6 +16,12 @@ published: true
 
 The AWS Community Builders program is like a global club for cloud enthusiasts. It's a place to connect with other passionate folks, learn a ton, and share your own knowledge. Whether you're a total newbie or a seasoned pro, there's a spot for you here. 
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/watch?v=iU82e_6cxdQ&list=PLQ1M3apmTbgPl1aCViRNuEzoMU8bxMYnq" class="img-fluid rounded z-depth-1" %} 
+    </div>
+</div>
+
 # Why Should You Care?
 
 - **Boost Your Cloud Skills:** You'll get access to a treasure trove of resources, mentorship from AWS experts, and opportunities to learn about the latest and greatest AWS tech.[1]
@@ -27,10 +33,6 @@ The AWS Community Builders program is like a global club for cloud enthusiasts. 
 # My Personal Take
 I've been a part of the AWS Community Builders program for 4 years now, and it's been an incredible experience. After two years in the program, I even founded an AWS user group. It's been a journey filled with learning, growth, and amazing opportunities. I've connected with countless professionals, traveled to events, given talks, and even received a huge discount for re:Invent! If you're serious about your cloud journey, I highly recommend checking out the AWS Community Builders program. You may even co-organize and talk in a big event like the AWS Community Day:
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/watch?v=iU82e_6cxdQ&list=PLQ1M3apmTbgPl1aCViRNuEzoMU8bxMYnq" class="img-fluid rounded z-depth-1" %} 
-</div>
 
 # What's Expected of You?
 
@@ -63,7 +65,7 @@ The application process is pretty straightforward:
 - **Be an Active Community Member:** Contribute to the AWS community by sharing your knowledge and creating content.
 - **Show Your Passion:** In your application, clearly articulate why you're excited about AWS and the Community Builders program.
 
-# Ready to Take the Leap?
+## Ready to Take the Leap?
 
 The AWS Community Builders program is a fantastic opportunity to learn, grow, and connect with other cloud enthusiasts. If you're ready to take your cloud skills to the next level, don't hesitate to apply! Contact me if you need further guidance, I'll be glad to help!
 
