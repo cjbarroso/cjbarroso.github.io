@@ -18,7 +18,7 @@ The AWS Community Builders program is like a global club for cloud enthusiasts. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/watch?v=iU82e_6cxdQ&list=PLQ1M3apmTbgPl1aCViRNuEzoMU8bxMYnq" class="img-fluid rounded z-depth-1" %} 
+        {% include video.liquid path="https://www.youtube.com/embed/iU82e_6cxdQ&list=PLQ1M3apmTbgPl1aCViRNuEzoMU8bxMYnq" class="img-fluid rounded z-depth-1" %} 
     </div>
 </div>
 
