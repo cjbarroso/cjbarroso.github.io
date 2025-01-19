@@ -489,8 +489,8 @@ ninja.data = [{
           description: "My FITGA talk in AWS&#39;s offices in Santiago, Chile",
           section: "Talks",handler: () => {
               window.location.href = "/talks/abr-santiago-2024/";
-            },},{id: "talks-fitga-oct-2024-buenos-aires-ar",
-          title: 'FITGA - Oct 2024. Buenos Aires, AR',
+            },},{id: "talks-fitga-aug-2024-bs-as-ar",
+          title: 'FITGA Aug 2024 - Bs As, AR',
           description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina, on Aug 2nd, 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-ago-2024/";
@@ -499,14 +499,14 @@ ninja.data = [{
           description: "Our experience in the CLoud eXPerience in Buenos Aires, March 13th 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-mar-2024/";
-            },},{id: "talks-fitga-oct-2024-buenos-aires",
-          title: 'FITGA - Oct 2024 - Buenos Aires',
-          description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina",
+            },},{id: "talks-fitga-oct-2024-bs-as-ar",
+          title: 'FITGA Oct 2024 - Bs As, AR',
+          description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina on Oct 3rd, 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-oct-2024/";
-            },},{id: "talks-fitga-nov-2024-cordoba-ar",
-          title: 'FITGA Nov 2024 - Cordoba, AR',
-          description: "My FITGA talk in Teracloud&#39;s offices in Cordoba, Argentina",
+            },},{id: "talks-fitga-nov-2024-cba-ar",
+          title: 'FITGA Nov 2024 - Cba, AR',
+          description: "My FITGA talk in Teracloud&#39;s offices in Cordoba, Argentina on Nov 13th 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/cba-teracloud-2024/";
             },},{
