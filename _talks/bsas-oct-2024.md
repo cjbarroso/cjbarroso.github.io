@@ -1,10 +1,14 @@
 ---
 layout: page
-title: From Idea to GenAI - Oct 3rd, 2024. Buenos Aires, Argentina
+title: FITGA - Oct 2024 - Buenos Aires
 description: My FITGA talk in AWS's offices in Buenos Aires, Argentina
-img: assets/img/7.jpg
+img: assets/img/03-10-24-c.jpg
 importance: 3
-category: work
+tags: 
+categories: work
+images:
+  compare: true
+  slider: true
 ---
 
 # 3 octubre buenos aires
@@ -29,4 +33,5 @@ As proud partners of AWS, we're absolutely confident that together we can take G
 
 Let's build the future together! 🚀
 
-[[https://www.instagram.com/teracloud.io/p/DArSSXYtMEg/?img_index=1][https://www.instagram.com/teracloud.io/p/DArSSXYtMEg/?img_index=1]]
+[https://www.instagram.com/teracloud.io/p/DArSSXYtMEg/?img_index=1](https://www.instagram.com/teracloud.io/p/DArSSXYtMEg/?img_index=1)
+
