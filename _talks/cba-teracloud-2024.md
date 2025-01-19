@@ -1,23 +1,20 @@
 ---
 layout: page
-title: From Idea to GenAI - Nov 13th, 2024. Cordoba, Argentina
+title: FITGA Nov 2024 - Cordoba, AR
 description: My FITGA talk in Teracloud's offices in Cordoba, Argentina
 img: assets/img/13-11-24-a.jpg
 importance: 3
 category: work
+images:
+  compare: true
+  slider: true
 ---
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/13-11-24-a.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/13-11-24-b.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/13-11-24-c.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/13-11-24-a.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/13-11-24-b.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/13-11-24-c.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
 
 
 Tera-Workshop: Supercharge your startup with #GenerativeAI 🌟
