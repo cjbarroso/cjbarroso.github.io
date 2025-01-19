@@ -100,7 +100,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.open("http://blog.cjbarroso.com/2023/11/the-age-of-ia-is-here-and-your.html", "_blank");
+          window.open("https://accesibilia.blogspot.com/2023/11/the-age-of-ia-is-here-and-your.html", "_blank");
         
       },
     },{id: "post-essential-insights-for-c-level-executives-navigating-it-in-the-age-of-ai",
@@ -265,7 +265,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.open("http://blog.cjbarroso.com/2018/10/chatbots-un-activo-invaluable-para-las.html", "_blank");
+          window.open("https://accesibilia.blogspot.com/2018/10/chatbots-un-activo-invaluable-para-las.html", "_blank");
         
       },
     },{id: "post-chatbots-un-activo-invaluable-para-las-pymes",
@@ -309,7 +309,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.open("http://blog.cjbarroso.com/2018/09/por-que-pydata.html", "_blank");
+          window.open("https://accesibilia.blogspot.com/2018/09/por-que-pydata.html", "_blank");
         
       },
     },{id: "post-por-qué-pydata",
@@ -353,7 +353,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.open("http://blog.cjbarroso.com/2018/08/serie-introduccion-inteligencia.html", "_blank");
+          window.open("https://accesibilia.blogspot.com/2018/08/serie-introduccion-inteligencia.html", "_blank");
         
       },
     },{id: "post-intro-to-ai-with-aws",
@@ -386,7 +386,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.open("http://blog.cjbarroso.com/2018/06/inteligencia-artificial-el-mundial-y-la.html", "_blank");
+          window.open("https://accesibilia.blogspot.com/2018/06/inteligencia-artificial-el-mundial-y-la.html", "_blank");
         
       },
     },{id: "post-qué-país-va-a-ganar-el-mundial-la-inteligencia-artificial-dio-su-veredicto",
@@ -397,7 +397,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.open("http://blog.cjbarroso.com/2018/06/que-pais-va-ganar-el-mundial-la.html", "_blank");
+          window.open("https://accesibilia.blogspot.com/2018/06/que-pais-va-ganar-el-mundial-la.html", "_blank");
         
       },
     },{id: "post-qué-país-va-a-ganar-el-mundial-la-inteligencia-artificial-dio-su-veredicto",
@@ -484,8 +484,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "talks-from-idea-to-genai-cordoba-2024",
-          title: 'From Idea to GenAI - Cordoba 2024',
+            },},{id: "talks-from-idea-to-genai-nov-13th-2024-cordoba-argentina",
+          title: 'From Idea to GenAI - Nov 13th, 2024. Cordoba, Argentina',
           description: "My FITGA talk in Teracloud&#39;s offices in Cordoba, Argentina",
           section: "Talks",handler: () => {
               window.location.href = "/talks/cba-teracloud-2024/";
