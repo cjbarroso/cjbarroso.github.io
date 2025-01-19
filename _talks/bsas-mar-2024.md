@@ -2,7 +2,7 @@
 layout: page
 title: Cloud eXPerience - Mar 2024 - BsAs, AR
 description: Our experience in the CLoud eXPerience in Buenos Aires, March 13th 2024
-img: assets/img/7.jpg
+img: assets/img/13-03-24-f.jpg
 importance: 3
 category: work
 images:
