@@ -484,6 +484,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "talks-from-idea-to-genai-oct-3rd-2024-buenos-aires-argentina",
+          title: 'From Idea to GenAI - Oct 3rd, 2024. Buenos Aires, Argentina',
+          description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/bsas-oct-2024/";
             },},{id: "talks-from-idea-to-genai-nov-13th-2024-cordoba-argentina",
           title: 'From Idea to GenAI - Nov 13th, 2024. Cordoba, Argentina',
           description: "My FITGA talk in Teracloud&#39;s offices in Cordoba, Argentina",
