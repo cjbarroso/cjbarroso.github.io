@@ -484,8 +484,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "talks-from-idea-to-genai-oct-3rd-2024-buenos-aires-argentina",
-          title: 'From Idea to GenAI - Oct 3rd, 2024. Buenos Aires, Argentina',
+            },},{id: "talks-fitga-oct-2024-buenos-aires",
+          title: 'FITGA - Oct 2024 - Buenos Aires',
           description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-oct-2024/";
