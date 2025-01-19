@@ -128,7 +128,7 @@ external_sources:
   - name: medium.com
     rss_url: https://medium.com/@carlosjosebarroso/feed
   - name: blogger.com
-    rss_url: https://blog.cjbarroso.com/feeds/posts/default
+    rss_url: https://accesibilia.blogspot.com/feeds/posts/default
 
   - name: Linkedin articles
     posts:
