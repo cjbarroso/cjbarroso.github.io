@@ -514,6 +514,11 @@ ninja.data = [{
           description: "My FITGA talk in Teracloud&#39;s offices in Cordoba, Argentina on Nov 13th 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/cba-teracloud-2024/";
+            },},{id: "talks-fitga-jun-2024-cdmx-mx",
+          title: 'FITGA Jun 2024 - CDMX, MX',
+          description: "My FITGA talk in AWS&#39;s offices in Ciudad de Mexico, MX on Jun 21st, 2024",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/cdmx-fitga-jun-24/";
             },},{
         id: 'social-discord',
         title: 'Discord',
