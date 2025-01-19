@@ -1,7 +1,7 @@
 ---
 layout: page
-title: FITGA - Oct 2024 - Buenos Aires
-description: My FITGA talk in AWS's offices in Buenos Aires, Argentina
+title: FITGA Oct 2024 - Bs As, AR
+description: My FITGA talk in AWS's offices in Buenos Aires, Argentina on Oct 3rd, 2024
 img: assets/img/03-10-24-c.jpg
 importance: 3
 tags: 

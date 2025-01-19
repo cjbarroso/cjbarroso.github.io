@@ -1,7 +1,7 @@
 ---
 layout: page
-title: FITGA Nov 2024 - Cordoba, AR
-description: My FITGA talk in Teracloud's offices in Cordoba, Argentina
+title: FITGA Nov 2024 - Cba, AR
+description: My FITGA talk in Teracloud's offices in Cordoba, Argentina on Nov 13th 2024
 img: assets/img/13-11-24-a.jpg
 importance: 3
 category: work
