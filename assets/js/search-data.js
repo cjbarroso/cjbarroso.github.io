@@ -494,6 +494,11 @@ ninja.data = [{
           description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina, on Aug 2nd, 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-ago-2024/";
+            },},{id: "talks-cloud-experience-mar-2024-bsas-ar",
+          title: 'Cloud eXPerience - Mar 2024 - BsAs, AR',
+          description: "Our experience in the CLoud eXPerience in Buenos Aires, March 13th 2024",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/bsas-mar-2024/";
             },},{id: "talks-fitga-oct-2024-buenos-aires",
           title: 'FITGA - Oct 2024 - Buenos Aires',
           description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina",
