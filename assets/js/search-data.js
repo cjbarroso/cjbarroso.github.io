@@ -489,6 +489,11 @@ ninja.data = [{
           description: "My FITGA talk in AWS&#39;s offices in Santiago, Chile",
           section: "Talks",handler: () => {
               window.location.href = "/talks/abr-santiago-2024/";
+            },},{id: "talks-aws-genai-fast-track-sf-ca-usa",
+          title: 'AWS GenAI Fast Track, SF, CA, USA',
+          description: "Work week with customers in AWS San Francisco Bay Area offices 24th apr, 2025",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/abr-sf-2025/";
             },},{id: "talks-fitga-aug-2024-bs-as-ar",
           title: 'FITGA Aug 2024 - Bs As, AR',
           description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina, on Aug 2nd, 2024",
