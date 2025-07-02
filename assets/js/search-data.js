@@ -517,8 +517,8 @@ ninja.data = [{
           description: "My FITGA talk in AWS&#39;s offices in Santiago, Chile",
           section: "Talks",handler: () => {
               window.location.href = "/talks/abr-santiago-2024/";
-            },},{id: "talks-aws-genai-fast-track-sf-ca-usa",
-          title: 'AWS GenAI Fast Track, SF, CA, USA',
+            },},{id: "talks-aws-genai-fast-track-apr-2025-san-francisco",
+          title: 'AWS GenAI Fast Track, Apr 2025, San Francisco',
           description: "Work week with customers in AWS San Francisco Bay Area offices 24th apr, 2025",
           section: "Talks",handler: () => {
               window.location.href = "/talks/abr-sf-2025/";
@@ -527,8 +527,8 @@ ninja.data = [{
           description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina, on Aug 2nd, 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-ago-2024/";
-            },},{id: "talks-madura-tus-datos-con-ia-bs-as-ar",
-          title: 'Madura tus datos con IA - Bs As, AR',
+            },},{id: "talks-madura-tus-datos-con-ia-jun-2025-bs-as-ar",
+          title: 'Madura tus datos con IA - Jun 2025, Bs As, AR',
           description: "Mi charla sobre madurez de dato en las oficinas de AWS Buenos Aires, Argentina, 4 de junio de 2025",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-jun-2025/";
