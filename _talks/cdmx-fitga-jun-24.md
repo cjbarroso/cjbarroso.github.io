@@ -16,7 +16,6 @@ images:
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/21-06-24-c.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
-
 ¡México! ¿estás buscando impulsar la innovación de tus proyectos y llevarlos al siguiente nivel? Entonces tenemos buenas noticias. 😎​
 
 @carlosjosebarroso, Head of AI en #Teracloud y experto en inteligencia artificial, va a estar presentando nuestro servicio líder del sector: "From Idea to Gen AI", una herramienta revolucionaria que transforma ideas en realidad con la ayuda de la #IA. 🤖
@@ -29,7 +28,5 @@ images:
 @amazonwebservices México.
 
 ¡Reserva tu lugar ahora!
-
-
 
 [Instagram](https://www.instagram.com/p/C8fomkxugUQ/)

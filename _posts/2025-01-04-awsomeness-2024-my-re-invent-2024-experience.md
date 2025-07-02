@@ -35,6 +35,7 @@ Here are some of the things that blew my mind:
 - AWS Trainium2 and Trainium3: These new instances deliver unmatched performance for AI/ML workloads, so you can train and deploy your models faster than ever before.
 
 # My key takeaways
+
 Mostly what I think can be used immediately, services to use and ideas to start having now:
 
 ## Simplexity: Making the Complex Simple

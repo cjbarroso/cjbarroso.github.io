@@ -19,9 +19,6 @@ images:
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/13-03-24-f.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
-
-
-
 Queremos darle un enorme agradecimiento a cada quien que se acercó a nuestro stand en el #CloudExperience ☁️ para conversar e intercambiar ideas y conocimientos. Nuestro recorrido como sponsors fue muy enriquecedor, por eso agradecemos a @amazonwebservices por esta oportunidad.
 
 Siempre vamos a estar presentes dondequiera que la tecnología converja, en primera fila para participar de discusiones, compartir ideas, intercambiar conocimientos y conectar con entusiastas de la tecnología como nosotros. 🙌
@@ -30,6 +27,4 @@ Si tuviste la oportunidad de acercarte y queres continuar con esta sinergia o co
 
 Exploremos las infinitas posibilidades que nos esperan en el mundo de la tecnología en la nube, juntos. 🤝🚀
 
-
 [Instagram](https://www.instagram.com/p/C4GmoaGuRCi/)
-

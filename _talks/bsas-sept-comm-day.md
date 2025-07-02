@@ -24,6 +24,4 @@ La comunidad #Cloud y #IT sigue creciendo gracias a eventos como este, e invitam
 
 Let's keep growing in the Cloud, together. 🚀
 
-
-
 [Instagram](https://www.instagram.com/teracloud.io/p/C__cvYzPvQg/?img_index=1

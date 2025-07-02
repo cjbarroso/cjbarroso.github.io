@@ -9,6 +9,6 @@ published: false
 ---
 
 # Summer Course: Introduction to BI
+
 Blas Pascal University
 Cordoba, Argentina
-

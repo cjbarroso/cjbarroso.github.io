@@ -30,6 +30,4 @@ Estas son las conclusiones principales luego de ayer:
 
 Como siempre, gracias @amazonwebservices por ser los mejores anfitriones en estas iniciativas. Un agradecimiento especial a @nicolasdelrealr, Maria Paula Barrera Cortés y Alvaro Plata Márquez por su valiosa colaboración en cada detalle 👏 Y, por supuesto, a los asistentes por su participación y atención activa durante la jornada de ayer.
 
-
-
 [Instagram](https://www.instagram.com/teracloud.io/p/C-nP75OCW8h/?img_index=1)

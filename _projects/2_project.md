@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Agents self-discovery
-description: 
+description:
 img: assets/img/3.jpg
 importance: 2
 category: research
