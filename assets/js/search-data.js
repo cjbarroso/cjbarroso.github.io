@@ -37,7 +37,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-aws-community-builders-2025-your-launchpad-to-cloud-success",
+        },{id: "post-model-context-protocol-code-examples",
+      
+        title: 'Model Context Protocol: Code Examples <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Learn how to seamlessly integrate the lightweight MCP SDK into your backend for context-aware, AI-powered applications. This guide covers setup, real-world examples with DynamoDB, payment processing, and best practices for resilient, scalable systems.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/getting-started-with-mcp-a-practical-code-example", "_blank");
+        
+      },
+    },{id: "post-architect-ai-ready-mcp-solutions-on-aws-compute-and-storage",
+      
+        title: 'Architect AI-ready MCP Solutions on AWS: Compute and Storage <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Explore how to build scalable, resilient MCP solutions on AWS. Learn how compute, storage, and AI tools integrate within a client-server architecture to empower MCP clients and next-gen AI applications.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://www.teracloud.io/single-post/model-context-protocol-overview-an-mcp-solution-on-aws-compute-and-storage", "_blank");
+        
+      },
+    },{id: "post-aws-community-builders-2025-your-launchpad-to-cloud-success",
       
         title: "AWS Community Builders 2025 - Your Launchpad to Cloud Success",
       
@@ -441,6 +463,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-my-webinar-in-spanish-for-data-modernization-and-data-maturity-model-video",
           title: 'My webinar (in spanish) for data modernization and data maturity model: video',
+          description: "",
+          section: "News",},{id: "news-no-more-seats-for-my-talk-in-aws-offices-this-june-4th",
+          title: 'No more seats for my talk in AWS Offices this June 4th',
           description: "",
           section: "News",},{id: "projects-1",
           title: '1',
