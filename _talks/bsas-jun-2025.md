@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Madura tus datos con IA - Bs As, AR
+title: Madura tus datos con IA - Jun 2025, Bs As, AR
 description: Mi charla sobre madurez de dato en las oficinas de AWS Buenos Aires, Argentina, 4 de junio de 2025
 img: assets/img/04-06-25c.png
 importance: 3

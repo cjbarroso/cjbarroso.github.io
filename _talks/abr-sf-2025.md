@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AWS GenAI Fast Track, SF, CA, USA
+title: AWS GenAI Fast Track, Apr 2025, San Francisco
 description: Work week with customers in AWS San Francisco Bay Area offices 24th apr, 2025
 img: assets/img/24-04-25a.png
 importance: 3
