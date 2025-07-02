@@ -439,6 +439,9 @@ ninja.data = [{
           section: "News",},{id: "news-apply-to-be-an-aws-community-builder-here",
           title: 'Apply to be an AWS Community Builder here!',
           description: "",
+          section: "News",},{id: "news-my-webinar-in-spanish-for-data-modernization-and-data-maturity-model-video",
+          title: 'My webinar (in spanish) for data modernization and data maturity model: video',
+          description: "",
           section: "News",},{id: "projects-1",
           title: '1',
           description: "Quantified Self",
@@ -499,6 +502,11 @@ ninja.data = [{
           description: "My FITGA talk in AWS&#39;s offices in Buenos Aires, Argentina, on Aug 2nd, 2024",
           section: "Talks",handler: () => {
               window.location.href = "/talks/bsas-ago-2024/";
+            },},{id: "talks-madura-tus-datos-con-ia-bs-as-ar",
+          title: 'Madura tus datos con IA - Bs As, AR',
+          description: "Mi charla sobre madurez de dato en las oficinas de AWS Buenos Aires, Argentina, 4 de junio de 2025",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/bsas-jun-2025/";
             },},{id: "talks-cloud-experience-mar-2024-bsas-ar",
           title: 'Cloud eXPerience - Mar 2024 - BsAs, AR',
           description: "Our experience in the CLoud eXPerience in Buenos Aires, March 13th 2024",
