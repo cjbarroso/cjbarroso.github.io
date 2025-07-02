@@ -2,7 +2,7 @@
 layout: page
 title: Madura tus datos con IA - Bs As, AR
 description: Mi charla sobre madurez de dato en las oficinas de AWS Buenos Aires, Argentina, 4 de junio de 2025
-img: assets/img/04-06-25-c.png
+img: assets/img/04-06-25c.png
 importance: 3
 category: work
 images:
@@ -11,9 +11,9 @@ images:
 ---
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/04-06-25-c.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/04-06-25-b.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-    <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/04-06-25-a.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/04-06-25c.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/04-06-25b.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+    <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/04-06-25a.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
 "Madura tus Datos y Arranca Proyectos de IA Generativa" en AWS Buenos Aires, ¡fue un éxito! Muchas gracias a todos los que se unieron para explorar cómo la transformación de datos y la IA generativa pueden impulsar el crecimiento de nuestros negocios. 🚀

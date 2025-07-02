@@ -2,7 +2,7 @@
 layout: page
 title: AWS GenAI Fast Track, SF, CA, USA
 description: Work week with customers in AWS San Francisco Bay Area offices 24th apr, 2025
-img: assets/img/24-04-25-a.png
+img: assets/img/24-04-25a.png
 importance: 3
 category: work
 images:
@@ -11,9 +11,9 @@ images:
 ---
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/24-04-25-a.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/24-04-25-b.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/24-04-25-c.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/24-04-25a.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/24-04-25b.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/24-04-25c.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
 Esta semana fue el #AWSGenAIandDataFastTrack en San Francisco.
