@@ -37,18 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-",
-      
-        title: "",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/2025-07-04-risks-ai-exposure/";
-        
-      },
-    },{id: "post-ai-39-s-pandora-39-s-box-a-technical-report-on-the-new-wave-of-corporate-data-exfiltration",
+        },{id: "post-ai-39-s-pandora-39-s-box-a-technical-report-on-the-new-wave-of-corporate-data-exfiltration",
       
         title: 'AI&#39;s Pandora&#39;s Box: A Technical Report on the New Wave of Corporate Data... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
@@ -57,6 +46,17 @@ ninja.data = [{
       handler: () => {
         
           window.open("https://accesibilia.blogspot.com/2025/07/ais-pandoras-box-technical-report-on.html", "_blank");
+        
+      },
+    },{id: "post-the-ai-39-s-pandora-39-s-box",
+      
+        title: "The AI&#39;s Pandora&#39;s Box",
+      
+      description: "A Technical Report on the New Wave of Corporate Data Exfiltration",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/risks-ai-exposure/";
         
       },
     },{id: "post-model-context-protocol-code-examples",
