@@ -15,4 +15,4 @@ repos:
         entry: npx prettier . --write
         language: node
         types_or: [javascript, jsx, ts, tsx, json, css, scss, yaml, html, liquid, markdown]
-        stages: [commit]
+        stages: [pre-commit]
