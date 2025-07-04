@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  AI's Pandora's Box
-description: : A Technical Report on the New Wave of Corporate Data Exfiltration
+title:  The AI's Pandora's Box
+description: A Technical Report on the New Wave of Corporate Data Exfiltration
 categories: ["data", "ai", "security"]
 related_posts: true
+date: 2025-07-04 01:59:00
 published: true
 ---
 
