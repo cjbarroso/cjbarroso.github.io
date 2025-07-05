@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-",
+        },{id: "post-the-ai-39-s-pandora-39-s-box-new-wave-of-corporate-data-exfiltration",
       
-        title: "",
+        title: "The AI&#39;s Pandora&#39;s Box - New Wave of Corporate Data Exfiltration",
       
-      description: "",
+      description: "Employees across all sectors—from software development to marketing—are turning to public generative AI tools to save time, boost efficiency, and solve complex problems. This behavior is not born of malicious intent but is a rational response to workflow demands in a competitive landscape",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/2025-07-04-risks-ai-exposure/";
+          window.location.href = "/blog/2025/risks-ai-exposure/";
         
       },
     },{id: "post-model-context-protocol-code-examples",
