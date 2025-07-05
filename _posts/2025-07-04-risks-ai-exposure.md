@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The AI's Pandora's Box: A Technical Report on the New Wave of Corporate Data Exfiltration
+title: The AI's Pandora's Box - New Wave of Corporate Data Exfiltration
 description: Employees across all sectors—from software development to marketing—are turning to public generative AI tools to save time, boost efficiency, and solve complex problems. This behavior is not born of malicious intent but is a rational response to workflow demands in a competitive landscape
 categories: ["data", "ai", "security"]
 related_posts: true
