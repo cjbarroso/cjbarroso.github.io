@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y la desigualdad
-description:
+description: Un análisis imaginado de cómo Domingo Faustino Sarmiento enfrentaría los desafíos y oportunidades de la inteligencia artificial en el siglo XXI. El texto explora su visión sobre el riesgo de que la IA concentre la riqueza y aumente la pobreza, y propone medidas concretas para democratizar el acceso al conocimiento y la tecnología.
 categories: ["data", "ai", "spanish"]
 related_posts: true
-date: 2025-08-10 18:34:00
+date: 2025-08-10 06:34:00
 published: true
 ---
 
