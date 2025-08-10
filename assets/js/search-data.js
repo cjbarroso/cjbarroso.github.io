@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-",
+        },{id: "post-civilización-o-barbarie-digital-lo-que-sarmiento-nos-diría-sobre-la-ia-y-la-desigualdad",
       
-        title: "",
+        title: "Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y...",
       
-      description: "",
+      description: "Un análisis imaginado de cómo Domingo Faustino Sarmiento enfrentaría los desafíos y oportunidades de la inteligencia artificial en el siglo XXI. El texto explora su visión sobre el riesgo de que la IA concentre la riqueza y aumente la pobreza, y propone medidas concretas para democratizar el acceso al conocimiento y la tecnología.",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/2025-08-10-sarmiento-ia/";
+          window.location.href = "/blog/2025/sarmiento-ia/";
         
       },
     },{id: "post-the-ai-39-s-pandora-39-s-box-new-wave-of-corporate-data-exfiltration",
