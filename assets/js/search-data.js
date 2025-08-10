@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-the-ai-39-s-pandora-39-s-box-new-wave-of-corporate-data-exfiltration",
+        },{id: "post-",
+      
+        title: "",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/2025-08-10-sarmiento-ia/";
+        
+      },
+    },{id: "post-the-ai-39-s-pandora-39-s-box-new-wave-of-corporate-data-exfiltration",
       
         title: "The AI&#39;s Pandora&#39;s Box - New Wave of Corporate Data Exfiltration",
       
