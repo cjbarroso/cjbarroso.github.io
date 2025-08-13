@@ -7,7 +7,7 @@ first_name: Carlos
 middle_name: Jose
 last_name: Barroso
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Reach me by email
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   My own internet corner
 footer_text: >
@@ -129,7 +129,8 @@ external_sources:
     rss_url: https://medium.com/@carlosjosebarroso/feed
   - name: blogger.com
     rss_url: https://accesibilia.blogspot.com/feeds/posts/default
-
+  - name: substack.com
+    rss_url: https://cjbarroso.substack.com/feed
   - name: Linkedin articles
     posts:
       - url: https://www.linkedin.com/pulse/chatbots-un-activo-invaluable-para-las-pymes-carlos-barroso/
