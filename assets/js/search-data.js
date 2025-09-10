@@ -37,7 +37,51 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-civilización-o-barbarie-digital-lo-que-sarmiento-nos-diría-sobre-la-ia-y-la-desigualdad",
+        },{id: "post-just-a-moment",
+      
+        title: 'Just a moment... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://cjbarroso.substack.com/p/reflective-prompt-evolution-with", "_blank");
+        
+      },
+    },{id: "post-just-a-moment",
+      
+        title: 'Just a moment... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://cjbarroso.substack.com/p/the-data-dilemma", "_blank");
+        
+      },
+    },{id: "post-just-a-moment",
+      
+        title: 'Just a moment... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://cjbarroso.substack.com/p/your-brain-has-four-gears", "_blank");
+        
+      },
+    },{id: "post-just-a-moment",
+      
+        title: 'Just a moment... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://cjbarroso.substack.com/p/viajar-para-pertenecer", "_blank");
+        
+      },
+    },{id: "post-civilización-o-barbarie-digital-lo-que-sarmiento-nos-diría-sobre-la-ia-y-la-desigualdad",
       
         title: "Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y...",
       
