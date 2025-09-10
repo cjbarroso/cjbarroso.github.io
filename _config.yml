@@ -131,16 +131,16 @@ external_sources:
     rss_url: https://accesibilia.blogspot.com/feeds/posts/default
   #  - name: substack.com
   #    rss_url: https://cjbarroso.substack.com/feed
-  - name: Substack articles
-    posts:
-      - url: https://cjbarroso.substack.com/p/viajar-para-pertenecer
-        published_date: 2025-08-13
-      - url: https://cjbarroso.substack.com/p/your-brain-has-four-gears
-        published_date: 2025-08-25
-      - url: https://cjbarroso.substack.com/p/the-data-dilemma
-        published_date: 2025-08-27
-      - url: https://cjbarroso.substack.com/p/reflective-prompt-evolution-with
-        published_date: 2025-08-28
+  # - name: Substack articles
+  #   posts:
+  #     - url: https://cjbarroso.substack.com/p/viajar-para-pertenecer
+  #       published_date: 2025-08-13
+  #     - url: https://cjbarroso.substack.com/p/your-brain-has-four-gears
+  #       published_date: 2025-08-25
+  #     - url: https://cjbarroso.substack.com/p/the-data-dilemma
+  #       published_date: 2025-08-27
+  #     - url: https://cjbarroso.substack.com/p/reflective-prompt-evolution-with
+  #       published_date: 2025-08-28
   - name: Linkedin articles
     posts:
       - url: https://www.linkedin.com/pulse/chatbots-un-activo-invaluable-para-las-pymes-carlos-barroso/
