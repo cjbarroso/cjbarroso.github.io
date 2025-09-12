@@ -23,12 +23,12 @@ lastfm_id: cjbarroso # your lastfm id
 linkedin_username: cjbarroso # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: carlosjosebarroso # your Medium username
-# orcid_id: # your ORCID ID
+orcid_id: 0009-0008-2126-1046 # your ORCID ID
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
-# research_gate_profile: # your profile on ResearchGate
+research_gate_profile: Carlos-Barroso-7 # your profile on ResearchGate
 rss_icon: true # set to true to show the RSS icon
 # scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
@@ -43,8 +43,8 @@ telegram_username: cjbarroso # your Telegram user name
 wikipedia_id: Cjbarroso # your wikipedia id (Case sensitive)
 work_url: https://www.teracloud.io # work page URL
 x_username: cjbarroso # your X handle
-# youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-# zotero_username: # your zotero username
+youtube_id: cjbarroso # your youtube channel id (youtube.com/@<youtube_id>)
+zotero_username: cjbarroso # your zotero username
 # custom_social: # can be any name here other than the ones already defined above
 #   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
 #   title: Custom Social
