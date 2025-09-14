@@ -683,6 +683,13 @@ ninja.data = [{
           window.open("https://telegram.me/cjbarroso", "_blank");
         },
       },{
+        id: 'social-whatsapp',
+        title: 'whatsapp',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://wa.me/5493517574588", "_blank");
+        },
+      },{
         id: 'social-wikipedia',
         title: 'Wikipedia',
         section: 'Socials',
