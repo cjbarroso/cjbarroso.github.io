@@ -38,7 +38,7 @@ rss_icon: true # set to true to show the RSS icon
 telegram_username: cjbarroso # your Telegram user name
 # unsplash_id: # your unsplash id
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+whatsapp_number: +5493517574588 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
 wikipedia_id: Cjbarroso # your wikipedia id (Case sensitive)
 work_url: https://www.teracloud.io # work page URL
