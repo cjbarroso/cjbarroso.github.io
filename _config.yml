@@ -88,7 +88,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Totally Human # blog_name will be displayed in your blog page
-blog_description: Carlos Barroso site
+blog_description: A place to share my work
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -129,8 +129,8 @@ external_sources:
     rss_url: https://medium.com/@carlosjosebarroso/feed
   - name: blogger.com
     rss_url: https://accesibilia.blogspot.com/feeds/posts/default
-  #  - name: substack.com
-  #    rss_url: https://cjbarroso.substack.com/feed
+  - name: substack.com
+    rss_url: https://cjbarroso.com/assets/rss/substack.xml
   # - name: Substack articles
   #   posts:
   #     - url: https://cjbarroso.substack.com/p/viajar-para-pertenecer
