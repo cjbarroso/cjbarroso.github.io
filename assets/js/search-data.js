@@ -565,7 +565,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-finally-hit-publish-my-first-book-the-ai-leadership-trap-firing-your-chief-ai-officer-is-just-the-first-step-comes-from-late-nights-hard-lessons-with-real-teams-and-a-stubborn-belief-that-ai-is-a-business-discipline-not-a-toy-it-s-blunt-practical-and-aimed-at-leaders-who-want-results-not-hype-if-that-s-you-grab-it-here",
           title: 'I finally hit “publish.” My first book—The AI Leadership Trap: Firing your Chief...',
           description: "",
-          section: "News",},{id: "news-mi-libro-ahora-tiene-una-versión-en-español-encuentra-la-trampa-del-liderazgo-en-ia-en-formato-kindle-en-el-siguiente-link-here",
+          section: "News",},{id: "news-mi-libro-ahora-tiene-una-versión-en-español-encuentra-la-trampa-del-liderazgo-en-ia-en-formato-kindle-en-el-siguiente-link-https-www-amazon-com-dp-b0fnyx3c3d",
           title: 'Mi libro ahora tiene una versión en español. Encuentra “La trampa del liderazgo...',
           description: "",
           section: "News",},{id: "projects-1",
