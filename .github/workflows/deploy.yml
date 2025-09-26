@@ -92,6 +92,8 @@ jobs:
           echo "Downloading RSS from substack"
           curl -o assets/rss/substack.xml "https://cjbarroso.substack.com/feed.xml"
           ls -l assets/rss/substack.xml
+          cat assets/rss/substack.xml
+          echo
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
