@@ -89,6 +89,9 @@ jobs:
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
+          echo "Downloading RSS from substack"
+          curl -o assets/rss/substack.xml "https://cjbarroso.substack.com/feed.xml"
+          ls -l assets/rss/substack.xml
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
