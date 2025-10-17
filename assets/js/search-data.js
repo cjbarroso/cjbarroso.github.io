@@ -44,8 +44,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "nav-pick-my-brain",
-          title: "pick my brain",
+        },{id: "nav-hire-me",
+          title: "🚀 Hire Me",
           description: "My current availability for new initiatives",
           section: "Navigation",
           handler: () => {
