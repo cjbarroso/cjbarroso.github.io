@@ -129,8 +129,8 @@ external_sources:
     rss_url: https://medium.com/@carlosjosebarroso/feed
   - name: blogger.com
     rss_url: https://accesibilia.blogspot.com/feeds/posts/default
-  - name: substack.com
-    rss_url: https://cjbarroso.com/assets/rss/substack.xml
+  # - name: substack.com
+  #  rss_url: https://cjbarroso.com/assets/rss/substack.xml
   # - name: Substack articles
   #   posts:
   #     - url: https://cjbarroso.substack.com/p/viajar-para-pertenecer
