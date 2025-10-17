@@ -44,73 +44,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-5-surprising-truths-about-ai-and-the-future-of-your-career",
-      
-        title: '5 Surprising Truths About AI and the Future of Your Career <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Beyond the &quot;Robot Took My Job&quot; Hype",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://cjbarroso.substack.com/p/5-surprising-truths-about-ai-and", "_blank");
-        
-      },
-    },{id: "post-reflective-prompt-evolution-with-dspy-gepa-insights-for-modular-ai-systems",
-      
-        title: 'Reflective Prompt Evolution with DSPy: GEPA Insights for Modular AI Systems <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "From RL to Reflective Prompt Optimization: The GEPA Breakthrough",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://cjbarroso.substack.com/p/reflective-prompt-evolution-with", "_blank");
-        
-      },
-    },{id: "post-the-data-dilemma",
-      
-        title: 'The Data Dilemma <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "An Analysis of the Top 5 Enterprise Data Challenges",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://cjbarroso.substack.com/p/the-data-dilemma", "_blank");
-        
-      },
-    },{id: "post-your-brain-has-four-gears",
-      
-        title: 'Your Brain Has Four Gears <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "... But We&amp;#8217;ve Only Been Told About Two",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://cjbarroso.substack.com/p/your-brain-has-four-gears", "_blank");
-        
-      },
-    },{id: "post-viajar-para-pertenecer",
-      
-        title: 'Viajar para pertenecer <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Por qu&amp;#233; la clase media no puede dejar de subirse a un avi&amp;#243;n",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://cjbarroso.substack.com/p/viajar-para-pertenecer", "_blank");
-        
-      },
-    },{id: "post-coming-soon",
-      
-        title: 'Coming soon <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "This is Carlos&amp;#8217;s Substack.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://cjbarroso.substack.com/p/coming-soon", "_blank");
-        
-      },
-    },{id: "post-civilización-o-barbarie-digital-lo-que-sarmiento-nos-diría-sobre-la-ia-y-la-desigualdad",
+        },{id: "post-civilización-o-barbarie-digital-lo-que-sarmiento-nos-diría-sobre-la-ia-y-la-desigualdad",
       
         title: "Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y...",
       
