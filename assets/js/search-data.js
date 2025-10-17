@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-hire-me",
           title: "🚀 Hire Me",
-          description: "My current availability for new initiatives",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/hire/";
