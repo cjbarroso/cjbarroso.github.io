@@ -26,8 +26,21 @@ I help organizations design data platforms, deploy intelligent systems, and buil
 
 ## Who I Work With
 
-Startups, enterprises, and consulting teams that want to accelerate with clarity — not chaos.
-Education and social-impact projects welcome, too.
+I collaborate with:
+
+- Startups that need senior technical direction without hiring a full team.
+- Enterprises modernizing their data and AI ecosystems.
+- Consulting firms that want a specialist to design or validate complex solutions.
+- Educational institutions or NGOs exploring AI adoption in learning contexts.
+
+## How to Engage
+
+I offer:
+
+- Consulting blocks (hourly or project-based).
+- Architectural reviews and workshops.
+- Innovation sprints for rapid ideation and prototyping.
+- Longer-term advisory retainers for strategic alignment.
 
 **Let’s Build Something**
 
