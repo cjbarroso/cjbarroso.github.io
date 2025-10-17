@@ -24,18 +24,14 @@ I help organizations design data platforms, deploy intelligent systems, and buil
   🧭 **Innovation Labs & Product Incubation:** From hypothesis to MVP: I help organizations structure, test, and launch new products using lean, product-management principles.
 - 🧱 **Technical Advisory:** Code and architecture reviews, mentoring for data teams, and hands-on support for complex technical decisions.
 
-## Who I Work With
-
-I collaborate with:
+## Who I Collaborate With
 
 - Startups that need senior technical direction without hiring a full team.
 - Enterprises modernizing their data and AI ecosystems.
 - Consulting firms that want a specialist to design or validate complex solutions.
 - Educational institutions or NGOs exploring AI adoption in learning contexts.
 
-## How to Engage
-
-I offer:
+## How we can Engage
 
 - Consulting blocks (hourly or project-based).
 - Architectural reviews and workshops.
@@ -47,4 +43,4 @@ I offer:
 Ready to talk?
 📧 carlos@cjbarroso.com
 
-I answer every message personally.
+_I answer every message personally._
