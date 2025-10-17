@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Totally Human # the website title (if blank, full name will be used instead)
+title: Carlos J. Barroso # the website title (if blank, full name will be used instead)
 first_name: Carlos
 middle_name: Jose
 last_name: Barroso
@@ -97,7 +97,7 @@ pagination:
 
 related_blog_posts:
   enabled: true
-  max_related: 5
+  max_related: 2
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.

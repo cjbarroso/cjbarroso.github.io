@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: How do we keep being human in the world of ASI?
+subtitle: Are you ready for artificial superintelligence?
 
 profile:
   align: right
