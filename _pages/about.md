@@ -9,16 +9,23 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>447 Broadway</p>
-    <p>New York, New York 10013</p>
+    <p>carlos@cjbarroso.com</p>
+    <p>I prefer email</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Carlos J. Barroso is the Head of AI at Teracloud, where he provides the vision, guidance, and architecture for the future of AI in the cloud, for both Teracloud and its clients.
+I’m Carlos J. Barroso — an AI specialist, data architect, and builder of ideas that work.
+For over a decade, I’ve helped teams and organizations turn data into intelligence and AI into business value. I design systems that don’t just run — they learn, adapt, and scale.
 
-With over a decade of experience in Artificial Intelligence, dating back to 2012, Carlos is a recognized thought leader known for his ability to translate complex technological landscapes into clear business strategies. He is the creator of the D2M2 (Datera Data Maturity Model), a framework used by Teracloud and other organizations to evaluate and enhance data maturity. His career spans roles from coder to C-suite positions, including significant projects with industry giants like Vodafone, Red Hat, and Mercadolibre.
+My work spans AWS, Google Cloud, and on-premise data and AI platforms, always focused on creating architectures that are reliable, cost-efficient, and ready for growth. Whether it’s shaping multi-account data lakes, deploying AI agents, or structuring innovation labs, I focus on solving real problems — the kind that move both technology and business forward.
 
-Carlos holds an MBA from the Universidad Nacional de Cordoba (UNC) and several certifications, including AWS Solutions Architect and PMP. He is passionate about leveraging data maturity to unlock the true value of AI and is focused on scaling Teracloud to become the leading AI/data partner for AWS in Latin America.
+Beyond tech, I’m a musician — I sing, and play classical guitar and bass. Music keeps me grounded in rhythm, patience, and flow — qualities that show up in my engineering work too.
+I also love trekking through the Andes near my home and training with kettlebells, finding in both the same mix of challenge and clarity that drives my professional life.
+
+At heart, I’m curious — about how systems work, how people learn, and how small experiments compound into transformation.
+If you’re building something ambitious, or just want to talk about the intersection of AI, data, and human creativity, let’s connect.
+
+📧 carlos@cjbarroso.com
