@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
+        },{id: "nav-pick-my-brain",
+          title: "pick my brain",
+          description: "My current availability for new initiatives",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/hire/";
+          },
         },{id: "post-civilización-o-barbarie-digital-lo-que-sarmiento-nos-diría-sobre-la-ia-y-la-desigualdad",
       
         title: "Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y...",
