@@ -8,7 +8,7 @@ nav_order: 6
 published: true
 ---
 
-# Hire me
+## If you want to work with me
 
 I'm available for consultancy under time-bound contracts for:
 
