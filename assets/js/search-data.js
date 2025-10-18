@@ -65,13 +65,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-talks-and-conferences",
-          title: "Talks and Conferences",
-          description: "Mainly talks I&#39;ve given but also some of my involvement in community events",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/talks/";
-          },
         },{id: "nav-hire-me",
           title: "🚀 Hire Me",
           description: "",
