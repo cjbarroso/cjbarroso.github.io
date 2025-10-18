@@ -3,7 +3,7 @@ layout: page
 title: Talks and Conferences
 permalink: /talks/
 description: Mainly talks I've given but also some of my involvement in community events
-nav: true
+nav: false
 nav_order: 5
 horizontal: false
 ---
