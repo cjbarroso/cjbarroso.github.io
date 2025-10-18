@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: /blog/
-title: Writeups
-nav: true
+title: Blog posts
+nav: false
 nav_order: 1
 pagination:
   enabled: true

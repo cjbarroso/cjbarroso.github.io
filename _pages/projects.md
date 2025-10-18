@@ -2,12 +2,12 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: My current, non-work projects
+description: My current interests
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [grow, fun]
 horizontal: false
-published: false
+published: true
 ---
 
 <!-- pages/projects.md -->
