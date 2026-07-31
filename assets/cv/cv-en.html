@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carlos José Barroso — Curriculum Vitae</title>
+    <style>
+      :root {
+        --ink: #16181d;
+        --ink-soft: #4a4f58;
+        --rule: #c9ccd2;
+        --accent: #1f4e79;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: #eceef1;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+        font-size: 10.5pt;
+        line-height: 1.5;
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .sheet {
+        max-width: 21cm;
+        margin: 1.2cm auto;
+        padding: 1.6cm 1.7cm;
+        background: #fff;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.14);
+      }
+
+      /* ---------- header ---------- */
+
+      header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 0.8em;
+        margin-bottom: 1.6em;
+      }
+
+      h1 {
+        font-size: 22pt;
+        line-height: 1.1;
+        margin: 0 0 0.15em;
+        letter-spacing: 0.01em;
+        font-weight: 600;
+      }
+
+      .role {
+        font-size: 11pt;
+        color: var(--accent);
+        font-variant: small-caps;
+        letter-spacing: 0.06em;
+        margin: 0 0 0.7em;
+      }
+
+      .contact {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8.6pt;
+        line-height: 1.7;
+        color: var(--ink-soft);
+        margin: 0;
+      }
+
+      .contact span:not(:last-child)::after {
+        content: " · ";
+        color: var(--rule);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* ---------- sections ---------- */
+
+      h2 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 9.5pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        color: var(--accent);
+        margin: 1.9em 0 0.2em;
+        padding-bottom: 0.35em;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      h2:first-of-type {
+        margin-top: 0;
+      }
+
+      h3 {
+        font-size: 10.5pt;
+        font-weight: 700;
+        margin: 1.05em 0 0;
+      }
+
+      p {
+        margin: 0.5em 0;
+        text-align: justify;
+      }
+
+      .lead p {
+        margin-bottom: 0.65em;
+      }
+
+      /* ---------- entries ---------- */
+
+      .entry {
+        margin-top: 1.05em;
+        break-inside: avoid;
+      }
+
+      .entry:first-child {
+        margin-top: 0.7em;
+      }
+
+      .entry h3 {
+        margin: 0;
+      }
+
+      .entry .meta {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8.8pt;
+        color: var(--ink-soft);
+        font-style: normal;
+        margin: 0.15em 0 0.3em;
+      }
+
+      .entry .meta em {
+        font-style: italic;
+        color: var(--ink);
+      }
+
+      .entry p {
+        margin: 0.25em 0 0;
+      }
+
+      ul {
+        margin: 0.5em 0 0;
+        padding-left: 1.15em;
+      }
+
+      li {
+        margin-bottom: 0.32em;
+      }
+
+      li strong {
+        font-weight: 700;
+      }
+
+      .compact li {
+        margin-bottom: 0.18em;
+      }
+
+      .refs p {
+        margin: 0.55em 0;
+        text-align: left;
+        text-indent: -1.1em;
+        padding-left: 1.1em;
+        break-inside: avoid;
+      }
+
+      /* ---------- talks table ---------- */
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.7em;
+        font-size: 9.8pt;
+      }
+
+      th {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8.2pt;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--ink-soft);
+        text-align: left;
+        font-weight: 600;
+        padding: 0 0.6em 0.4em 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      td {
+        padding: 0.42em 0.6em 0.42em 0;
+        border-bottom: 1px solid #eceef1;
+        vertical-align: top;
+      }
+
+      td:first-child {
+        white-space: nowrap;
+        color: var(--ink-soft);
+        font-variant-numeric: tabular-nums;
+      }
+
+      td:last-child,
+      th:last-child {
+        padding-right: 0;
+        color: var(--ink-soft);
+      }
+
+      .skills p {
+        margin: 0.45em 0;
+        text-align: left;
+      }
+
+      footer {
+        margin-top: 2.2em;
+        padding-top: 0.8em;
+        border-top: 1px solid var(--rule);
+        font-size: 8.8pt;
+        color: var(--ink-soft);
+        font-style: italic;
+        text-align: center;
+      }
+
+      /* ---------- print ---------- */
+
+      @page {
+        size: A4;
+        margin: 1.5cm 1.6cm;
+      }
+
+      @media print {
+        html {
+          background: #fff;
+        }
+
+        .sheet {
+          margin: 0;
+          padding: 0;
+          max-width: none;
+          box-shadow: none;
+        }
+
+        a {
+          color: var(--ink);
+        }
+
+        h2 {
+          break-after: avoid;
+        }
+
+        h3 {
+          break-after: avoid;
+        }
+
+        tr {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header>
+        <h1>Carlos José Barroso</h1>
+        <p class="role">Artificial Intelligence Specialist · Data Architect · Author and speaker</p>
+        <p class="contact">
+          <span>General Fernández Oro, Río Negro, Argentina</span>
+          <span><a href="mailto:carlos@cjbarroso.com">carlos@cjbarroso.com</a></span>
+          <span>+54 9 351 757 4588</span>
+        </p>
+        <p class="contact">
+          <span><a href="https://www.cjbarroso.com">www.cjbarroso.com</a></span>
+          <span><a href="https://www.linkedin.com/in/cjbarroso/">linkedin.com/in/cjbarroso</a></span>
+          <span><a href="https://github.com/cjbarroso">github.com/cjbarroso</a></span>
+          <span>ORCID <a href="https://orcid.org/0009-0008-2126-1046">0009-0008-2126-1046</a></span>
+          <span>ResearchGate <a href="https://www.researchgate.net/profile/Carlos-Barroso-7">Carlos-Barroso-7</a></span>
+        </p>
+      </header>
+
+      <h2>Professional profile</h2>
+      <div class="lead">
+        <p>
+          Artificial intelligence specialist with over twenty years in technology and more than thirteen dedicated specifically to AI and machine
+          learning (since 2012). <strong>Chief AI Officer at Teracloud</strong>, where I set the vision, architecture and AI adoption strategy for the
+          company and its clients; alongside that role I maintain an
+          <strong>independent practice in consulting, writing and public speaking</strong> on AI and data.
+        </p>
+        <p>
+          My work spans both technical construction —MLOps, data architectures, generative AI systems and agents in production— and the teaching and
+          communication of those subjects to technical and non-technical audiences. Author of the
+          <strong>D2M2 (Datera Data Maturity Model)</strong>, a data maturity assessment framework used by Teracloud and other organizations, and of
+          two books on AI leadership published in 2025, in Spanish and English.
+        </p>
+        <p>
+          My recent writing focuses on the public dimension of the problem: access to compute, to data and to AI education, and the re-skilling of
+          junior professionals in the face of automation.
+        </p>
+      </div>
+
+      <h2>Areas of specialization</h2>
+      <ul>
+        <li>
+          <strong>Generative AI and language models.</strong> Design and implementation of solutions on Amazon Bedrock, Anthropic and OpenAI; context
+          engineering, agents, integration with APIs and knowledge bases.
+        </li>
+        <li>
+          <strong>MLOps and machine learning systems engineering.</strong> Infrastructure, pipelines and production deployment of machine and deep
+          learning workloads.
+        </li>
+        <li>
+          <strong>Data architecture for AI.</strong> Multi-account data lakes, data warehouses and lakehouse architectures (S3, Redshift, Lake
+          Formation, Apache Iceberg, Glue, DataZone).
+        </li>
+        <li>
+          <strong>Data maturity and governance.</strong> Author of the D2M2 model; diagnostic assessment and data modernization roadmaps as a
+          prerequisite to any AI initiative.
+        </li>
+        <li>
+          <strong>AI risk, security and ethics.</strong> Shadow AI and corporate data exfiltration, responsible AI governance, assessment of
+          organizational exposure.
+        </li>
+        <li>
+          <strong>AI, work and inequality.</strong> The impact of automation on the structure of employment; re-skilling junior professionals toward
+          orchestration and oversight of AI systems; public access to compute and knowledge.
+        </li>
+      </ul>
+
+      <h2>Teaching and training experience</h2>
+
+      <div class="entry">
+        <h3>Universidad Blas Pascal — Córdoba, Argentina</h3>
+        <p class="meta"><em>Instructor, Summer Course "Introduction to Business Intelligence"</em></p>
+        <p>
+          Taught the full course: business intelligence fundamentals, dimensional modeling, indicators and analytical exploitation of data, for
+          students with no prior background in the subject.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>"From Idea to GenAI" programme — AWS Latin America</h3>
+        <p class="meta"><em>Design and delivery of executive and technical training workshops on generative AI</em> · 2024 – 2025</p>
+        <p>
+          A series of in-person workshops delivered at the Amazon Web Services offices in Santiago de Chile, Mexico City and Buenos Aires, and at
+          Teracloud's offices in Córdoba. Contents: generative AI fundamentals, criteria for selecting use cases, live demonstrations on Amazon
+          Bedrock and the construction of an adoption roadmap. Mixed audiences of technical and business profiles.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Seminar "Mature your data and launch generative AI projects"</h3>
+        <p class="meta"><em>Lead speaker</em> · AWS offices, Buenos Aires · June 2025</p>
+        <p>
+          Training module on data maturity assessment and the comparison of architectures (data lake, data warehouse, lakehouse), with hands-on
+          generative AI demonstrations.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Webinar on data modernization and data maturity</h3>
+        <p class="meta"><em>Speaker</em> · March 2025</p>
+        <p>Open lecture in Spanish, available on <a href="https://www.youtube.com/watch?v=fgSyNdviVho">YouTube</a>.</p>
+      </div>
+
+      <div class="entry">
+        <h3>Technical training of teams</h3>
+        <p class="meta"><em>Ongoing</em></p>
+        <p>Mentoring of data teams, architecture and code reviews, and internal training workshops as part of my technical advisory practice.</p>
+      </div>
+
+      <div class="entry">
+        <h3>Technical community</h3>
+        <p class="meta"><em>Founder and leader of the AWS User Group Patagonia</em></p>
+        <p>
+          The southernmost AWS user group in the world: organization of regular training meetups and development of a regional technical community.
+        </p>
+      </div>
+
+      <h2>Professional experience</h2>
+
+      <div class="entry">
+        <h3>Teracloud.io — Argentina</h3>
+        <p class="meta"><em>Chief AI Officer / Head of AI</em> · 2018 – present</p>
+        <p>
+          Responsible for the AI vision, architecture and strategy of the company and its client portfolio. Definition of the generative AI and data
+          service portfolio; technical leadership of AI adoption initiatives; public representation of the company at AWS forums in Argentina, Chile,
+          Mexico and the United States. Author of the D2M2 data maturity framework. Strategic goal: position Teracloud as AWS's leading AI and data
+          partner in Latin America.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Independent practice in AI and data — Argentina</h3>
+        <p class="meta"><em>Consultant, author and speaker</em> · present (in parallel)</p>
+        <p>
+          AI strategy and roadmaps, responsible AI governance, cloud data architecture, development of generative AI agents, structuring of innovation
+          labs and product incubation. Advisory work for startups, companies undergoing modernization, consulting firms and educational institutions
+          exploring AI adoption in learning contexts.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Teracloud — Argentina</h3>
+        <p class="meta"><em>MLOps Engineer</em> · 2021 – 2024</p>
+        <p>
+          Design, architecture and implementation of MLOps infrastructure for machine learning, deep learning and artificial intelligence workloads.
+          Reduced costs and time to production for clients' ML initiatives through secure, reproducible infrastructure pipelines.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Machinalis — Argentina</h3>
+        <p class="meta"><em>Manager, Machine Learning Solutions Architecture</em> · 2016 – 2018</p>
+        <p>
+          Led the machine learning solutions architecture practice at one of the country's pioneering machine learning consultancies. Identification
+          of market verticals and design of the technical approach; management of the customer decision journey from first contact to proposal;
+          leadership of the business analysis teams in the design of ML solutions.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Machinalis — Argentina</h3>
+        <p class="meta"><em>Project Portfolio Manager</em> · 2012 – 2016</p>
+        <p>
+          Management of the company's full project portfolio, in a context of data science and machine learning projects for clients across the
+          region. The period in which my specific work in artificial intelligence began.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Machinalis — Argentina</h3>
+        <p class="meta"><em>Project Manager</em> · 2011 – 2012</p>
+        <p>Agile project management of a medium-sized aerospace MRP system.</p>
+      </div>
+
+      <div class="entry">
+        <h3>Starbene — Argentina</h3>
+        <p class="meta"><em>Software process designer</em> · 2010 – 2011</p>
+        <p>
+          Definition and maintenance of development processes compliant with international medical device regulation: ISO 9001, IEC 60601 (medical
+          electrical equipment), ISO 13485 (medical devices — quality management), IEC 62304 (medical device software — life cycle processes), ISO/IEC
+          14598 (software product evaluation) and the FDA General Principles of Software Validation.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>IURL — Argentina</h3>
+        <p class="meta"><em>Linux Software Manager</em> · 2007 – 2008</p>
+        <p>Led the project that became versions 6 and 7 of the urli OS operating system.</p>
+      </div>
+
+      <div class="entry">
+        <h3>AguarA Soft — Argentina</h3>
+        <p class="meta"><em>Software designer and developer</em> · 2001 – 2005</p>
+        <p>Design and development of business management applications.</p>
+      </div>
+
+      <div class="entry">
+        <h3>Xecomm — Argentina</h3>
+        <p class="meta"><em>Software designer</em> · 1997 – 1999</p>
+        <p>Design and implementation of software for government bodies.</p>
+      </div>
+
+      <h2>Publications</h2>
+
+      <h3>Books</h3>
+      <div class="refs">
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>The AI Leadership Trap: Firing your Chief AI Officer is just the first step</em>. 1st ed. General
+          Fernández Oro, Río Negro, Argentina. ASIN B0FQT5LLY5. Kindle edition.
+          <a href="https://www.amazon.com/dp/B0FQT5LLY5">amazon.com/dp/B0FQT5LLY5</a>
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>La trampa del liderazgo en IA: Despedir a su CAIO es solo el primer paso</em> [The AI leadership
+          trap: firing your CAIO is only the first step]. 1st ed. General Fernández Oro, Argentina. ISBN 978-631-01-0938-1. Kindle edition.
+          <a href="https://www.amazon.com/dp/B0FNYX3C3D/">amazon.com/dp/B0FNYX3C3D</a>
+        </p>
+      </div>
+
+      <h3>Articles and preprints</h3>
+      <div class="refs">
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>From Grunt Work to Governance: Re-skilling Juniors as AI Orchestrators</em>. Preprint,
+          ResearchGate. DOI: <a href="https://doi.org/10.13140/RG.2.2.14680.97281">10.13140/RG.2.2.14680.97281</a>
+        </p>
+        <p><strong>Barroso, C.</strong> (2025). <em>Unlocking Creativity: A Guide to Human-AI Collaboration in Design</em>. Whitepaper.</p>
+      </div>
+
+      <h3>Essays and public writing</h3>
+      <div class="refs">
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>The AI's Pandora's Box: A Technical Report on the New Wave of Corporate Data Exfiltration</em>.
+          Technical report on Shadow AI and corporate data leakage.
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y la desigualdad</em>
+          [Civilization or digital barbarism: what Sarmiento would tell us about AI and inequality]. Essay on AI, inequality and public access to
+          knowledge.
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>AWSomeness 2024: My re:Invent 2024 highlights</em>. Analysis of the state of the art in cloud data
+          and AI.
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2017). <em>Machine learning en e-commerce: casos de éxito</em> [Machine learning in e-commerce: success
+          stories]. Conference material on applied machine learning cases in the Latin American market.
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2012). <em>Python para grandes proyectos</em> [Python for large projects]. Conference material on the
+          applicability of Python and free software in large-scale engineering projects.
+        </p>
+      </div>
+
+      <h2>Conferences and presentations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Activity</th>
+            <th>Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025</td>
+            <td>AWS GenAI &amp; Data Fast Track — session with leading Latin American fintech startups</td>
+            <td>AWS offices, San Francisco, USA</td>
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>"Mature your data and launch generative AI projects" — lead speaker</td>
+            <td>AWS offices, Buenos Aires, Argentina</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>Tera-Workshop: "Supercharge your startup with GenAI"</td>
+            <td>Teracloud, Córdoba, Argentina</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>"From Idea to GenAI" (FITGA)</td>
+            <td>AWS offices, Buenos Aires, Argentina</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>AWS Community Day Argentina — speaker and member of the organizing team</td>
+            <td>Buenos Aires, Argentina</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>"From Idea to GenAI" (FITGA)</td>
+            <td>AWS offices, Buenos Aires, Argentina</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>"From Idea to GenAI" (FITGA)</td>
+            <td>AWS offices, Mexico City, Mexico</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>América Digital 2024</td>
+            <td>Mexico City, Mexico</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>"From Idea to GenAI" (FITGA)</td>
+            <td>AWS offices, Santiago de Chile, Chile</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>Cloud eXPerience</td>
+            <td>Buenos Aires, Argentina</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Education</h2>
+
+      <div class="entry">
+        <h3>Licenciatura in Computer Science</h3>
+        <p class="meta">Universidad Nacional de San Luis, Argentina</p>
+      </div>
+
+      <div class="entry">
+        <h3>Postgraduate Specialization in Management</h3>
+        <p class="meta">Especialización en Gestión Gerencial · Universidad Católica de Córdoba, Argentina</p>
+      </div>
+
+      <div class="entry">
+        <h3>Business Administration for IT Companies</h3>
+        <p class="meta">Administrador de Empresas Informáticas · Colegio Universitario IES, Córdoba, Argentina · 2009 – 2012</p>
+      </div>
+
+      <h2>Certifications and continuing education</h2>
+      <ul class="compact">
+        <li><strong>AWS Certified Solutions Architect – Associate</strong> — Amazon Web Services (2020–2023)</li>
+        <li><strong>AWS Certified Database Specialty</strong> — Amazon Web Services (2022)</li>
+        <li><strong>AWS Certified Cloud Practitioner</strong> — Amazon Web Services (2019–2021)</li>
+        <li><strong>AWS Academy Graduate — Machine Learning Foundations</strong> — Amazon Web Services (2022)</li>
+        <li><strong>AWS Well-Architected Proficient</strong> — Amazon Web Services (2021)</li>
+        <li><strong>AWS Solutions Training for Partners: Machine Learning on AWS – Business</strong> — Amazon Partner Network (2019)</li>
+        <li><strong>AWS Technical Professional</strong> and <strong>AWS Cloud Practitioner Essentials</strong> — Amazon Partner Network (2018)</li>
+        <li><strong>Project management training (PMP)</strong> — Project Management Institute (2012)</li>
+        <li><strong>Scrum Manager</strong> (2010)</li>
+      </ul>
+
+      <h2>Awards and recognition</h2>
+
+      <div class="entry">
+        <h3>AWS User Group Leader</h3>
+        <p class="meta">Amazon Web Services · 2023</p>
+        <p>In recognition of founding and leading the AWS User Group Patagonia, the southernmost AWS user group in the world.</p>
+      </div>
+
+      <div class="entry">
+        <h3>AWS Community Builder</h3>
+        <p class="meta">Amazon Web Services · 2021 – present</p>
+        <p>
+          AWS recognition programme for technical specialists with sustained community contribution through content, training and public speaking.
+        </p>
+      </div>
+
+      <h2>Technical skills</h2>
+      <div class="skills">
+        <p>
+          <strong>AI and machine learning:</strong> generative AI, large language models, AI agents, Amazon Bedrock, Amazon SageMaker, Anthropic,
+          OpenAI, MLOps, machine learning, deep learning.
+        </p>
+        <p>
+          <strong>Data:</strong> data lake / data warehouse / lakehouse architectures, Amazon S3, Redshift, AWS Lake Formation, AWS Glue, Amazon
+          DataZone, Apache Iceberg, SQL, data governance and maturity.
+        </p>
+        <p>
+          <strong>Cloud and infrastructure:</strong> AWS (multi-account architecture, Well-Architected Framework), Google Cloud, on-premise platforms,
+          GNU/Linux.
+        </p>
+        <p><strong>Languages and development:</strong> Python, SQL, C.</p>
+        <p>
+          <strong>Management and method:</strong> project and portfolio management, agile methodologies (Scrum), requirements analysis, innovation
+          management, robotic process automation (RPA), software processes under ISO/IEC/FDA standards.
+        </p>
+      </div>
+
+      <h2>Languages</h2>
+      <div class="skills">
+        <p><strong>Spanish</strong> — native.</p>
+        <p>
+          <strong>English</strong> — full professional proficiency. Professional and teaching activity in English, including presentations and client
+          work in the United States, Mexico and Chile.
+        </p>
+      </div>
+
+      <h2>Other interests</h2>
+      <p>Music: singing, classical guitar and bass. Trekking in the Andes and kettlebell training.</p>
+
+      <footer>Professional references and supporting documentation for degrees, certifications and publications available on request.</footer>
+    </main>
+  </body>
+</html>

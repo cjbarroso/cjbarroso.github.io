@@ -86,6 +86,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
+            },{id: "dropdown-cv-english",
+              title: "CV (english)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "";
+              },
             },{id: "post-civilización-o-barbarie-digital-lo-que-sarmiento-nos-diría-sobre-la-ia-y-la-desigualdad",
       
         title: "Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y...",
