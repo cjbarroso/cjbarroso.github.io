@@ -9,6 +9,7 @@
         --ink: #16181d;
         --ink-soft: #4a4f58;
         --rule: #c9ccd2;
+        --hairline: #eceef1;
         --accent: #1f4e79;
       }
 
@@ -18,6 +19,7 @@
 
       html {
         background: #eceef1;
+        -webkit-text-size-adjust: 100%;
       }
 
       body {
@@ -46,7 +48,7 @@
       }
 
       h1 {
-        font-size: 22pt;
+        font-size: 2.1em;
         line-height: 1.1;
         margin: 0 0 0.15em;
         letter-spacing: 0.01em;
@@ -54,7 +56,7 @@
       }
 
       .role {
-        font-size: 11pt;
+        font-size: 1.05em;
         color: var(--accent);
         font-variant: small-caps;
         letter-spacing: 0.06em;
@@ -63,10 +65,11 @@
 
       .contact {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        font-size: 8.6pt;
+        font-size: 0.82em;
         line-height: 1.7;
         color: var(--ink-soft);
         margin: 0;
+        overflow-wrap: break-word;
       }
 
       .contact span:not(:last-child)::after {
@@ -77,6 +80,7 @@
       a {
         color: var(--accent);
         text-decoration: none;
+        overflow-wrap: break-word;
       }
 
       a:hover {
@@ -87,7 +91,7 @@
 
       h2 {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        font-size: 9.5pt;
+        font-size: 0.905em;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.13em;
@@ -102,7 +106,7 @@
       }
 
       h3 {
-        font-size: 10.5pt;
+        font-size: 1em;
         font-weight: 700;
         margin: 1.05em 0 0;
       }
@@ -133,7 +137,7 @@
 
       .entry .meta {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        font-size: 8.8pt;
+        font-size: 0.838em;
         color: var(--ink-soft);
         font-style: normal;
         margin: 0.15em 0 0.3em;
@@ -179,12 +183,12 @@
         width: 100%;
         border-collapse: collapse;
         margin-top: 0.7em;
-        font-size: 9.8pt;
+        font-size: 0.933em;
       }
 
       th {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        font-size: 8.2pt;
+        font-size: 0.837em;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         color: var(--ink-soft);
@@ -196,7 +200,7 @@
 
       td {
         padding: 0.42em 0.6em 0.42em 0;
-        border-bottom: 1px solid #eceef1;
+        border-bottom: 1px solid var(--hairline);
         vertical-align: top;
       }
 
@@ -221,10 +225,92 @@
         margin-top: 2.2em;
         padding-top: 0.8em;
         border-top: 1px solid var(--rule);
-        font-size: 8.8pt;
+        font-size: 0.838em;
         color: var(--ink-soft);
         font-style: italic;
         text-align: center;
+      }
+
+      /* ---------- phones and narrow windows ---------- */
+      /* The A4 sheet metaphor stops making sense below ~46em: 3.3cm of
+         horizontal padding eats a third of a 390px viewport and the talks
+         table cannot hold three columns. Full-bleed page, bigger type,
+         one stacked block per talk. */
+
+      @media screen and (max-width: 46em) {
+        html {
+          background: #fff;
+        }
+
+        body {
+          font-size: 1rem;
+          line-height: 1.55;
+        }
+
+        .sheet {
+          max-width: none;
+          margin: 0;
+          padding: 1.4rem 1.15rem 2.5rem;
+          box-shadow: none;
+        }
+
+        header {
+          margin-bottom: 1.3em;
+        }
+
+        h1 {
+          font-size: 1.75em;
+        }
+
+        h2 {
+          margin-top: 2.1em;
+        }
+
+        /* Justified text on a narrow column opens rivers of whitespace. */
+        p {
+          text-align: left;
+        }
+
+        .refs p {
+          text-indent: 0;
+          padding-left: 0;
+        }
+
+        /* One talk per block instead of a 3-column table. */
+        thead {
+          display: none;
+        }
+
+        table,
+        tbody {
+          display: block;
+        }
+
+        tr {
+          display: block;
+          padding: 0.6em 0;
+          border-bottom: 1px solid var(--hairline);
+        }
+
+        td {
+          display: block;
+          padding: 0;
+          border: 0;
+        }
+
+        td:first-child {
+          color: var(--ink-soft);
+          font-size: 0.85em;
+          letter-spacing: 0.06em;
+        }
+
+        td:nth-child(2) {
+          color: var(--ink);
+        }
+
+        td:last-child {
+          font-size: 0.9em;
+        }
       }
 
       /* ---------- print ---------- */
@@ -237,6 +323,11 @@
       @media print {
         html {
           background: #fff;
+        }
+
+        body {
+          font-size: 10.5pt;
+          line-height: 1.5;
         }
 
         .sheet {
