@@ -10,7 +10,7 @@ children:
     permalink: /cv/
   - title: divider
   - title: CV (spanish)
-    permalink: /assets/cv/cv-es-responsive.html
+    permalink: /assets/cv/cv-es.html
   - title: CV (english)
     permalink: /assets/cv/cv-en.html
 cv_pdf: false # example_pdf.pdf # you can also use external links here
