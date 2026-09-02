@@ -456,17 +456,6 @@ ninja.data = [{
           window.open("https://accesibilia.blogspot.com/2018/08/serie-introduccion-inteligencia.html", "_blank");
         
       },
-    },{id: "post-intro-to-ai-with-aws",
-      
-        title: 'Intro to #AI with AWS <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "When you read this, Amazon will have taken out of the market to 200 data scientists per day with an update to its Machine Learning platform. Ok, I made up that number, but I think is really close to the truth.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://www.linkedin.com/pulse/intro-ai-aws-carlos-barroso/", "_blank");
-        
-      },
     },{id: "post-intro-to-artificial-intelligence-ai-on-aws",
       
         title: 'Intro to Artificial Intelligence(AI) on AWS <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
