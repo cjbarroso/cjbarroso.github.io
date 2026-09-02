@@ -69,6 +69,10 @@ module ExternalPosts
       src['posts'].each do |post|
         puts "...fetching #{post['url']}"
         content = fetch_content_from_url(post['url'])
+        if content.nil?
+          Jekyll.logger.warn "ExternalPosts:", "skipping #{post['url']}, could not fetch content"
+          next
+        end
         content[:published] = parse_published_date(post['published_date'])
         create_document(site, src['name'], post['url'], content)
       end
@@ -86,10 +90,15 @@ module ExternalPosts
     end
 
     def fetch_content_from_url(url)
-      html = HTTParty.get(url).body
+      response = HTTParty.get(url)
+      return nil unless response.success?
+
+      html = response.body
+      return nil if html.nil? || html.empty?
+
       parsed_html = Nokogiri::HTML(html)
 
-      title = parsed_html.at('head title')&.text.strip || ''
+      title = parsed_html.at('head title')&.text&.strip || ''
       description = parsed_html.at('head meta[name="description"]')&.attr('content') || ''
       body_content = parsed_html.at('body')&.inner_html || ''
 
