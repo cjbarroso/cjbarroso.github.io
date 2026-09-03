@@ -14,6 +14,7 @@ children:
   - title: CV (english)
     permalink: /assets/cv/cv-en.html
 cv_pdf: false # example_pdf.pdf # you can also use external links here
+cv_format: jsonresume # options: rendercv, jsonresume
 description: This is summary of the CV of Carlos José Barroso.
 toc:
   sidebar: left
