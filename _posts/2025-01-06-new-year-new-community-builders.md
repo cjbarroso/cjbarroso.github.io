@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AWS Community Builders 2025 - Your Launchpad to Cloud Success
+title: AWS Community Builders 2025 - Your Launchpad to Cloud Success
 description: Thinking about diving into the AWS cloud? Or maybe you're already there and want to level up your game? Look no further than the AWS Community Builders program!
 categories: community
 categories: ["community", "growth", "experience"]
