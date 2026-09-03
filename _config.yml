@@ -189,16 +189,9 @@ external_sources:
   #       published_date: 2025-08-27
   #     - url: https://cjbarroso.substack.com/p/reflective-prompt-evolution-with
   #       published_date: 2025-08-28
-  - name: Linkedin articles
-    posts:
-      - url: https://www.linkedin.com/pulse/chatbots-un-activo-invaluable-para-las-pymes-carlos-barroso/
-        published_date: 2018-10-22
-      - url: https://www.linkedin.com/pulse/como-bajamos-30-los-costos-de-atenci%25C3%25B3n-al-cliente-carlos-barroso/
-        published_date: 2018-10-18
-      - url: https://www.linkedin.com/pulse/por-qu%25C3%25A9-pydata-carlos-barroso/
-        published_date: 2018-09-24
-      - url: https://www.linkedin.com/pulse/intro-ai-aws-carlos-barroso/
-        published_date: 2018-08-01
+  # Linkedin articles: every one of these was also published to Medium, so the
+  # source added only duplicates (and /pulse/intro-ai-aws-carlos-barroso/ now
+  # 404s). Re-add individual URLs here if you publish something only on LinkedIn.
   - name: Teracloud blog
     posts:
       - url: https://www.teracloud.io/single-post/getting-started-with-mcp-a-practical-code-example
