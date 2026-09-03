@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://cjbarroso.github.io/sitemap.xml
+Sitemap: https://cjbarroso.com/sitemap.xml
