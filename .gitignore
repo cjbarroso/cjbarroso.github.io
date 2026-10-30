@@ -1,21 +1,4 @@
-_site
-.bundle
-.DS_store
-.idea
-.jekyll-cache
-.jekyll-metadata
-.sass-cache
-.tweet-cache
-.venv
-assets/libs/
-assets/rendercv/rendercv_output/*.typ
-al-folio-upgrade-report.md
+.DS_Store
 node_modules/
-output/playwright/
-test-results/
-vendor
-
-# Python bytecode from bin/ helper scripts
-__pycache__/
-*.pyc
-/assets/img/old_profpic.jpg
+# mockup de diseño local, no se publica
+_design/
