@@ -4,7 +4,7 @@
 Uso: python3 scripts/update_writing.py   (desde la raiz del repo)
 
 Solo usa la libreria estandar. Reescribe lo que hay entre los marcadores
-<!-- writing:start --> y <!-- writing:end --> en writing/index.html y es/writing/index.html.
+<!-- writing:start --> y <!-- writing:end --> en writing/index.html, es/writing/index.html y zh/writing/index.html.
 Si un feed falla, usa lo ultimo que se bajo bien (writing/feeds.json).
 Para sumar un post que no tiene feed (LinkedIn, Teracloud, otros), agregarlo a
 writing/manual.json con title, url, date (AAAA-MM-DD) y source.
@@ -21,7 +21,8 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = [(ROOT / "writing" / "index.html", "en"), (ROOT / "es" / "writing" / "index.html", "es")]
+PAGES = [(ROOT / "writing" / "index.html", "en"), (ROOT / "es" / "writing" / "index.html", "es"),
+         (ROOT / "zh" / "writing" / "index.html", "zh")]
 MANUAL = ROOT / "writing" / "manual.json"
 CACHE = ROOT / "writing" / "feeds.json"
 
@@ -174,9 +175,9 @@ def dedupe(items):
 
 
 def render(items, lang="en"):
-    es = lang == "es"
+    es, zh = lang == "es", lang == "zh"
     sources = sorted({i["source"] for i in items})
-    chips = ['<button class="chip active" type="button" data-source="all">' + ("Todos" if es else "All") + '</button>']
+    chips = ['<button class="chip active" type="button" data-source="all">' + ("Todos" if es else "全部" if zh else "All") + '</button>']
     chips += [f'<button class="chip" type="button" data-source="{html.escape(s)}">{html.escape(s)}</button>' for s in sources]
     rows, year = [], None
     for it in items:
@@ -185,14 +186,15 @@ def render(items, lang="en"):
             year = y
             rows.append(f'        <h3 class="year">{y}</h3>')
         d = datetime.strptime(it["date"], "%Y-%m-%d")
-        when = f"{d.day:02d} {MESES[d.month - 1]} {d.year}" if es else d.strftime("%b %d, %Y")
+        when = (f"{d.day:02d} {MESES[d.month - 1]} {d.year}" if es
+                else f"{d.year}年{d.month}月{d.day}日" if zh else d.strftime("%b %d, %Y"))
         summary = f'\n          <p>{html.escape(it["summary"])}</p>' if it.get("summary") else ""
         rows.append(
             f'        <article class="post" data-source="{html.escape(it["source"])}">\n'
             f'          <div class="meta"><span class="src">{html.escape(it["source"])}</span> · {when}</div>\n'
             f'          <h4><a href="{html.escape(it["url"])}" rel="noopener">{html.escape(it["title"])}</a></h4>{summary}\n'
             f'        </article>')
-    return ("\n        <div class=\"chips\" role=\"group\" aria-label=\"" + ("Filtrar por fuente" if es else "Filter by source") + "\">\n          "
+    return ("\n        <div class=\"chips\" role=\"group\" aria-label=\"" + ("Filtrar por fuente" if es else "按来源筛选" if zh else "Filter by source") + "\">\n          "
             + "\n          ".join(chips) + "\n        </div>\n        <div class=\"posts\">\n"
             + "\n".join(rows) + "\n        </div>\n        ")
 
