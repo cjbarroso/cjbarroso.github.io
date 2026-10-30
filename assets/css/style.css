@@ -158,3 +158,18 @@ footer.site a:hover { color: var(--stone); text-decoration: none; }
 @media print {
   nav.top, .band, footer.site, .hero .signal { display: none; }
 }
+
+/* Writing: lista unificada con filtro por fuente */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
+.chip { background: none; border: 1px solid var(--line); color: var(--fg); border-radius: 999px; padding: 5px 14px; font: inherit; font-size: 14px; cursor: pointer; }
+.chip:hover { border-color: var(--terracotta); }
+.chip.active { background: var(--terracotta); border-color: var(--terracotta); color: #fff; }
+.posts h3.year { font-size: 14px; letter-spacing: 0.14em; color: var(--terracotta); margin: 32px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+.post { padding: 14px 0; border-bottom: 1px solid var(--line); max-width: 44em; }
+.post[hidden], .posts h3.year[hidden] { display: none; }
+.post .meta { font-size: 13px; color: var(--muted); }
+.post .src { color: var(--terracotta); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 12px; }
+.post h4 { margin: 2px 0 4px; font-size: 18px; line-height: 1.35; }
+.post h4 a { color: var(--fg); }
+.post h4 a:hover { color: var(--terracotta); text-decoration: none; }
+.post p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }

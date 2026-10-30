@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Model Context Protocol: Code Examples",
+    "url": "https://www.teracloud.io/single-post/getting-started-with-mcp-a-practical-code-example",
+    "date": "2025-06-24",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Architect AI-ready MCP Solutions on AWS: Compute and Storage",
+    "url": "https://www.teracloud.io/single-post/model-context-protocol-overview-an-mcp-solution-on-aws-compute-and-storage",
+    "date": "2025-05-30",
+    "source": "Teracloud"
+  },
+  {
+    "title": "AI: Beyond Science Fiction - A Look at Its Gradual Takeover",
+    "url": "https://www.teracloud.io/single-post/the-rise-of-ia-and-its-inescapable-transformation",
+    "date": "2024-07-08",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Don't Lose Clients in Onboarding Hell: A Fintech Case Study in AI-powered Efficiency",
+    "url": "https://www.teracloud.io/single-post/teracloud-boosts-fintech-client-onboarding-with-cloud-and-ai",
+    "date": "2024-04-25",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Essential Insights for C-Level Executives: Navigating IT in the Age of AI",
+    "url": "https://www.teracloud.io/single-post/what-c-levels-must-know-about-their-it-in-the-age-of-ai",
+    "date": "2023-11-17",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Simplify CodeCommit Authentication",
+    "url": "https://www.teracloud.io/single-post/easy-codecommit-authentication-with-git-remote-codecommit",
+    "date": "2021-11-03",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Cybersecurity Awareness: Phishing Prevention",
+    "url": "https://www.teracloud.io/single-post/cybersecurity-month-tips-to-avoid-being-phished",
+    "date": "2021-10-06",
+    "source": "Teracloud"
+  },
+  {
+    "title": "The Art of Data Management: AWS Data Pipelines",
+    "url": "https://www.teracloud.io/single-post/data-fundamentals-on-aws-data-pipelines",
+    "date": "2021-09-14",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Terraform Workspaces with direnv & dotenv: Maintain Sanity in Multi-Environment Setups",
+    "url": "https://www.teracloud.io/single-post/terraform-workspaces-direnv-dotenv-and-mental-sanity",
+    "date": "2021-06-15",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Direnv Demystified: Advanced Tip for DevOps",
+    "url": "https://www.teracloud.io/single-post/advanced-direnv-for-devops",
+    "date": "2021-06-07",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Unlock DevOps Efficiency with Direnv",
+    "url": "https://www.teracloud.io/single-post/direnv-for-devops",
+    "date": "2021-06-02",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Leverage GCloud Service Accounts within Terraform for Secure Infrastructure Management",
+    "url": "https://www.teracloud.io/single-post/using-gcloud-service-accounts-in-terraform",
+    "date": "2021-05-27",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Boost GCP Security: Secure GCloud CLI Access with Service Accounts",
+    "url": "https://www.teracloud.io/single-post/secure-your-access-to-gcloud-cli-with-service-accounts",
+    "date": "2021-05-07",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Secure Your Database: Aurora MySQL Encryption",
+    "url": "https://www.teracloud.io/single-post/existing-aurora-mysql-cluster-encryption-at-rest-from-zero-to-kms",
+    "date": "2020-10-13",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Automation: Friend or Foe? How Automation Will Reshape the Future of Work",
+    "url": "https://www.teracloud.io/single-post/will-the-automation-stole-your-job-or-secure-your-future",
+    "date": "2020-07-20",
+    "source": "Teracloud"
+  },
+  {
+    "title": "The Impact of Big Data in the Cloud: Shaping the Future of Businesses",
+    "url": "https://www.teracloud.io/single-post/the-power-of-big-data-in-the-cloud-and-its-effects-on-the-future-of-companies",
+    "date": "2020-06-05",
+    "source": "Teracloud"
+  },
+  {
+    "title": "Intro to Artificial Intelligence(AI) on AWS",
+    "url": "https://www.teracloud.io/single-post/2018/08/01/intro-to-artificial-intelligenceai-on-aws",
+    "date": "2018-07-30",
+    "source": "Teracloud"
+  }
+]
