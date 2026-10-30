@@ -65,9 +65,13 @@ nav.top ul { display: flex; gap: 24px; list-style: none; margin: 0 0 0 auto; pad
 nav.top ul a { color: var(--fg); padding-bottom: 2px; }
 nav.top ul a:hover { text-decoration: none; color: var(--terracotta); }
 nav.top ul a[aria-current="page"] { color: var(--terracotta); border-bottom: 2px solid var(--terracotta); }
-.icon-btn { background: none; border: 1px solid var(--line); color: var(--fg); border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; font-size: 13px; }
+.icon-btn { background: none; border: 1px solid var(--line); color: var(--fg); border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; font-size: 13px; white-space: nowrap; }
 .icon-btn:hover { border-color: var(--terracotta); text-decoration: none; }
-.lang-btn { font-weight: 600; letter-spacing: .04em; }
+.lang-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; font-size: 13px; font-weight: 600; letter-spacing: .04em; }
+.lang-switch a, .lang-switch span { padding: 4px 9px; line-height: 1.4; }
+.lang-switch a { color: var(--fg); }
+.lang-switch a:hover { text-decoration: none; color: var(--terracotta); }
+.lang-switch [aria-current] { background: var(--fg); color: var(--bg); }
 #menu-btn { display: none; }
 
 /* Hero */
@@ -146,7 +150,7 @@ footer.site a:hover { color: var(--stone); text-decoration: none; }
 
 @media (max-width: 720px) {
   body { font-size: 16px; }
-  nav.top .wrap { gap: 14px; }
+  nav.top .wrap { gap: 8px; }
   #menu-btn { display: inline-block; margin-left: auto; }
   nav.top ul { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; gap: 0; margin: 0; padding: 8px 16px 16px; background: var(--bg); border-bottom: 1px solid var(--line); }
   nav.top ul.open { display: flex; }
