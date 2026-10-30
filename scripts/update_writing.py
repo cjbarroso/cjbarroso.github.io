@@ -16,7 +16,7 @@ import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -35,6 +35,7 @@ ATOM = "{http://www.w3.org/2005/Atom}"
 SNIPPET = 180
 # Worker de Cloudflare (worker/) que baja los posts de Substack y los sirve; URL publica, no es un secreto.
 SUBSTACK_RELAY = "https://substack-relay.cjbarroso.workers.dev/"
+RELAY_MAX_AGE = timedelta(hours=48)  # el cron corre cada 6 horas
 
 
 def fetch(url):
@@ -99,10 +100,21 @@ def parse_substack_api(base, source):
         offset += page
 
 
+def fetch_relay(source):
+    """Lee el relay de Cloudflare y avisa si el cron del Worker lleva dias sin actualizarlo."""
+    data = json.loads(fetch(SUBSTACK_RELAY))
+    updated = datetime.fromisoformat(data["updated"].replace("Z", "+00:00"))
+    age = datetime.now(timezone.utc) - updated
+    if age > RELAY_MAX_AGE:
+        warn(f"{source}: el relay de Cloudflare no se actualiza hace {age.days} dias ({data['updated']}); "
+             "revisar el cron del Worker (worker/), la lista puede estar desactualizada")
+    return substack_items(data["posts"], source)
+
+
 def fetch_source(source, url, kind):
     if kind == "substack":
         # Substack bloquea a GitHub Actions: primero el relay (Cloudflare Worker), despues directo.
-        attempts = [("relay", lambda: substack_items(json.loads(fetch(SUBSTACK_RELAY))["posts"], source)),
+        attempts = [("relay", lambda: fetch_relay(source)),
                     ("API", lambda: parse_substack_api(url, source)),
                     ("RSS", lambda: parse_rss(fetch(url + "/feed"), source))]
         for i, (name, run) in enumerate(attempts):
