@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carlos José Barroso — 简历</title>
+    <style>
+      :root {
+        --ink: #16181d;
+        --ink-soft: #4a4f58;
+        --rule: #c9ccd2;
+        --hairline: #eceef1;
+        --accent: #1f4e79;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: #eceef1;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+        font-size: 10.5pt;
+        line-height: 1.5;
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .sheet {
+        max-width: 21cm;
+        margin: 1.2cm auto;
+        padding: 1.6cm 1.7cm;
+        background: #fff;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.14);
+      }
+
+      /* ---------- header ---------- */
+
+      header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 0.8em;
+        margin-bottom: 1.6em;
+      }
+
+      h1 {
+        font-size: 2.1em;
+        line-height: 1.1;
+        margin: 0 0 0.15em;
+        letter-spacing: 0.01em;
+        font-weight: 600;
+      }
+
+      .role {
+        font-size: 1.05em;
+        color: var(--accent);
+        font-variant: small-caps;
+        letter-spacing: 0.06em;
+        margin: 0 0 0.7em;
+      }
+
+      .contact {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.82em;
+        line-height: 1.7;
+        color: var(--ink-soft);
+        margin: 0;
+        overflow-wrap: break-word;
+      }
+
+      .contact span:not(:last-child)::after {
+        content: " · ";
+        color: var(--rule);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        overflow-wrap: break-word;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* ---------- sections ---------- */
+
+      h2 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.905em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        color: var(--accent);
+        margin: 1.9em 0 0.2em;
+        padding-bottom: 0.35em;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      h2:first-of-type {
+        margin-top: 0;
+      }
+
+      h3 {
+        font-size: 1em;
+        font-weight: 700;
+        margin: 1.05em 0 0;
+      }
+
+      p {
+        margin: 0.5em 0;
+        text-align: justify;
+      }
+
+      .lead p {
+        margin-bottom: 0.65em;
+      }
+
+      /* ---------- entries ---------- */
+
+      .entry {
+        margin-top: 1.05em;
+        break-inside: avoid;
+      }
+
+      .entry:first-child {
+        margin-top: 0.7em;
+      }
+
+      .entry h3 {
+        margin: 0;
+      }
+
+      .entry .meta {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.838em;
+        color: var(--ink-soft);
+        font-style: normal;
+        margin: 0.15em 0 0.3em;
+      }
+
+      .entry .meta em {
+        font-style: italic;
+        color: var(--ink);
+      }
+
+      .entry p {
+        margin: 0.25em 0 0;
+      }
+
+      ul {
+        margin: 0.5em 0 0;
+        padding-left: 1.15em;
+      }
+
+      li {
+        margin-bottom: 0.32em;
+      }
+
+      li strong {
+        font-weight: 700;
+      }
+
+      .compact li {
+        margin-bottom: 0.18em;
+      }
+
+      .refs p {
+        margin: 0.55em 0;
+        text-align: left;
+        text-indent: -1.1em;
+        padding-left: 1.1em;
+        break-inside: avoid;
+      }
+
+      /* ---------- talks table ---------- */
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.7em;
+        font-size: 0.933em;
+      }
+
+      th {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.837em;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--ink-soft);
+        text-align: left;
+        font-weight: 600;
+        padding: 0 0.6em 0.4em 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      td {
+        padding: 0.42em 0.6em 0.42em 0;
+        border-bottom: 1px solid var(--hairline);
+        vertical-align: top;
+      }
+
+      td:first-child {
+        white-space: nowrap;
+        color: var(--ink-soft);
+        font-variant-numeric: tabular-nums;
+      }
+
+      td:last-child,
+      th:last-child {
+        padding-right: 0;
+        color: var(--ink-soft);
+      }
+
+      .skills p {
+        margin: 0.45em 0;
+        text-align: left;
+      }
+
+      footer {
+        margin-top: 2.2em;
+        padding-top: 0.8em;
+        border-top: 1px solid var(--rule);
+        font-size: 0.838em;
+        color: var(--ink-soft);
+        font-style: italic;
+        text-align: center;
+      }
+
+      /* ---------- phones and narrow windows ---------- */
+      /* The A4 sheet metaphor stops making sense below ~46em: 3.3cm of
+         horizontal padding eats a third of a 390px viewport and the talks
+         table cannot hold three columns. Full-bleed page, bigger type,
+         one stacked block per talk. */
+
+      @media screen and (max-width: 46em) {
+        html {
+          background: #fff;
+        }
+
+        body {
+          font-size: 1rem;
+          line-height: 1.55;
+        }
+
+        .sheet {
+          max-width: none;
+          margin: 0;
+          padding: 1.4rem 1.15rem 2.5rem;
+          box-shadow: none;
+        }
+
+        header {
+          margin-bottom: 1.3em;
+        }
+
+        h1 {
+          font-size: 1.75em;
+        }
+
+        h2 {
+          margin-top: 2.1em;
+        }
+
+        /* Justified text on a narrow column opens rivers of whitespace. */
+        p {
+          text-align: left;
+        }
+
+        .refs p {
+          text-indent: 0;
+          padding-left: 0;
+        }
+
+        /* One talk per block instead of a 3-column table. */
+        thead {
+          display: none;
+        }
+
+        table,
+        tbody {
+          display: block;
+        }
+
+        tr {
+          display: block;
+          padding: 0.6em 0;
+          border-bottom: 1px solid var(--hairline);
+        }
+
+        td {
+          display: block;
+          padding: 0;
+          border: 0;
+        }
+
+        td:first-child {
+          color: var(--ink-soft);
+          font-size: 0.85em;
+          letter-spacing: 0.06em;
+        }
+
+        td:nth-child(2) {
+          color: var(--ink);
+        }
+
+        td:last-child {
+          font-size: 0.9em;
+        }
+      }
+
+      /* ---------- print ---------- */
+
+      @page {
+        size: A4;
+        margin: 1.5cm 1.6cm;
+      }
+
+      @media print {
+        html {
+          background: #fff;
+        }
+
+        body {
+          font-size: 10.5pt;
+          line-height: 1.5;
+        }
+
+        .sheet {
+          margin: 0;
+          padding: 0;
+          max-width: none;
+          box-shadow: none;
+        }
+
+        a {
+          color: var(--ink);
+        }
+
+        h2 {
+          break-after: avoid;
+        }
+
+        h3 {
+          break-after: avoid;
+        }
+
+        tr {
+          break-inside: avoid;
+        }
+      }
+    
+      /* Chinese: CJK font stacks, no wide tracking */
+      :lang(zh) body, :lang(zh) h1, :lang(zh) h2, :lang(zh) h3, :lang(zh) .role, :lang(zh) .contact, :lang(zh) .meta, :lang(zh) th, :lang(zh) footer {
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+      }
+      :lang(zh) h2, :lang(zh) th, :lang(zh) .role { letter-spacing: 0.04em; text-transform: none; }
+      :lang(zh) em { font-style: normal; }
+      :lang(zh) .refs em { font-style: italic; }
+
+  </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header>
+        <h1>Carlos José Barroso</h1>
+        <p class="role">人工智能专家 · 数据架构师 · 作者与演讲者</p>
+        <p class="contact">
+          <span>阿根廷里奥内格罗省 General Fernández Oro</span>
+          <span><a href="mailto:carlos@cjbarroso.com">carlos@cjbarroso.com</a></span>
+          <span>+54 9 351 757 4588</span>
+        </p>
+        <p class="contact">
+          <span><a href="https://www.cjbarroso.com">www.cjbarroso.com</a></span>
+          <span><a href="https://www.linkedin.com/in/cjbarroso/">linkedin.com/in/cjbarroso</a></span>
+          <span><a href="https://github.com/cjbarroso">github.com/cjbarroso</a></span>
+          <span>ORCID <a href="https://orcid.org/0009-0008-2126-1046">0009-0008-2126-1046</a></span>
+          <span>ResearchGate <a href="https://www.researchgate.net/profile/Carlos-Barroso-7">Carlos-Barroso-7</a></span>
+        </p>
+      </header>
+
+      <h2>个人简介</h2>
+      <div class="lead">
+        <p>
+          人工智能专家，拥有二十多年技术从业经历，其中自 2012 年起有十三年以上专注于 AI 与机器学习。现任 <strong>Teracloud 首席 AI 官（Chief AI Officer）</strong>，负责公司及其客户的 AI 愿景、架构和落地策略；同时经营<strong>独立的咨询、写作与演讲实践</strong>，主题为 AI 与数据。
+        </p>
+        <p>
+          我的工作既包括技术构建——MLOps、数据架构、生产环境中的生成式 AI 系统与智能体——也包括面向技术与非技术受众的培训与科普。我是 <strong>D2M2（Datera Data Maturity Model，Datera 数据成熟度模型）</strong>的作者，该数据成熟度评估框架已被 Teracloud 及其他组织采用；2025 年还出版了两本关于 AI 领导力的著作，分别有西班牙文版和英文版。
+        </p>
+        <p>
+          我近期的写作聚焦于这一问题的公共维度：算力、数据和 AI 教育的可及性，以及初级从业者在自动化冲击下的转型。
+        </p>
+      </div>
+
+      <h2>专业领域</h2>
+      <ul>
+        <li><strong>生成式 AI 与语言模型。</strong>基于 Amazon Bedrock、Anthropic 和 OpenAI 设计并实施解决方案；上下文工程、智能体，以及与 API 和知识库的集成。</li>
+        <li><strong>MLOps 与机器学习系统工程。</strong>机器学习与深度学习工作负载的基础设施、流水线和生产部署。</li>
+        <li><strong>面向 AI 的数据架构。</strong>多账户数据湖、数据仓库和湖仓一体架构（S3、Redshift、Lake Formation、Apache Iceberg、Glue、DataZone）。</li>
+        <li><strong>数据成熟度与治理。</strong>D2M2 模型的作者；将诊断评估和数据现代化路线图作为任何 AI 项目的前提。</li>
+        <li><strong>AI 风险、安全与伦理。</strong>影子 AI 与企业数据外泄、负责任的 AI 治理、组织风险暴露评估。</li>
+        <li><strong>AI、工作与不平等。</strong>自动化对就业结构的影响；帮助初级从业者转向 AI 系统的编排与监督角色；公众获取算力和知识的机会。</li>
+      </ul>
+
+      <h2>教学与培训经历</h2>
+
+      <div class="entry">
+        <h3>Universidad Blas Pascal（布拉斯·帕斯卡大学）— 阿根廷科尔多瓦</h3>
+        <p class="meta"><em>讲师，暑期课程“商业智能导论”</em></p>
+        <p>完整讲授该课程：商业智能基础、维度建模、指标体系与数据分析应用，面向没有相关基础的学生。</p>
+      </div>
+
+      <div class="entry">
+        <h3>“From Idea to GenAI”项目 — AWS 拉丁美洲</h3>
+        <p class="meta"><em>设计并主讲面向管理层和技术人员的生成式 AI 培训工作坊</em> · 2024 – 2025</p>
+        <p>在亚马逊云科技（AWS）位于智利圣地亚哥、墨西哥城、布宜诺斯艾利斯的办公室，以及 Teracloud 位于科尔多瓦的办公室，举办了一系列线下工作坊。内容包括：生成式 AI 基础、用例筛选标准、基于 Amazon Bedrock 的现场演示，以及落地路线图的制定。受众为技术与业务背景混合的人群。</p>
+      </div>
+
+      <div class="entry">
+        <h3>研讨会“Madura tus datos y arrancá proyectos de IA generativa”（提升数据成熟度，启动生成式 AI 项目）</h3>
+        <p class="meta"><em>主讲人</em> · AWS 办公室，布宜诺斯艾利斯 · 2025 年 6 月</p>
+        <p>关于数据成熟度诊断，以及数据湖、数据仓库和湖仓一体架构比较的培训模块，并配有生成式 AI 实操演示。</p>
+      </div>
+
+      <div class="entry">
+        <h3>数据现代化与数据成熟度网络研讨会</h3>
+        <p class="meta"><em>演讲者</em> · 2025 年 3 月</p>
+        <p>以西班牙语进行的公开课，可在 <a href="https://www.youtube.com/watch?v=fgSyNdviVho">YouTube</a> 观看。</p>
+      </div>
+
+      <div class="entry">
+        <h3>技术团队培训</h3>
+        <p class="meta"><em>持续进行</em></p>
+        <p>作为技术顾问工作的一部分，指导数据团队，开展架构与代码评审，并组织内部培训工作坊。</p>
+      </div>
+
+      <div class="entry">
+        <h3>技术社区</h3>
+        <p class="meta"><em>AWS User Group Patagonia 创始人与负责人</em></p>
+        <p>全球最南端的 AWS 用户组：定期组织培训聚会，建设区域技术社区。</p>
+      </div>
+
+      <h2>工作经历</h2>
+
+      <div class="entry">
+        <h3>Teracloud.io — 阿根廷</h3>
+        <p class="meta"><em>首席 AI 官 / AI 负责人（Chief AI Officer / Head of AI）</em> · 2018 – 至今</p>
+        <p>负责公司及其客户群的 AI 愿景、架构与战略。制定生成式 AI 与数据服务组合；主导 AI 落地项目的技术工作；代表公司出席在阿根廷、智利、墨西哥和美国举办的 AWS 活动。D2M2 数据成熟度框架的作者。战略目标：使 Teracloud 成为 AWS 在拉丁美洲首选的 AI 与数据合作伙伴。</p>
+      </div>
+
+      <div class="entry">
+        <h3>AI 与数据独立实践 — 阿根廷</h3>
+        <p class="meta"><em>顾问、作者与演讲者</em> · 至今（兼任）</p>
+        <p>AI 战略与路线图、负责任的 AI 治理、云数据架构、生成式 AI 智能体开发、创新实验室搭建与产品孵化。为初创公司、正在现代化的企业、咨询公司，以及探索在学习场景中采用 AI 的教育机构提供咨询。</p>
+      </div>
+
+      <div class="entry">
+        <h3>Teracloud — 阿根廷</h3>
+        <p class="meta"><em>MLOps 工程师</em> · 2021 – 2024</p>
+        <p>为机器学习、深度学习和人工智能工作负载设计、构建并实施 MLOps 基础设施。通过安全、可复现的基础设施流水线，降低客户 ML 项目的成本，并缩短其上线时间。</p>
+      </div>
+
+      <div class="entry">
+        <h3>Machinalis — 阿根廷</h3>
+        <p class="meta"><em>机器学习解决方案架构经理</em> · 2016 – 2018</p>
+        <p>领导该国最早的机器学习咨询公司之一的机器学习解决方案架构团队。识别细分市场并设计技术切入策略；负责客户决策流程，从首次接触直至方案提交；带领业务分析团队设计机器学习解决方案。</p>
+      </div>
+
+      <div class="entry">
+        <h3>Machinalis — 阿根廷</h3>
+        <p class="meta"><em>项目组合经理</em> · 2012 – 2016</p>
+        <p>管理公司全部项目组合，涉及面向本地区客户的数据科学与机器学习项目。这一时期是我开始专门从事人工智能工作的起点。</p>
+      </div>
+
+      <div class="entry">
+        <h3>Machinalis — 阿根廷</h3>
+        <p class="meta"><em>项目经理</em> · 2011 – 2012</p>
+        <p>以敏捷方式管理一个中型航空航天行业 MRP 系统项目。</p>
+      </div>
+
+      <div class="entry">
+        <h3>Starbene — 阿根廷</h3>
+        <p class="meta"><em>软件流程设计师</em> · 2010 – 2011</p>
+        <p>制定并维护符合国际医疗器械法规的开发流程：ISO 9001、IEC 60601（医用电气设备）、ISO 13485（医疗器械质量管理）、IEC 62304（医疗器械软件生命周期过程）、ISO/IEC 14598（软件产品评价）以及 FDA 软件验证通用原则。</p>
+      </div>
+
+      <div class="entry">
+        <h3>IURL — 阿根廷</h3>
+        <p class="meta"><em>Linux 软件经理</em> · 2007 – 2008</p>
+        <p>主导了后来成为 urli OS 操作系统 6 和 7 版的项目。</p>
+      </div>
+
+      <div class="entry">
+        <h3>AguarA Soft — 阿根廷</h3>
+        <p class="meta"><em>软件设计师与开发者</em> · 2001 – 2005</p>
+        <p>设计并开发企业管理应用。</p>
+      </div>
+
+      <div class="entry">
+        <h3>Xecomm — 阿根廷</h3>
+        <p class="meta"><em>软件设计师</em> · 1997 – 1999</p>
+        <p>为政府机构设计并实现软件。</p>
+      </div>
+
+      <h2>出版物</h2>
+
+      <h3>图书</h3>
+      <div class="refs">
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>The AI Leadership Trap: Firing your Chief AI Officer is just the first step</em>. 第 1 版。General Fernández Oro, Río Negro, Argentina。ASIN B0FQT5LLY5。Kindle 版。
+          <a href="https://www.amazon.com/dp/B0FQT5LLY5">amazon.com/dp/B0FQT5LLY5</a>
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>La trampa del liderazgo en IA: Despedir a su CAIO es solo el primer paso</em>［AI 领导力陷阱：解雇首席 AI 官只是第一步］。第 1 版。General Fernández Oro, Argentina。ISBN 978-631-01-0938-1。Kindle 版。
+          <a href="https://www.amazon.com/dp/B0FNYX3C3D/">amazon.com/dp/B0FNYX3C3D</a>
+        </p>
+      </div>
+
+      <h3>论文与预印本</h3>
+      <div class="refs">
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>From Grunt Work to Governance: Re-skilling Juniors as AI Orchestrators</em>. 预印本，ResearchGate。DOI: <a href="https://doi.org/10.13140/RG.2.2.14680.97281">10.13140/RG.2.2.14680.97281</a>
+        </p>
+        <p><strong>Barroso, C.</strong> (2025). <em>Unlocking Creativity: A Guide to Human-AI Collaboration in Design</em>. 白皮书。</p>
+      </div>
+
+      <h3>随笔与公开写作</h3>
+      <div class="refs">
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>The AI's Pandora's Box: A Technical Report on the New Wave of Corporate Data Exfiltration</em>. 关于影子 AI 与企业数据泄露的技术报告。
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>Civilización o barbarie digital: lo que Sarmiento nos diría sobre la IA y la desigualdad</em>［文明还是数字野蛮：萨米恩托会对我们说些什么——关于 AI 与不平等］。关于 AI、不平等与公众获取知识的随笔。
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2025). <em>AWSomeness 2024: My re:Invent 2024 highlights</em>. 对云端数据与 AI 技术前沿的分析。
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2017). <em>Machine learning en e-commerce: casos de éxito</em>［电商中的机器学习：成功案例］。会议材料，介绍机器学习在拉丁美洲市场的应用案例。
+        </p>
+        <p>
+          <strong>Barroso, C.</strong> (2012). <em>Python para grandes proyectos</em>［面向大型项目的 Python］。会议材料，探讨 Python 与自由软件在大规模工程项目中的适用性。
+        </p>
+      </div>
+
+      <h2>会议与演讲</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>年份</th>
+            <th>活动</th>
+            <th>地点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025</td>
+            <td>AWS GenAI &amp; Data Fast Track — 与拉丁美洲领先金融科技初创公司的交流活动</td>
+            <td>AWS 办公室，美国旧金山</td>
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>“Madura tus datos y arrancá proyectos de IA generativa”（提升数据成熟度，启动生成式 AI 项目）— 主讲人</td>
+            <td>AWS 办公室，阿根廷布宜诺斯艾利斯</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>Tera-Workshop：“Supercharge your startup with GenAI”</td>
+            <td>Teracloud，阿根廷科尔多瓦</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>“From Idea to GenAI”（FITGA）</td>
+            <td>AWS 办公室，阿根廷布宜诺斯艾利斯</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>AWS Community Day Argentina — 演讲者与组织团队成员</td>
+            <td>阿根廷布宜诺斯艾利斯</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>“From Idea to GenAI”（FITGA）</td>
+            <td>AWS 办公室，阿根廷布宜诺斯艾利斯</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>“From Idea to GenAI”（FITGA）</td>
+            <td>AWS 办公室，墨西哥墨西哥城</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>América Digital 2024</td>
+            <td>墨西哥墨西哥城</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>“From Idea to GenAI”（FITGA）</td>
+            <td>AWS 办公室，智利圣地亚哥</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>Cloud eXPerience</td>
+            <td>阿根廷布宜诺斯艾利斯</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>教育背景</h2>
+
+      <div class="entry">
+        <h3>计算机科学学士（Licenciatura）</h3>
+        <p class="meta">Universidad Nacional de San Luis（圣路易斯国立大学），阿根廷</p>
+
+      </div>
+
+      <div class="entry">
+        <h3>管理学研究生专业文凭</h3>
+        <p class="meta">Especialización en Gestión Gerencial · Universidad Católica de Córdoba（科尔多瓦天主教大学），阿根廷</p>
+
+      </div>
+
+      <div class="entry">
+        <h3>信息技术企业管理</h3>
+        <p class="meta">Administrador de Empresas Informáticas · Colegio Universitario IES，阿根廷科尔多瓦 · 2009 – 2012</p>
+
+      </div>
+
+      <h2>认证与继续教育</h2>
+      <ul class="compact">
+        <li><strong>AWS Certified Solutions Architect – Associate</strong> — Amazon Web Services（2020–2023）</li>
+        <li><strong>AWS Certified Database Specialty</strong> — Amazon Web Services（2022）</li>
+        <li><strong>AWS Certified Cloud Practitioner</strong> — Amazon Web Services（2019–2021）</li>
+        <li><strong>AWS Academy Graduate — Machine Learning Foundations</strong> — Amazon Web Services（2022）</li>
+        <li><strong>AWS Well-Architected Proficient</strong> — Amazon Web Services（2021）</li>
+        <li><strong>AWS Solutions Training for Partners: Machine Learning on AWS – Business</strong> — Amazon Partner Network（2019）</li>
+        <li><strong>AWS Technical Professional</strong> 与 <strong>AWS Cloud Practitioner Essentials</strong> — Amazon Partner Network（2018）</li>
+        <li><strong>项目管理培训（PMP）</strong> — Project Management Institute（2012）</li>
+        <li><strong>Scrum Manager</strong>（2010）</li>
+      </ul>
+
+      <h2>荣誉与认可</h2>
+
+      <div class="entry">
+        <h3>AWS User Group Leader</h3>
+        <p class="meta">Amazon Web Services · 2023</p>
+        <p>表彰创办并领导 AWS User Group Patagonia——全球最南端的 AWS 用户组。</p>
+      </div>
+
+      <div class="entry">
+        <h3>AWS Community Builder</h3>
+        <p class="meta">Amazon Web Services · 2021 – 至今</p>
+        <p>AWS 面向技术专家的认可计划，表彰其通过内容创作、培训和演讲对社区作出的持续贡献。</p>
+      </div>
+
+      <h2>技术技能</h2>
+      <div class="skills">
+        <p><strong>AI 与机器学习：</strong>生成式 AI、大语言模型、AI 智能体、Amazon Bedrock、Amazon SageMaker、Anthropic、OpenAI、MLOps、机器学习、深度学习。</p>
+        <p><strong>数据：</strong>数据湖 / 数据仓库 / 湖仓一体架构、Amazon S3、Redshift、AWS Lake Formation、AWS Glue、Amazon DataZone、Apache Iceberg、SQL、数据治理与成熟度。</p>
+        <p><strong>云与基础设施：</strong>AWS（多账户架构、Well-Architected Framework）、Google Cloud、本地部署平台、GNU/Linux。</p>
+        <p><strong>语言与开发：</strong>Python、SQL、C。</p>
+        <p><strong>管理与方法：</strong>项目与项目组合管理、敏捷方法（Scrum）、需求分析、创新管理、机器人流程自动化（RPA）、符合 ISO/IEC/FDA 标准的软件流程。</p>
+      </div>
+
+      <h2>语言</h2>
+      <div class="skills">
+        <p><strong>西班牙语</strong> — 母语。</p>
+        <p><strong>英语</strong> — 完全胜任工作。以英语开展专业与教学活动，包括在美国、墨西哥和智利的演讲与客户工作。</p>
+      </div>
+
+      <h2>其他兴趣</h2>
+      <p>音乐：唱歌、古典吉他和贝斯。在安第斯山脉徒步，以及壶铃训练。</p>
+
+      <footer>职业推荐人，以及学历、认证和出版物的证明材料，可应要求提供。</footer>
+    </main>
+  </body>
+</html>
