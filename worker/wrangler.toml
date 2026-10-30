@@ -1,0 +1,10 @@
+name = "substack-relay"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["0 */6 * * *"] # cada 6 horas
+
+[[kv_namespaces]]
+binding = "SUBSTACK"
+id = "0f3782ef69b649cd887c62a2f93f5d19"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Arma la lista de /writing/ juntando Substack (API, con RSS de respaldo), Medium, Blogger y los posts de writing/manual.json.
+"""Arma la lista de /writing/ juntando Substack (via relay en Cloudflare, con API/RSS de respaldo), Medium, Blogger y los posts de writing/manual.json.
 
 Uso: python3 scripts/update_writing.py   (desde la raiz del repo)
 
@@ -33,6 +33,8 @@ FEEDS = [
 ]
 ATOM = "{http://www.w3.org/2005/Atom}"
 SNIPPET = 180
+# Worker de Cloudflare (worker/) que baja los posts de Substack y los sirve; URL publica, no es un secreto.
+SUBSTACK_RELAY = "https://substack-relay.cjbarroso.workers.dev/"
 
 
 def fetch(url):
@@ -75,29 +77,41 @@ def parse_atom(data, source):
     return items
 
 
+def substack_items(posts, source):
+    items = []
+    for p in posts:
+        if not p.get("canonical_url") or not p.get("post_date"):
+            continue
+        items.append({"title": (p.get("title") or "").strip(), "url": p["canonical_url"],
+                      "date": p["post_date"][:10], "source": source,
+                      "summary": snippet(p.get("subtitle") or p.get("description"))})
+    return items
+
+
 def parse_substack_api(base, source):
     """Pagina /api/v1/archive hasta que no haya mas posts."""
-    items, offset, page = [], 0, 12
+    posts, offset, page = [], 0, 12
     while True:
         data = json.loads(fetch(f"{base}/api/v1/archive?sort=new&limit={page}&offset={offset}"))
-        for p in data:
-            if not p.get("canonical_url") or not p.get("post_date"):
-                continue
-            items.append({"title": (p.get("title") or "").strip(), "url": p["canonical_url"],
-                          "date": p["post_date"][:10], "source": source,
-                          "summary": snippet(p.get("subtitle") or p.get("description"))})
+        posts += data
         if len(data) < page:
-            return items
+            return substack_items(posts, source)
         offset += page
 
 
 def fetch_source(source, url, kind):
     if kind == "substack":
-        try:
-            return parse_substack_api(url, source)
-        except Exception as exc:  # noqa: BLE001 - se intenta el RSS antes de rendirse
-            print(f"{source}: la API fallo ({exc}), pruebo el RSS", file=sys.stderr)
-            return parse_rss(fetch(url + "/feed"), source)
+        # Substack bloquea a GitHub Actions: primero el relay (Cloudflare Worker), despues directo.
+        attempts = [("relay", lambda: substack_items(json.loads(fetch(SUBSTACK_RELAY))["posts"], source)),
+                    ("API", lambda: parse_substack_api(url, source)),
+                    ("RSS", lambda: parse_rss(fetch(url + "/feed"), source))]
+        for i, (name, run) in enumerate(attempts):
+            try:
+                return run()
+            except Exception as exc:  # noqa: BLE001 - se prueba la siguiente via antes de rendirse
+                if i == len(attempts) - 1:
+                    raise
+                print(f"{source}: {name} fallo ({exc}), pruebo {attempts[i + 1][0]}", file=sys.stderr)
     data = fetch(url)
     return parse_rss(data, source) if kind == "rss" else parse_atom(data, source)
 
