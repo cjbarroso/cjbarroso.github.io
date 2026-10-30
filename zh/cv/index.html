@@ -25,7 +25,7 @@
     <script>
       try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
     </script>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=67699fc7" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EV4GS2396"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -49,7 +49,7 @@
           <li><a href="/zh/hire/">合作</a></li>
           <li><a href="/zh/cv/" aria-current="page">简历</a></li>
         </ul>
-        <div class="lang-switch" role="group" aria-label="语言"><a href="/cv/" hreflang="en" lang="en" data-lang="en" title="View this site in English">EN</a><a href="/es/cv/" hreflang="es" lang="es" data-lang="es" title="Ver este sitio en español">ES</a><span lang="zh-Hans" aria-current="true">中文</span></div>
+        <details class="lang-menu"><summary aria-label="语言: 中文"><img class="flag" src="/assets/img/flags/cn.svg" alt="" width="20" height="14" /><span>中文</span></summary><div class="lang-list" role="group" aria-label="语言"><a class="lang-opt" href="/cv/" hreflang="en" lang="en" data-lang="en" title="View this site in English"><img class="flag" src="/assets/img/flags/us.svg" alt="" width="20" height="14" />English</a><a class="lang-opt" href="/es/cv/" hreflang="es" lang="es" data-lang="es" title="Ver este sitio en español"><img class="flag" src="/assets/img/flags/ar.svg" alt="" width="20" height="14" />Español</a><span class="lang-opt" lang="zh" aria-current="true"><img class="flag" src="/assets/img/flags/cn.svg" alt="" width="20" height="14" />中文</span></div></details>
         <button class="icon-btn" id="theme-btn" type="button" aria-label="切换浅色或深色主题">浅色 / 深色</button>
         <button class="icon-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">菜单</button>
       </div>
@@ -83,6 +83,6 @@
         <span>&copy; 2026 Carlos J. Barroso</span>
       </div>
     </footer>
-    <script src="/assets/js/site.js" defer></script>
+    <script src="/assets/js/site.js?v=2caeace9" defer></script>
   </body>
 </html>

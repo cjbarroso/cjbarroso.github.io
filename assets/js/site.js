@@ -17,11 +17,17 @@
     });
   }
 
-  // Idioma: el selector guarda la eleccion para que la deteccion automatica (script del <head>) no la pise
-  var langLink = document.querySelector(".lang-switch a");
-  if (langLink) {
-    langLink.addEventListener("click", function () {
-      try { localStorage.setItem("lang", langLink.getAttribute("data-lang")); } catch (e) {}
+  // Idioma: el menu guarda la eleccion para que la deteccion automatica (script del <head>) no la pise
+  var langMenu = document.querySelector(".lang-menu");
+  if (langMenu) {
+    langMenu.querySelectorAll("a[data-lang]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        try { localStorage.setItem("lang", link.getAttribute("data-lang")); } catch (e) {}
+      });
+    });
+    document.addEventListener("click", function (e) { if (!langMenu.contains(e.target)) langMenu.open = false; });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && langMenu.open) { langMenu.open = false; langMenu.querySelector("summary").focus(); }
     });
   }
 
