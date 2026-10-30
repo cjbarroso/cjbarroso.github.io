@@ -17,7 +17,11 @@ SKIP = {"node_modules", "_design", "worker", ".git"}
 
 
 def digest(rel):
-    return hashlib.sha256((ROOT / rel.lstrip("/")).read_bytes()).hexdigest()[:8]
+    path = ROOT / rel.lstrip("/")
+    if not path.exists():
+        print(f"  WARNING: asset not found, skipping version for {rel}")
+        return "00000000"
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:8]
 
 
 def main():
