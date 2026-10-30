@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Arma la lista de /writing/ juntando Medium, Blogger, Substack y los posts de writing/manual.json.
+"""Arma la lista de /writing/ juntando Substack (API, con RSS de respaldo), Medium, Blogger y los posts de writing/manual.json.
 
 Uso: python3 scripts/update_writing.py   (desde la raiz del repo)
 
@@ -11,6 +11,7 @@ writing/manual.json con title, url, date (AAAA-MM-DD) y source.
 """
 import html
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -25,7 +26,8 @@ MANUAL = ROOT / "writing" / "manual.json"
 CACHE = ROOT / "writing" / "feeds.json"
 
 FEEDS = [
-    ("Substack", "https://cjbarroso.substack.com/feed", "rss"),
+    # Substack bloquea el RSS (403) desde los servidores de GitHub: se prueba primero su API.
+    ("Substack", "https://cjbarroso.substack.com", "substack"),
     ("Medium", "https://medium.com/@carlosjosebarroso/feed", "rss"),
     ("Blogger", "https://accesibilia.blogspot.com/feeds/posts/default", "atom"),
 ]
@@ -73,6 +75,39 @@ def parse_atom(data, source):
     return items
 
 
+def parse_substack_api(base, source):
+    """Pagina /api/v1/archive hasta que no haya mas posts."""
+    items, offset, page = [], 0, 12
+    while True:
+        data = json.loads(fetch(f"{base}/api/v1/archive?sort=new&limit={page}&offset={offset}"))
+        for p in data:
+            if not p.get("canonical_url") or not p.get("post_date"):
+                continue
+            items.append({"title": (p.get("title") or "").strip(), "url": p["canonical_url"],
+                          "date": p["post_date"][:10], "source": source,
+                          "summary": snippet(p.get("subtitle") or p.get("description"))})
+        if len(data) < page:
+            return items
+        offset += page
+
+
+def fetch_source(source, url, kind):
+    if kind == "substack":
+        try:
+            return parse_substack_api(url, source)
+        except Exception as exc:  # noqa: BLE001 - se intenta el RSS antes de rendirse
+            print(f"{source}: la API fallo ({exc}), pruebo el RSS", file=sys.stderr)
+            return parse_rss(fetch(url + "/feed"), source)
+    data = fetch(url)
+    return parse_rss(data, source) if kind == "rss" else parse_atom(data, source)
+
+
+def warn(msg):
+    print(msg, file=sys.stderr)
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::warning title=Writing::{msg}")  # aparece como aviso amarillo en el run
+
+
 def load_json(path, default):
     try:
         return json.loads(path.read_text())
@@ -85,15 +120,14 @@ def collect():
     items = []
     for source, url, kind in FEEDS:
         try:
-            data = fetch(url)
-            got = parse_rss(data, source) if kind == "rss" else parse_atom(data, source)
+            got = fetch_source(source, url, kind)
             if not got:
                 raise ValueError("feed sin items")
             cache[source] = got
             print(f"{source}: {len(got)} posts")
         except Exception as exc:  # noqa: BLE001 - un feed caido no debe frenar el resto
             got = cache.get(source, [])
-            print(f"{source}: fallo ({exc}), uso {len(got)} posts de la ultima vez", file=sys.stderr)
+            warn(f"{source}: fallo ({exc}); uso {len(got)} posts de la ultima vez, la lista puede estar desactualizada")
         items += got
     CACHE.write_text(json.dumps(cache, indent=2, ensure_ascii=False) + "\n")
     manual = load_json(MANUAL, [])
