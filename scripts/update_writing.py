@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Arma la lista de /writing/ juntando Medium, Blogger, Substack y los posts de writing/manual.json.
+"""Arma la lista de /writing/ juntando Substack (via relay en Cloudflare, con API/RSS de respaldo), Medium, Blogger y los posts de writing/manual.json.
 
 Uso: python3 scripts/update_writing.py   (desde la raiz del repo)
 
@@ -11,11 +11,12 @@ writing/manual.json con title, url, date (AAAA-MM-DD) y source.
 """
 import html
 import json
+import os
 import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -25,12 +26,16 @@ MANUAL = ROOT / "writing" / "manual.json"
 CACHE = ROOT / "writing" / "feeds.json"
 
 FEEDS = [
-    ("Substack", "https://cjbarroso.substack.com/feed", "rss"),
+    # Substack bloquea el RSS (403) desde los servidores de GitHub: se prueba primero su API.
+    ("Substack", "https://cjbarroso.substack.com", "substack"),
     ("Medium", "https://medium.com/@carlosjosebarroso/feed", "rss"),
     ("Blogger", "https://accesibilia.blogspot.com/feeds/posts/default", "atom"),
 ]
 ATOM = "{http://www.w3.org/2005/Atom}"
 SNIPPET = 180
+# Worker de Cloudflare (worker/) que baja los posts de Substack y los sirve; URL publica, no es un secreto.
+SUBSTACK_RELAY = "https://substack-relay.cjbarroso.workers.dev/"
+RELAY_MAX_AGE = timedelta(hours=48)  # el cron corre cada 6 horas
 
 
 def fetch(url):
@@ -73,6 +78,62 @@ def parse_atom(data, source):
     return items
 
 
+def substack_items(posts, source):
+    items = []
+    for p in posts:
+        if not p.get("canonical_url") or not p.get("post_date"):
+            continue
+        items.append({"title": (p.get("title") or "").strip(), "url": p["canonical_url"],
+                      "date": p["post_date"][:10], "source": source,
+                      "summary": snippet(p.get("subtitle") or p.get("description"))})
+    return items
+
+
+def parse_substack_api(base, source):
+    """Pagina /api/v1/archive hasta que no haya mas posts."""
+    posts, offset, page = [], 0, 12
+    while True:
+        data = json.loads(fetch(f"{base}/api/v1/archive?sort=new&limit={page}&offset={offset}"))
+        posts += data
+        if len(data) < page:
+            return substack_items(posts, source)
+        offset += page
+
+
+def fetch_relay(source):
+    """Lee el relay de Cloudflare y avisa si el cron del Worker lleva dias sin actualizarlo."""
+    data = json.loads(fetch(SUBSTACK_RELAY))
+    updated = datetime.fromisoformat(data["updated"].replace("Z", "+00:00"))
+    age = datetime.now(timezone.utc) - updated
+    if age > RELAY_MAX_AGE:
+        warn(f"{source}: el relay de Cloudflare no se actualiza hace {age.days} dias ({data['updated']}); "
+             "revisar el cron del Worker (worker/), la lista puede estar desactualizada")
+    return substack_items(data["posts"], source)
+
+
+def fetch_source(source, url, kind):
+    if kind == "substack":
+        # Substack bloquea a GitHub Actions: primero el relay (Cloudflare Worker), despues directo.
+        attempts = [("relay", lambda: fetch_relay(source)),
+                    ("API", lambda: parse_substack_api(url, source)),
+                    ("RSS", lambda: parse_rss(fetch(url + "/feed"), source))]
+        for i, (name, run) in enumerate(attempts):
+            try:
+                return run()
+            except Exception as exc:  # noqa: BLE001 - se prueba la siguiente via antes de rendirse
+                if i == len(attempts) - 1:
+                    raise
+                print(f"{source}: {name} fallo ({exc}), pruebo {attempts[i + 1][0]}", file=sys.stderr)
+    data = fetch(url)
+    return parse_rss(data, source) if kind == "rss" else parse_atom(data, source)
+
+
+def warn(msg):
+    print(msg, file=sys.stderr)
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::warning title=Writing::{msg}")  # aparece como aviso amarillo en el run
+
+
 def load_json(path, default):
     try:
         return json.loads(path.read_text())
@@ -85,15 +146,14 @@ def collect():
     items = []
     for source, url, kind in FEEDS:
         try:
-            data = fetch(url)
-            got = parse_rss(data, source) if kind == "rss" else parse_atom(data, source)
+            got = fetch_source(source, url, kind)
             if not got:
                 raise ValueError("feed sin items")
             cache[source] = got
             print(f"{source}: {len(got)} posts")
         except Exception as exc:  # noqa: BLE001 - un feed caido no debe frenar el resto
             got = cache.get(source, [])
-            print(f"{source}: fallo ({exc}), uso {len(got)} posts de la ultima vez", file=sys.stderr)
+            warn(f"{source}: fallo ({exc}); uso {len(got)} posts de la ultima vez, la lista puede estar desactualizada")
         items += got
     CACHE.write_text(json.dumps(cache, indent=2, ensure_ascii=False) + "\n")
     manual = load_json(MANUAL, [])
