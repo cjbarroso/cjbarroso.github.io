@@ -6,10 +6,28 @@
     <title>Writing — Carlos J. Barroso</title>
     <meta name="description" content="Articles and essays from Substack, Medium, Blogger and Teracloud, in one place." />
     <link rel="canonical" href="https://cjbarroso.com/writing/" />
+    <link rel="alternate" hreflang="en" href="https://cjbarroso.com/writing/" />
+    <link rel="alternate" hreflang="es" href="https://cjbarroso.com/es/writing/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://cjbarroso.com/zh/writing/" />
+    <link rel="alternate" hreflang="x-default" href="https://cjbarroso.com/writing/" />
+    <script>
+      (function () {
+        var l = null; try { l = localStorage.getItem("lang"); } catch (e) {}
+        // Sin eleccion guardada se usa el idioma del navegador, salvo que el visitante venga de otra pagina del sitio
+        // (por ejemplo al tocar "EN"): asi el selector funciona aunque localStorage este bloqueado.
+        var internal = false; try { internal = new URL(document.referrer).origin === location.origin; } catch (e) {}
+        var want = l || (internal ? "" : (navigator.language || "").slice(0, 2).toLowerCase());
+        var a = /^[a-z]{2}$/.test(want) && want !== "en" && document.querySelector('link[rel="alternate"][hreflang^="' + want + '"]');
+        if (a) location.replace(new URL(a.href).pathname + location.search + location.hash);
+      })();
+    </script>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Carlos J. Barroso" />
     <meta property="og:title" content="Writing — Carlos J. Barroso" />
     <meta property="og:description" content="Articles and essays from Substack, Medium, Blogger and Teracloud, in one place." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_AR" />
+    <meta property="og:locale:alternate" content="zh_CN" />
     <meta property="og:url" content="https://cjbarroso.com/writing/" />
     <meta property="og:image" content="https://cjbarroso.com/assets/img/prof_pic.jpg" />
     <meta name="twitter:card" content="summary" />
@@ -42,6 +60,7 @@
           <li><a href="/hire/">Hire me</a></li>
           <li><a href="/cv/">CV</a></li>
         </ul>
+        <div class="lang-switch" role="group" aria-label="Language"><span lang="en" aria-current="true">EN</span><a href="/es/writing/" hreflang="es" lang="es" data-lang="es" title="Ver este sitio en español">ES</a><a href="/zh/writing/" hreflang="zh" lang="zh" data-lang="zh" title="查看中文版">中文</a></div>
         <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark theme">Light / Dark</button>
         <button class="icon-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
       </div>

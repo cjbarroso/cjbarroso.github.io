@@ -4,7 +4,7 @@
 Uso: python3 scripts/update_writing.py   (desde la raiz del repo)
 
 Solo usa la libreria estandar. Reescribe lo que hay entre los marcadores
-<!-- writing:start --> y <!-- writing:end --> en writing/index.html.
+<!-- writing:start --> y <!-- writing:end --> en writing/index.html, es/writing/index.html y zh/writing/index.html.
 Si un feed falla, usa lo ultimo que se bajo bien (writing/feeds.json).
 Para sumar un post que no tiene feed (LinkedIn, Teracloud, otros), agregarlo a
 writing/manual.json con title, url, date (AAAA-MM-DD) y source.
@@ -21,7 +21,8 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGE = ROOT / "writing" / "index.html"
+PAGES = [(ROOT / "writing" / "index.html", "en"), (ROOT / "es" / "writing" / "index.html", "es"),
+         (ROOT / "zh" / "writing" / "index.html", "zh")]
 MANUAL = ROOT / "writing" / "manual.json"
 CACHE = ROOT / "writing" / "feeds.json"
 
@@ -31,6 +32,7 @@ FEEDS = [
     ("Medium", "https://medium.com/@carlosjosebarroso/feed", "rss"),
     ("Blogger", "https://accesibilia.blogspot.com/feeds/posts/default", "atom"),
 ]
+MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 ATOM = "{http://www.w3.org/2005/Atom}"
 SNIPPET = 180
 # Worker de Cloudflare (worker/) que baja los posts de Substack y los sirve; URL publica, no es un secreto.
@@ -94,6 +96,8 @@ def parse_substack_api(base, source):
     posts, offset, page = [], 0, 12
     while True:
         data = json.loads(fetch(f"{base}/api/v1/archive?sort=new&limit={page}&offset={offset}"))
+        if not isinstance(data, list):
+            raise ValueError(f"respuesta inesperada de la API de Substack (tipo {type(data).__name__})")
         posts += data
         if len(data) < page:
             return substack_items(posts, source)
@@ -172,9 +176,10 @@ def dedupe(items):
     return out
 
 
-def render(items):
+def render(items, lang="en"):
+    es, zh = lang == "es", lang == "zh"
     sources = sorted({i["source"] for i in items})
-    chips = ['<button class="chip active" type="button" data-source="all">All</button>']
+    chips = ['<button class="chip active" type="button" data-source="all">' + ("Todos" if es else "全部" if zh else "All") + '</button>']
     chips += [f'<button class="chip" type="button" data-source="{html.escape(s)}">{html.escape(s)}</button>' for s in sources]
     rows, year = [], None
     for it in items:
@@ -182,27 +187,33 @@ def render(items):
         if y != year:
             year = y
             rows.append(f'        <h3 class="year">{y}</h3>')
-        when = datetime.strptime(it["date"], "%Y-%m-%d").strftime("%b %d, %Y")
+        d = datetime.strptime(it["date"], "%Y-%m-%d")
+        when = (f"{d.day:02d} {MESES[d.month - 1]} {d.year}" if es
+                else f"{d.year}年{d.month}月{d.day}日" if zh else d.strftime("%b %d, %Y"))
         summary = f'\n          <p>{html.escape(it["summary"])}</p>' if it.get("summary") else ""
         rows.append(
             f'        <article class="post" data-source="{html.escape(it["source"])}">\n'
             f'          <div class="meta"><span class="src">{html.escape(it["source"])}</span> · {when}</div>\n'
             f'          <h4><a href="{html.escape(it["url"])}" rel="noopener">{html.escape(it["title"])}</a></h4>{summary}\n'
             f'        </article>')
-    return ("\n        <div class=\"chips\" role=\"group\" aria-label=\"Filter by source\">\n          "
+    return ("\n        <div class=\"chips\" role=\"group\" aria-label=\"" + ("Filtrar por fuente" if es else "按来源筛选" if zh else "Filter by source") + "\">\n          "
             + "\n          ".join(chips) + "\n        </div>\n        <div class=\"posts\">\n"
             + "\n".join(rows) + "\n        </div>\n        ")
 
 
 def main():
     items = dedupe(collect())
-    page = PAGE.read_text()
-    new, n = re.subn(r"(<!-- writing:start -->).*?(<!-- writing:end -->)",
-                     lambda m: m.group(1) + render(items) + m.group(2), page, flags=re.S)
-    if n != 1:
-        sys.exit("No encontre los marcadores writing:start / writing:end en writing/index.html")
-    PAGE.write_text(new)
-    print(f"writing/index.html: {len(items)} posts")
+    # Se renderizan todas las paginas antes de escribir ninguna, para no dejar una actualizada y otra no.
+    rendered = []
+    for path, lang in PAGES:
+        new, n = re.subn(r"(<!-- writing:start -->).*?(<!-- writing:end -->)",
+                         lambda m: m.group(1) + render(items, lang) + m.group(2), path.read_text(), flags=re.S)
+        if n != 1:
+            sys.exit(f"No encontre los marcadores writing:start / writing:end en {path.relative_to(ROOT)}")
+        rendered.append((path, new))
+    for path, new in rendered:
+        path.write_text(new)
+        print(f"{path.relative_to(ROOT)}: {len(items)} posts")
 
 
 if __name__ == "__main__":
