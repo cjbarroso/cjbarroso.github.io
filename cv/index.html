@@ -6,10 +6,22 @@
     <title>CV — Carlos J. Barroso</title>
     <meta name="description" content="Curriculum vitae of Carlos José Barroso, in English and Spanish." />
     <link rel="canonical" href="https://cjbarroso.com/cv/" />
+    <link rel="alternate" hreflang="en" href="https://cjbarroso.com/cv/" />
+    <link rel="alternate" hreflang="es" href="https://cjbarroso.com/es/cv/" />
+    <link rel="alternate" hreflang="x-default" href="https://cjbarroso.com/cv/" />
+    <script>
+      (function () {
+        var l = null; try { l = localStorage.getItem("lang"); } catch (e) {}
+        var a = document.querySelector('link[rel="alternate"][hreflang="es"]');
+        if (a && (l ? l === "es" : /^es/i.test(navigator.language || ""))) location.replace(new URL(a.href).pathname + location.hash);
+      })();
+    </script>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Carlos J. Barroso" />
     <meta property="og:title" content="CV — Carlos J. Barroso" />
     <meta property="og:description" content="Curriculum vitae of Carlos José Barroso, in English and Spanish." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_AR" />
     <meta property="og:url" content="https://cjbarroso.com/cv/" />
     <meta property="og:image" content="https://cjbarroso.com/assets/img/prof_pic.jpg" />
     <meta name="twitter:card" content="summary" />
@@ -42,6 +54,7 @@
           <li><a href="/hire/">Hire me</a></li>
           <li><a href="/cv/" aria-current="page">CV</a></li>
         </ul>
+        <a class="icon-btn lang-btn" href="/es/cv/" hreflang="es" lang="es" data-lang="es" title="Ver este sitio en español">ES</a>
         <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark theme">Light / Dark</button>
         <button class="icon-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
       </div>

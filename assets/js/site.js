@@ -17,6 +17,14 @@
     });
   }
 
+  // Idioma: el selector guarda la eleccion para que la deteccion automatica (script del <head>) no la pise
+  var langBtn = document.querySelector(".lang-btn");
+  if (langBtn) {
+    langBtn.addEventListener("click", function () {
+      try { localStorage.setItem("lang", langBtn.getAttribute("data-lang")); } catch (e) {}
+    });
+  }
+
   if (menuBtn && menu) {
     menuBtn.addEventListener("click", function () {
       var open = menu.classList.toggle("open");

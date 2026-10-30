@@ -66,7 +66,8 @@ nav.top ul a { color: var(--fg); padding-bottom: 2px; }
 nav.top ul a:hover { text-decoration: none; color: var(--terracotta); }
 nav.top ul a[aria-current="page"] { color: var(--terracotta); border-bottom: 2px solid var(--terracotta); }
 .icon-btn { background: none; border: 1px solid var(--line); color: var(--fg); border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; font-size: 13px; }
-.icon-btn:hover { border-color: var(--terracotta); }
+.icon-btn:hover { border-color: var(--terracotta); text-decoration: none; }
+.lang-btn { font-weight: 600; letter-spacing: .04em; }
 #menu-btn { display: none; }
 
 /* Hero */
