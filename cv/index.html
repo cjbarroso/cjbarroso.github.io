@@ -13,9 +13,12 @@
     <script>
       (function () {
         var l = null; try { l = localStorage.getItem("lang"); } catch (e) {}
-        var want = l || (navigator.language || "").slice(0, 2).toLowerCase();
+        // Sin eleccion guardada se usa el idioma del navegador, salvo que el visitante venga de otra pagina del sitio
+        // (por ejemplo al tocar "EN"): asi el selector funciona aunque localStorage este bloqueado.
+        var internal = false; try { internal = new URL(document.referrer).origin === location.origin; } catch (e) {}
+        var want = l || (internal ? "" : (navigator.language || "").slice(0, 2).toLowerCase());
         var a = /^[a-z]{2}$/.test(want) && want !== "en" && document.querySelector('link[rel="alternate"][hreflang^="' + want + '"]');
-        if (a) location.replace(new URL(a.href).pathname + location.hash);
+        if (a) location.replace(new URL(a.href).pathname + location.search + location.hash);
       })();
     </script>
     <meta property="og:type" content="website" />

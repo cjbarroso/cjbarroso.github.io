@@ -96,6 +96,8 @@ def parse_substack_api(base, source):
     posts, offset, page = [], 0, 12
     while True:
         data = json.loads(fetch(f"{base}/api/v1/archive?sort=new&limit={page}&offset={offset}"))
+        if not isinstance(data, list):
+            raise ValueError(f"respuesta inesperada de la API de Substack (tipo {type(data).__name__})")
         posts += data
         if len(data) < page:
             return substack_items(posts, source)
@@ -201,12 +203,15 @@ def render(items, lang="en"):
 
 def main():
     items = dedupe(collect())
+    # Se renderizan todas las paginas antes de escribir ninguna, para no dejar una actualizada y otra no.
+    rendered = []
     for path, lang in PAGES:
-        page = path.read_text()
         new, n = re.subn(r"(<!-- writing:start -->).*?(<!-- writing:end -->)",
-                         lambda m: m.group(1) + render(items, lang) + m.group(2), page, flags=re.S)
+                         lambda m: m.group(1) + render(items, lang) + m.group(2), path.read_text(), flags=re.S)
         if n != 1:
             sys.exit(f"No encontre los marcadores writing:start / writing:end en {path.relative_to(ROOT)}")
+        rendered.append((path, new))
+    for path, new in rendered:
         path.write_text(new)
         print(f"{path.relative_to(ROOT)}: {len(items)} posts")
 
