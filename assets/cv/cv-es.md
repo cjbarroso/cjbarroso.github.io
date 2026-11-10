@@ -10,7 +10,7 @@ General Fernández Oro, Río Negro, Argentina · carlos@cjbarroso.com · +54 9 3
 
 ## Perfil profesional
 
-Especialista en inteligencia artificial con más de veinte años de trayectoria en tecnología y más de trece años dedicados específicamente a IA y aprendizaje automático (desde 2012). **Chief AI Officer de Teracloud**, donde defino la visión, la arquitectura y la estrategia de adopción de IA para la compañía y sus clientes; en paralelo desarrollo una **práctica independiente de consultoría, autoría y divulgación** en IA y datos.
+Especialista en inteligencia artificial con más de veinte años de trayectoria en tecnología y más de trece años dedicados específicamente a IA y aprendizaje automático (desde 2012). **CTO de Neurapraxis**, compañía de IA y tecnología para la salud, donde lidero la estrategia y la arquitectura tecnológica; antes fui Chief AI Officer de Teracloud (2022 – 2025), donde definí la visión y la estrategia de adopción de IA de la compañía y sus clientes; en paralelo desarrollo una **práctica independiente de consultoría, autoría y divulgación** en IA y datos.
 
 Mi trabajo abarca tanto la construcción técnica —MLOps, arquitecturas de datos, sistemas de IA generativa y agentes en producción— como la formación y la divulgación de esos temas ante audiencias técnicas y no técnicas. Autor del **D2M2 (Datera Data Maturity Model)**, marco de evaluación de madurez de datos utilizado por Teracloud y otras organizaciones, y de dos libros sobre liderazgo en IA publicados en 2025, en español e inglés.
 
@@ -71,9 +71,15 @@ El grupo de usuarios de AWS más austral del mundo: organización de encuentros 
 
 ## Experiencia profesional
 
+### Neurapraxis — neurapraxis.com
+
+_CTO (Chief Technology Officer) · 2025 – actualidad_
+
+Responsable de la estrategia y la arquitectura tecnológica de una compañía de IA y tecnología para la salud, bajo la premisa de "Salud Aumentada": herramientas que ayudan a profesionales e instituciones de salud a aprovechar el conocimiento, comprender la información y mejorar sus procesos, con el criterio humano en el centro. La oferta se organiza en tres frentes: conocimiento, organizaciones (procesos y auditoría) y personas (capacidades de los equipos).
+
 ### Teracloud.io — Argentina
 
-_Chief AI Officer / Head of AI · 2018 – actualidad_
+_Chief AI Officer / Head of AI · 2022 – 2025_
 
 Responsable de la visión, la arquitectura y la estrategia de IA de la compañía y de su cartera de clientes. Definición del portafolio de servicios de IA generativa y datos; liderazgo técnico de iniciativas de adopción de IA; representación pública de la compañía en foros de AWS en Argentina, Chile, México y Estados Unidos. Autoría del marco D2M2 de madurez de datos. Objetivo estratégico: posicionar a Teracloud como principal socio de IA y datos de AWS en Latinoamérica.
 
@@ -85,7 +91,7 @@ Estrategia y hojas de ruta de IA, gobernanza de IA responsable, arquitectura de 
 
 ### Teracloud — Argentina
 
-_MLOps Engineer · 2021 – 2024_
+_MLOps Engineer · 2021 – 2022_
 
 Diseño, arquitectura e implementación de infraestructura MLOps para cargas de trabajo de machine learning, deep learning e inteligencia artificial. Reducción de costos y del tiempo de puesta en producción de iniciativas de ML de clientes mediante pipelines de infraestructura seguros y reproducibles.
 

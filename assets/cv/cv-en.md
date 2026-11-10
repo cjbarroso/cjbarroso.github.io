@@ -10,7 +10,7 @@ General Fernández Oro, Río Negro, Argentina · carlos@cjbarroso.com · +54 9 3
 
 ## Professional profile
 
-Artificial intelligence specialist with over twenty years in technology and more than thirteen dedicated specifically to AI and machine learning (since 2012). **Chief AI Officer at Teracloud**, where I set the vision, architecture and AI adoption strategy for the company and its clients; alongside that role I maintain an **independent practice in consulting, writing and public speaking** on AI and data.
+Artificial intelligence specialist with over twenty years in technology and more than thirteen dedicated specifically to AI and machine learning (since 2012). **CTO at Neurapraxis**, an AI and technology company for health, where I lead technology strategy and architecture; previously Chief AI Officer at Teracloud (2022 – 2025), where I set the vision and AI adoption strategy for the company and its clients; alongside that role I maintain an **independent practice in consulting, writing and public speaking** on AI and data.
 
 My work spans both technical construction —MLOps, data architectures, generative AI systems and agents in production— and the teaching and communication of those subjects to technical and non-technical audiences. Author of the **D2M2 (Datera Data Maturity Model)**, a data maturity assessment framework used by Teracloud and other organizations, and of two books on AI leadership published in 2025, in Spanish and English.
 
@@ -71,9 +71,15 @@ The southernmost AWS user group in the world: organization of regular training m
 
 ## Professional experience
 
+### Neurapraxis — neurapraxis.com
+
+_CTO (Chief Technology Officer) · 2025 – present_
+
+Responsible for technology strategy and architecture at an AI and technology company for health, built on the premise of "Salud Aumentada" (augmented health): tools that help health professionals and institutions make use of knowledge, understand information and improve their processes, keeping human judgment at the center. The offer is organized in three areas: knowledge, organizations (processes and auditing) and people (team capabilities).
+
 ### Teracloud.io — Argentina
 
-_Chief AI Officer / Head of AI · 2018 – present_
+_Chief AI Officer / Head of AI · 2022 – 2025_
 
 Responsible for the AI vision, architecture and strategy of the company and its client portfolio. Definition of the generative AI and data service portfolio; technical leadership of AI adoption initiatives; public representation of the company at AWS forums in Argentina, Chile, Mexico and the United States. Author of the D2M2 data maturity framework. Strategic goal: position Teracloud as AWS's leading AI and data partner in Latin America.
 
@@ -85,7 +91,7 @@ AI strategy and roadmaps, responsible AI governance, cloud data architecture, de
 
 ### Teracloud — Argentina
 
-_MLOps Engineer · 2021 – 2024_
+_MLOps Engineer · 2021 – 2022_
 
 Design, architecture and implementation of MLOps infrastructure for machine learning, deep learning and artificial intelligence workloads. Reduced costs and time to production for clients' ML initiatives through secure, reproducible infrastructure pipelines.
 
