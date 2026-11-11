@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Agrega ?v=<hash> a las referencias a /assets/css/*.css y /assets/js/*.js de todas las paginas.
+"""Agrega ?v=<hash> a las referencias a /assets/css/*.css, /assets/js/*.js y a los mapas
+/assets/img/map-americas-*.svg de todas las paginas.
 
-Uso: python3 scripts/version_assets.py   (desde la raiz del repo, despues de tocar el CSS o el JS)
+Uso: python3 scripts/version_assets.py   (desde la raiz del repo, despues de tocar el CSS, el JS o los mapas)
 
 GitHub Pages deja los assets en cache hasta 4 horas, asi que un cambio de CSS/JS puede verse
 con el HTML nuevo y el estilo viejo. El hash cambia solo cuando cambia el archivo, por lo que
@@ -12,7 +13,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-REF = re.compile(r'(/assets/(?:css|js)/[\w.-]+\.(?:css|js))(?:\?v=[0-9a-f]+)?(?=")')
+REF = re.compile(r'(/assets/(?:(?:css|js)/[\w.-]+\.(?:css|js)|img/map-americas-[\w-]+\.svg))(?:\?v=[0-9a-f]+)?(?=")')
 SKIP = {"node_modules", "_design", "worker", ".git"}
 
 
