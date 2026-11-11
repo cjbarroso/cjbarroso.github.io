@@ -5,7 +5,7 @@ compatibility_date = "2026-10-01"
 # Crear con: npx wrangler kv namespace create CONTACTO  y pegar el id aca
 [[kv_namespaces]]
 binding = "CONTACTO"
-id = "REEMPLAZAR_CON_EL_ID_DEL_KV"
+id = "864a40176f7c48dfb4215ee7fa8e9d7f"
 
 [vars]
 ALLOWED_ORIGINS = "https://cjbarroso.com,https://www.cjbarroso.com"
