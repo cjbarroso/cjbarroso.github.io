@@ -223,6 +223,9 @@ h2.subhead { font-size: 22px; margin: 0 0 14px; }
 .subscribe h3 { margin: 0 0 6px; font-size: 24px; line-height: 1.25; }
 .subscribe p { margin: 0; color: var(--slate); }
 .subscribe h2.kicker { margin-bottom: 8px; }
+.subscribe .btn { display: inline-flex; align-items: center; gap: 8px; }
+.subscribe .ico { flex: none; }
+#follow { scroll-margin-top: 80px; }
 .subscribe .follow-links { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin: 0; padding-top: 20px; border-top: 1px solid var(--line); }
 .subscribe .follow-links span { color: var(--slate); font-size: 14px; margin-right: 4px; }
 
