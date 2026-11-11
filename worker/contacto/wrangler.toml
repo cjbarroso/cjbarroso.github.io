@@ -1,6 +1,8 @@
 name = "contacto-relay"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
+workers_dev = true
+preview_urls = false
 
 # Crear con: npx wrangler kv namespace create CONTACTO  y pegar el id aca
 [[kv_namespaces]]

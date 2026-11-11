@@ -56,7 +56,7 @@
   });
   // Contacto: formulario que habla con el Worker (worker/contacto). Sin endpoint o sitekey no se muestra
   // y queda el mailto como unica via.
-  var CONTACT_ENDPOINT = "";
+  var CONTACT_ENDPOINT = "https://contacto-relay.cjbarroso.workers.dev";
   var TURNSTILE_SITEKEY = "0x4AAAAAAF841QZGNsJ9BJTQ";
   var contactHost = document.querySelector("[data-contact]");
   if (contactHost && CONTACT_ENDPOINT && TURNSTILE_SITEKEY) {
