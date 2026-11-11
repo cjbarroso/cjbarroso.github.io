@@ -1,0 +1,17 @@
+name = "contacto-relay"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+preview_urls = false
+
+# Crear con: npx wrangler kv namespace create CONTACTO  y pegar el id aca
+[[kv_namespaces]]
+binding = "CONTACTO"
+id = "864a40176f7c48dfb4215ee7fa8e9d7f"
+
+[vars]
+ALLOWED_ORIGINS = "https://cjbarroso.com,https://www.cjbarroso.com"
+IP_LIMIT = "3"        # mensajes por IP por hora
+DAILY_LIMIT = "40"    # tope global por dia (cortacircuitos)
+
+# Secrets (no van aca): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TURNSTILE_SECRET
