@@ -251,3 +251,13 @@ h2.subhead { font-size: 22px; margin: 0 0 14px; }
 :root[data-theme="light"] .map-light { display: block; }
 :root[data-theme="light"] .map-dark { display: none; }
 @media (max-width: 720px) { .reach { grid-template-columns: 1fr; } .reach .map { max-width: 220px; } }
+.contact-form { margin-top: 20px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); display: grid; gap: 12px; max-width: 640px; }
+.contact-form h4 { margin: 0; font-size: 20px; }
+.contact-form textarea, .contact-form input[type="text"] { width: 100%; box-sizing: border-box; font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; }
+.contact-form textarea { resize: vertical; }
+.contact-form textarea:focus, .contact-form input:focus { outline: 2px solid var(--terracotta); outline-offset: 1px; }
+.contact-form button { justify-self: start; border: 0; cursor: pointer; font-family: inherit; }
+.contact-form button:disabled { opacity: .6; cursor: default; }
+.contact-form .status { margin: 0; color: var(--muted); min-height: 1.4em; }
+.contact-form .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.contact-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
