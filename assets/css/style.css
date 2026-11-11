@@ -241,7 +241,7 @@ h2.subhead { font-size: 22px; margin: 0 0 14px; }
 .reach li { display: flex; flex-direction: column; margin: 0 0 10px; }
 .reach li strong { color: var(--terracotta); }
 .reach li span { color: var(--muted); font-size: 15px; }
-.map-dark { display: none; }
+.reach .map .map-dark { display: none; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .map-light { display: none; }
   :root:not([data-theme="light"]) .map-dark { display: block; }
