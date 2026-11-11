@@ -6,10 +6,17 @@ const UA = "cjbarroso.com writing updater (Cloudflare Worker)";
 
 async function refresh(env) {
   const posts = [];
-  for (let offset = 0; ; offset += PAGE) {
-    const res = await fetch(`${ARCHIVE}&limit=${PAGE}&offset=${offset}`, { headers: { "User-Agent": UA } });
+  // Substack devolvia una lista paginada con offset; ahora devuelve { posts, nextCursor }. Se aceptan los dos.
+  let offset = 0;
+  let cursor = null;
+  for (;;) {
+    // El formato nuevo rechaza offset (400): la primera pagina va sin paginacion y despues con cursor.
+    const q = cursor ? `&cursor=${encodeURIComponent(cursor)}` : offset ? `&offset=${offset}` : "";
+    const res = await fetch(`${ARCHIVE}&limit=${PAGE}${q}`, { headers: { "User-Agent": UA } });
     if (!res.ok) throw new Error(`Substack respondio ${res.status}`);
-    const page = await res.json();
+    const data = await res.json();
+    const page = Array.isArray(data) ? data : data && Array.isArray(data.posts) ? data.posts : null;
+    if (!page) throw new Error("respuesta inesperada de la API de Substack");
     for (const p of page) {
       posts.push({
         title: p.title,
@@ -19,7 +26,13 @@ async function refresh(env) {
         description: p.description,
       });
     }
-    if (page.length < PAGE) break;
+    if (Array.isArray(data)) {
+      if (page.length < PAGE) break;
+      offset += PAGE;
+    } else {
+      cursor = data.nextCursor;
+      if (!cursor || !page.length) break;
+    }
   }
   if (!posts.length) throw new Error("Substack no devolvio posts");
   // Si falla algo antes de este punto, KV conserva la ultima copia buena.

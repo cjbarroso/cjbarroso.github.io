@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -92,10 +93,22 @@ def substack_items(posts, source):
 
 
 def parse_substack_api(base, source):
-    """Pagina /api/v1/archive hasta que no haya mas posts."""
-    posts, offset, page = [], 0, 12
+    """Pagina /api/v1/archive hasta que no haya mas posts.
+
+    Substack devolvia una lista y paginaba con offset; ahora devuelve {"posts": [...], "nextCursor": ...}.
+    Se aceptan los dos formatos.
+    """
+    posts, offset, cursor, page = [], 0, None, 12
     while True:
-        data = json.loads(fetch(f"{base}/api/v1/archive?sort=new&limit={page}&offset={offset}"))
+        # El formato nuevo rechaza offset (400): la primera pagina va sin paginacion y despues con cursor.
+        query = f"&cursor={urllib.parse.quote(str(cursor))}" if cursor else (f"&offset={offset}" if offset else "")
+        data = json.loads(fetch(f"{base}/api/v1/archive?sort=new&limit={page}{query}"))
+        if isinstance(data, dict) and isinstance(data.get("posts"), list):
+            posts += data["posts"]
+            cursor = data.get("nextCursor")
+            if not cursor or not data["posts"]:
+                return substack_items(posts, source)
+            continue
         if not isinstance(data, list):
             raise ValueError(f"respuesta inesperada de la API de Substack (tipo {type(data).__name__})")
         posts += data
@@ -104,21 +117,25 @@ def parse_substack_api(base, source):
         offset += page
 
 
-def fetch_relay(source):
-    """Lee el relay de Cloudflare y avisa si el cron del Worker lleva dias sin actualizarlo."""
+def fetch_relay(source, base):
+    """Lee el relay de Cloudflare; si el cron del Worker lleva dias sin actualizarlo, prueba la API directa."""
     data = json.loads(fetch(SUBSTACK_RELAY))
     updated = datetime.fromisoformat(data["updated"].replace("Z", "+00:00"))
     age = datetime.now(timezone.utc) - updated
     if age > RELAY_MAX_AGE:
         warn(f"{source}: el relay de Cloudflare no se actualiza hace {age.days} dias ({data['updated']}); "
              "revisar el cron del Worker (worker/), la lista puede estar desactualizada")
+        try:
+            return parse_substack_api(base, source)
+        except Exception as exc:  # noqa: BLE001 - si la API tambien falla, sirve lo del relay
+            print(f"{source}: API directa fallo ({exc}), uso el relay viejo", file=sys.stderr)
     return substack_items(data["posts"], source)
 
 
 def fetch_source(source, url, kind):
     if kind == "substack":
         # Substack bloquea a GitHub Actions: primero el relay (Cloudflare Worker), despues directo.
-        attempts = [("relay", lambda: fetch_relay(source)),
+        attempts = [("relay", lambda: fetch_relay(source, url)),
                     ("API", lambda: parse_substack_api(url, source)),
                     ("RSS", lambda: parse_rss(fetch(url + "/feed"), source))]
         for i, (name, run) in enumerate(attempts):
