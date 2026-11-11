@@ -76,15 +76,18 @@ export default {
 
     const ip = request.headers.get("cf-connecting-ip") || "";
 
-    // Turnstile
+    // Turnstile: token acotado, timeout, y se exige action y hostname esperados
+    const token = String(data.token || "");
+    if (!token || token.length > 2048) return json({ error: "captcha" }, 403, okOrigin);
     const form = new FormData();
     form.append("secret", env.TURNSTILE_SECRET);
-    form.append("response", String(data.token || ""));
+    form.append("response", token);
     if (ip) form.append("remoteip", ip);
-    const ts = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", { method: "POST", body: form })
-      .then((r) => r.json())
-      .catch(() => ({ success: false }));
-    if (!ts.success) return json({ error: "captcha" }, 403, okOrigin);
+    const ts = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST", body: form, signal: AbortSignal.timeout(10000),
+    }).then((r) => (r.ok ? r.json() : { success: false })).catch(() => ({ success: false }));
+    const hosts = allowed.map((o) => new URL(o).hostname);
+    if (!ts.success || ts.action !== "contact" || !hosts.includes(ts.hostname)) return json({ error: "captcha" }, 403, okOrigin);
 
     // Limites: por IP (hash, no se guarda la IP) y global diario
     const day = new Date().toISOString().slice(0, 10);

@@ -57,7 +57,7 @@
   // Contacto: formulario que habla con el Worker (worker/contacto). Sin endpoint o sitekey no se muestra
   // y queda el mailto como unica via.
   var CONTACT_ENDPOINT = "";
-  var TURNSTILE_SITEKEY = "";
+  var TURNSTILE_SITEKEY = "0x4AAAAAAF841QZGNsJ9BJTQ";
   var contactHost = document.querySelector("[data-contact]");
   if (contactHost && CONTACT_ENDPOINT && TURNSTILE_SITEKEY) {
     var L = {
@@ -90,7 +90,7 @@
     var token = "", widget = null;
     function renderTs() {
       widget = window.turnstile.render(form.querySelector(".ts"), {
-        sitekey: TURNSTILE_SITEKEY, appearance: "interaction-only", language: lang === "zh" ? "zh-cn" : lang,
+        sitekey: TURNSTILE_SITEKEY, action: "contact", appearance: "interaction-only", language: lang === "zh" ? "zh-cn" : lang,
         callback: function (tk) { token = tk; }, "expired-callback": function () { token = ""; }, "error-callback": function () { token = ""; }
       });
     }
