@@ -162,7 +162,25 @@ def collect():
     CACHE.write_text(json.dumps(cache, indent=2, ensure_ascii=False) + "\n")
     manual = load_json(MANUAL, [])
     print(f"manual: {len(manual)} posts")
+    for it in items + manual:
+        it["title"] = TITLE_FIXES.get(it["title"], it["title"])
     return items + manual
+
+
+# Titulos con errores en el feed de origen; se corrigen al mostrarlos.
+TITLE_FIXES = {
+    "Como bajamos 30% los costos de atención al cliente": "Cómo bajamos 30% los costos de atención al cliente",
+    "Que es autokeras y por que es un paso en la dirección correcta":
+        "Qué es AutoKeras y por qué es un paso en la dirección correcta",
+    "The age of IA is here - and your infrastructure is not ready":
+        "The age of AI is here, and your infrastructure is not ready",
+}
+ES_HINT = re.compile(r"[áéíóúñ¿¡]|\b(el|la|los|las|de|del|y|que|para|por|con|un|una|es|en)\b", re.I)
+
+
+def is_spanish(it):
+    """Heuristica simple: palabras o caracteres tipicos del espanol en titulo y bajada."""
+    return bool(ES_HINT.search(it["title"] + " " + it.get("summary", "")))
 
 
 def dedupe(items):
@@ -191,9 +209,13 @@ def render(items, lang="en"):
         when = (f"{d.day:02d} {MESES[d.month - 1]} {d.year}" if es
                 else f"{d.year}年{d.month}月{d.day}日" if zh else d.strftime("%b %d, %Y"))
         summary = f'\n          <p>{html.escape(it["summary"])}</p>' if it.get("summary") else ""
+        # Se marca el idioma solo cuando no coincide con el de la pagina (en zh no se marca).
+        spanish = is_spanish(it)
+        tag = (' · <span class="lang-tag" lang="es">ES</span>' if lang == "en" and spanish
+               else ' · <span class="lang-tag" lang="en">EN</span>' if es and not spanish else "")
         rows.append(
             f'        <article class="post" data-source="{html.escape(it["source"])}">\n'
-            f'          <div class="meta"><span class="src">{html.escape(it["source"])}</span> · {when}</div>\n'
+            f'          <div class="meta"><span class="src">{html.escape(it["source"])}</span> · {when}{tag}</div>\n'
             f'          <h4><a href="{html.escape(it["url"])}" rel="noopener">{html.escape(it["title"])}</a></h4>{summary}\n'
             f'        </article>')
     return ("\n        <div class=\"chips\" role=\"group\" aria-label=\"" + ("Filtrar por fuente" if es else "按来源筛选" if zh else "Filter by source") + "\">\n          "
